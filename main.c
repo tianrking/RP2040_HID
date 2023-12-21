@@ -34,10 +34,10 @@ bool gp4_state; //= gpio_get(PIN_GP4) == 0;  // 当 GP4 接地时为真
 bool gp5_state; //= gpio_get(PIN_GP5) == 0;  // 当 GP5 接地时为真
 
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
-
+void hid_mouse_circle_task(int direct);
 void led_blinking_task(void);
 void hid_task(void);
-void hid_mouse_circle_task(void);
+void hid_mouse_circle_task(int direct);
 
 void setup_gpio(void);
 /*------------- MAIN -------------*/
@@ -60,7 +60,8 @@ int main(void)
 //--------------------------------------------------------------------+
 
 ///circle task
-void hid_mouse_circle_task(void) {
+//
+void hid_mouse_circle_task(int direct) {
     static int angle = 0; // 角度变量
     const int radius = 10; // 圆形轨迹的半径
     const int circle_speed = 5; // 移动速度（角度增量）
@@ -70,8 +71,10 @@ void hid_mouse_circle_task(void) {
     int8_t y_move = radius * sin(angle * M_PI / 180);
 
     // 发送鼠标移动报告
-    tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, x_move, y_move, 0, 0);
-
+    if(direct == 1)
+    	tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, x_move, y_move, 0, 0);
+    if(direct == -1)
+	tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, -x_move, -y_move, 0, 0);
     // 更新角度
     angle = (angle + circle_speed) % 360;
 }
@@ -138,6 +141,20 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
 	
   if ( !tud_hid_ready() ) return;
 
+    bool gp4_state = gpio_get(PIN_GP4) == 0;  // 当 GP4 接地时为真
+    bool gp5_state = gpio_get(PIN_GP5) == 0;  // 当 GP5 接地时为真
+
+    // 音量控制
+    if (gp4_state) {
+        // 音量减小
+        uint16_t volume_decrement = HID_USAGE_CONSUMER_VOLUME_DECREMENT;
+        tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_decrement, 2);
+    } else if (gp5_state) {
+        // 音量增加
+        uint16_t volume_increment = HID_USAGE_CONSUMER_VOLUME_INCREMENT;
+        tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_increment, 2);
+    }
+
   switch(report_id)
   {
     case REPORT_ID_KEYBOARD:
@@ -166,7 +183,10 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
       int8_t const delta = 5;
 
       // no button, right + down, no scroll, no pan
-      hid_mouse_circle_task();
+      if(gpio_get(PIN_GP2)==0)
+      	hid_mouse_circle_task(1);
+      if(gpio_get(PIN_GP3)==0)
+	hid_mouse_circle_task(-1);
       //tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, delta, delta, 0, 0);
     }
     break;
