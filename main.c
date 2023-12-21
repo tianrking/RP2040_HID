@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <math.h>
 #include "bsp/board.h"
 #include "tusb.h"
-
+#include "hardware/gpio.h"
 #include "usb_descriptors.h"
 
 //--------------------------------------------------------------------+
 // MACRO CONSTANT TYPEDEF PROTYPES
 //--------------------------------------------------------------------+
-#define M_PI 3.1415926
+//#define M_PI 3.1415926
 /* Blink pattern
  * - 250 ms  : device not mounted
  * - 1000 ms : device mounted
@@ -22,17 +22,30 @@ enum  {
   BLINK_SUSPENDED = 2500,
 };
 
+// 全局声明 GPIO 引脚变量
+const uint PIN_GP2 = 2;
+const uint PIN_GP3 = 3;
+const uint PIN_GP4 = 4;
+const uint PIN_GP5 = 5;
+
+bool gp2_state; //= gpio_get(PIN_GP2) == 0;  // 当 GP2 接地时为真
+bool gp3_state; //= gpio_get(PIN_GP3) == 0;  // 当 GP3 接地时为真
+bool gp4_state; //= gpio_get(PIN_GP4) == 0;  // 当 GP4 接地时为真
+bool gp5_state; //= gpio_get(PIN_GP5) == 0;  // 当 GP5 接地时为真
+
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
 void led_blinking_task(void);
 void hid_task(void);
 void hid_mouse_circle_task(void);
+
+void setup_gpio(void);
 /*------------- MAIN -------------*/
 int main(void)
 {
   board_init();
   tusb_init();
-
+  setup_gpio();
   while (1)
   {
     tud_task(); // tinyusb device task
@@ -64,6 +77,28 @@ void hid_mouse_circle_task(void) {
 }
 
 //
+void setup_gpio() {
+    // 初始化 GPIO 为输入模式，并启用内部上拉电阻
+    const uint PIN_GP2 = 2;
+    const uint PIN_GP3 = 3;
+    const uint PIN_GP4 = 4;
+    const uint PIN_GP5 = 5;
+
+    gpio_init(PIN_GP2);
+    gpio_init(PIN_GP3);
+    gpio_init(PIN_GP4);
+    gpio_init(PIN_GP5);
+
+    gpio_set_dir(PIN_GP2, GPIO_IN);
+    gpio_set_dir(PIN_GP3, GPIO_IN);
+    gpio_set_dir(PIN_GP4, GPIO_IN);
+    gpio_set_dir(PIN_GP5, GPIO_IN);
+
+    gpio_pull_up(PIN_GP2);
+    gpio_pull_up(PIN_GP3);
+    gpio_pull_up(PIN_GP4);
+    gpio_pull_up(PIN_GP5);
+}
 
 
 // Invoked when device is mounted
@@ -100,6 +135,7 @@ void tud_resume_cb(void)
 static void send_hid_report(uint8_t report_id, uint32_t btn)
 {
   // skip if hid is not ready yet
+	
   if ( !tud_hid_ready() ) return;
 
   switch(report_id)
@@ -109,7 +145,7 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
       // use to avoid send multiple consecutive zero report for keyboard
       static bool has_keyboard_key = false;
 
-      if ( btn )
+      if ( btn ||gpio_get(PIN_GP2) == 0)
       {
         uint8_t keycode[6] = { 0 };
         keycode[0] = HID_KEY_A;
