@@ -1,28 +1,3 @@
-/* 
- * The MIT License (MIT)
- *
- * Copyright (c) 2019 Ha Thach (tinyusb.org)
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -35,7 +10,7 @@
 //--------------------------------------------------------------------+
 // MACRO CONSTANT TYPEDEF PROTYPES
 //--------------------------------------------------------------------+
-
+#define M_PI 3.1415926
 /* Blink pattern
  * - 250 ms  : device not mounted
  * - 1000 ms : device mounted
@@ -51,7 +26,7 @@ static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
 void led_blinking_task(void);
 void hid_task(void);
-
+void hid_mouse_circle_task(void);
 /*------------- MAIN -------------*/
 int main(void)
 {
@@ -70,6 +45,26 @@ int main(void)
 //--------------------------------------------------------------------+
 // Device callbacks
 //--------------------------------------------------------------------+
+
+///circle task
+void hid_mouse_circle_task(void) {
+    static int angle = 0; // 角度变量
+    const int radius = 10; // 圆形轨迹的半径
+    const int circle_speed = 5; // 移动速度（角度增量）
+
+    // 使用正弦和余弦函数计算增量
+    int8_t x_move = radius * cos(angle * M_PI / 180);
+    int8_t y_move = radius * sin(angle * M_PI / 180);
+
+    // 发送鼠标移动报告
+    tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, x_move, y_move, 0, 0);
+
+    // 更新角度
+    angle = (angle + circle_speed) % 360;
+}
+
+//
+
 
 // Invoked when device is mounted
 void tud_mount_cb(void)
@@ -135,7 +130,8 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
       int8_t const delta = 5;
 
       // no button, right + down, no scroll, no pan
-      tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, delta, delta, 0, 0);
+      hid_mouse_circle_task();
+      //tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, delta, delta, 0, 0);
     }
     break;
 
