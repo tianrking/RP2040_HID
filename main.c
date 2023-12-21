@@ -27,6 +27,10 @@ const uint PIN_GP2 = 2;
 const uint PIN_GP3 = 3;
 const uint PIN_GP4 = 4;
 const uint PIN_GP5 = 5;
+const uint PIN_GP6 = 6;
+const uint PIN_GP7 = 7;
+const uint PIN_GP8 = 8;
+const uint PIN_GP9 = 9;
 
 bool gp2_state; //= gpio_get(PIN_GP2) == 0;  // 当 GP2 接地时为真
 bool gp3_state; //= gpio_get(PIN_GP3) == 0;  // 当 GP3 接地时为真
@@ -38,6 +42,7 @@ void hid_mouse_circle_task(int direct);
 void led_blinking_task(void);
 void hid_task(void);
 void hid_mouse_circle_task(int direct);
+void send_wifi_connect_sequence(void);
 
 void setup_gpio(void);
 /*------------- MAIN -------------*/
@@ -59,6 +64,68 @@ int main(void)
 // Device callbacks
 //--------------------------------------------------------------------+
 
+// wifi connect
+//
+void send_key(uint8_t key) {
+    uint8_t keycode[6] = {0};
+    keycode[0] = key;
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
+    sleep_ms(10);
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 发送空报告以模拟键盘释放
+    sleep_ms(10);
+}
+
+void open_terminal() {
+    // 模拟 Ctrl+Alt+T 发送终端命令
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, KEYBOARD_MODIFIER_LEFTCTRL | KEYBOARD_MODIFIER_LEFTALT, (uint8_t[]){HID_KEY_T});
+    sleep_ms(10);
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 模拟键盘释放
+    sleep_ms(500); // 等待终端打开
+}
+
+void input_wifi_command() {
+    // 模拟输入命令 "nmcli c up WorldMaker"
+    char cmd[] = "nmcli c up WorldMaker";
+    for (int i = 0; cmd[i] != '\0'; i++) {
+        // 这里需要将字符映射到对应的键盘扫描码
+        //uint8_t key = ... // 字符到扫描码的映射
+        //send_key(key);
+	send_key(cmd[i]);
+    }
+    send_key(HID_KEY_ENTER);
+}
+
+/// startup
+void send_combination(uint8_t modifier, uint8_t key) {
+    uint8_t keycode[6] = {0};
+    keycode[0] = key;
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, modifier, keycode);
+    sleep_ms(10);
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 模拟键盘释放
+    sleep_ms(10);
+}
+
+void alt_tab() {
+    send_combination(KEYBOARD_MODIFIER_LEFTALT, HID_KEY_TAB);
+}
+
+void alt_f4() {
+    send_combination(KEYBOARD_MODIFIER_LEFTALT, HID_KEY_F4);
+}
+
+void refresh_f5() {
+    send_combination(0, HID_KEY_F5);
+}
+
+void windows_e() {
+    send_combination(KEYBOARD_MODIFIER_LEFTGUI, HID_KEY_E);
+}
+
+void windows_r() {
+    send_combination(KEYBOARD_MODIFIER_LEFTGUI, HID_KEY_R);
+}
+
+///
 ///circle task
 //
 void hid_mouse_circle_task(int direct) {
@@ -86,7 +153,8 @@ void setup_gpio() {
     const uint PIN_GP3 = 3;
     const uint PIN_GP4 = 4;
     const uint PIN_GP5 = 5;
-
+    const uint PIN_GP6 = 6;
+    const uint PIN_GP7 = 7;
     gpio_init(PIN_GP2);
     gpio_init(PIN_GP3);
     gpio_init(PIN_GP4);
@@ -101,6 +169,22 @@ void setup_gpio() {
     gpio_pull_up(PIN_GP3);
     gpio_pull_up(PIN_GP4);
     gpio_pull_up(PIN_GP5);
+
+    gpio_init(PIN_GP6);
+    gpio_set_dir(PIN_GP6, GPIO_IN);
+    gpio_pull_up(PIN_GP6);
+
+    gpio_init(PIN_GP7);
+    gpio_set_dir(PIN_GP7, GPIO_IN);
+    gpio_pull_up(PIN_GP7);
+
+    gpio_init(PIN_GP8);
+    gpio_set_dir(PIN_GP8, GPIO_IN);
+    gpio_pull_up(PIN_GP8);
+
+    gpio_init(PIN_GP9);
+    gpio_set_dir(PIN_GP9, GPIO_IN);
+    gpio_pull_up(PIN_GP9);
 }
 
 
@@ -134,6 +218,19 @@ void tud_resume_cb(void)
 //--------------------------------------------------------------------+
 // USB HID
 //--------------------------------------------------------------------+
+void send_empty_report() {
+    uint8_t empty_keys[6] = {0}; // 所有键位都未被按下
+    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, empty_keys); // 发送空键盘报告
+}
+
+    bool last_state_gp2 = true;
+    bool last_state_gp3 = true;
+    bool last_state_gp4 = true;
+    bool last_state_gp5 = true;
+    bool last_state_gp6 = true;
+    bool last_state_gp7 = true;
+    bool last_state_gp8 = true;
+    bool last_state_gp9 = true;
 
 static void send_hid_report(uint8_t report_id, uint32_t btn)
 {
@@ -141,9 +238,14 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
 	
   if ( !tud_hid_ready() ) return;
 
-    bool gp4_state = gpio_get(PIN_GP4) == 0;  // 当 GP4 接地时为真
-    bool gp5_state = gpio_get(PIN_GP5) == 0;  // 当 GP5 接地时为真
-
+	bool current_state_gp2 = gpio_get(PIN_GP2) == 0;
+        bool current_state_gp3 = gpio_get(PIN_GP3) == 0;
+        bool current_state_gp4 = gpio_get(PIN_GP4) == 0;
+        bool current_state_gp5 = gpio_get(PIN_GP5) == 0;
+        bool current_state_gp6 = gpio_get(PIN_GP6) == 0;
+        bool current_state_gp7 = gpio_get(PIN_GP7) == 0;
+        bool current_state_gp8 = gpio_get(PIN_GP8) == 0;
+        bool current_state_gp9 = gpio_get(PIN_GP9) == 0;
     // 音量控制
     if (gp4_state) {
         // 音量减小
@@ -155,6 +257,36 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
         tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_increment, 2);
     }
 
+
+        if (!current_state_gp6 && last_state_gp6) {
+            alt_tab();
+	    send_empty_report();
+        }
+
+        if (!current_state_gp7 && last_state_gp7) {
+            alt_f4();
+	    send_empty_report();
+        }
+
+        if (!current_state_gp8 && last_state_gp8) {
+            refresh_f5();
+	    send_empty_report();
+        }
+
+        if (!current_state_gp9 && last_state_gp9) {
+            windows_e();
+	    send_empty_report();
+            sleep_ms(500); // 假设按 GP9 后要打开资源管理器，需要稍长延时
+        }
+
+last_state_gp2 = current_state_gp2;
+last_state_gp3 = current_state_gp3;
+last_state_gp4 = current_state_gp4;
+last_state_gp5 = current_state_gp5;
+last_state_gp6 = current_state_gp6;
+last_state_gp7 = current_state_gp7;
+last_state_gp8 = current_state_gp8;
+last_state_gp9 = current_state_gp9;
   switch(report_id)
   {
     case REPORT_ID_KEYBOARD:
