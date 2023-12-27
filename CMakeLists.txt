@@ -8,6 +8,22 @@ project(rp2040_hid_mouse C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+
+# Use the LVGL_PATH environment variable
+set(LVGL_DIR $ENV{LVGL_PATH})
+
+# Make sure LVGL_DIR points to something
+if(NOT LVGL_DIR)
+    message(FATAL_ERROR "Please set the LVGL_PATH environment variable to the LVGL directory.")
+endif()
+
+file(GLOB_RECURSE LVGL_SOURCES ${LVGL_DIR}/src/*.c)
+
+# Include the LVGL headers
+include_directories(${LVGL_DIR})
+include_directories(${LVGL_DIR}/src)
+link_directories(${LVGL_DIR})
+
 # 初始化 Pico-SDK
 pico_sdk_init()
 
@@ -20,6 +36,7 @@ add_executable(rp2040_hid_mouse
 target_sources(rp2040_hid_mouse PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/main.c
         ${CMAKE_CURRENT_LIST_DIR}/usb_descriptors.c
+        ${LVGL_SOURCES} # Add this line to include LVGL sources
         )
 
 # Make sure TinyUSB can find tusb_config.h
@@ -37,11 +54,19 @@ target_link_libraries(rp2040_hid_mouse PUBLIC
 	pico_unique_id 
 	tinyusb_device 
 	tinyusb_board
+    # lvgl
 	)
 
 target_include_directories(rp2040_hid_mouse PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}
 )
+
+
+# Include the LVGL headers
+include_directories(${LVGL_DIR})
+include_directories(${LVGL_DIR}/src)
+
+
 # Uncomment this line to enable fix for Errata RP2040-E5 (the fix requires use of GPIO 15)
 #target_compile_definitions(dev_hid_composite PUBLIC PICO_RP2040_USB_DEVICE_ENUMERATION_FIX=1)
 # 设置 C 和 C++ 编译器标志

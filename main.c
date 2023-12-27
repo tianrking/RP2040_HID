@@ -9,25 +9,299 @@
 uint16_t ColorTab[5]={RED,GREEN,BLUE,YELLOW,RED};
 uint16_t POINT_COLOR=WHITE;
 
-/*------------- MAIN -------------*/
-int main(void)
-{
+void lcd_hw_init(void) {
+    // Initialize GPIO, SPI, etc. for LCD
+    // ...
 
-  stdio_init_all();
-  my_spi_init();
-  lcd_gpio_init();
-  lcd_init();
-
-  // Fill the screen with a color
-  lcd_clear(WHITE); 
-  sleep_ms(3000);
-  lcd_clear(BLUE); 
-  while (1)
-  {
-    test_fill_rec();
-  }
-  return 0;
+    // Reset LCD to a known state
+    lcd_reset();
 }
+
+// // void my_disp_flush(lv_disp_drv_t * disp, const lv_area_t * area, lv_color_t * color_p) { lv_fs_drv_t
+// // Corrected function declaration
+// // Corrected function declaration
+
+// void my_disp_flush(lv_disp_drv_t * disp, const lv_area_t * area, lv_color_t * color_p) {
+
+//     // Set the area to be updated
+//     uint16_t x1 = area->x1;
+//     uint16_t y1 = area->y1;
+//     uint16_t x2 = area->x2;
+//     uint16_t y2 = area->y2;
+
+//     // Write pixel data
+//     for (int y = y1; y <= y2; y++) {
+//         for (int x = x1; x <= x2; x++) {
+
+//             // Access the full 16-bit color value
+//             uint16_t color = color_p->full;
+
+//             // **Bitwise Operations (Recommended)**
+//             // Extract color components directly from `color_p->full`
+//             uint8_t red = (color >> 11) & 0x1F;
+//             uint8_t green = (color >> 5) & 0x3F;
+//             uint8_t blue = color & 0x1F;
+
+//             // Write the pixel (using the appropriate format for your LCD driver)
+//             lcd_write_data_16bit(red << 11 | green << 5 | blue);  // Assuming your LCD driver expects 16-bit colors
+
+//             color_p++;
+//         }
+//     }
+// }
+
+
+
+// static lv_disp_drv_t disp_drv; 
+
+// void lvgl_init() {
+//     // Initialize LVGL
+//     lv_init();
+
+//     // Initialize the display buffer for LVGL
+//     static lv_disp_draw_buf_t draw_buf;  // Use the correct type for display buffer
+//     static lv_color_t buf_1[LV_HOR_RES_MAX * 10];  // Example buffer size, adjust as needed
+//     lv_disp_draw_buf_init(&draw_buf, buf_1, NULL, sizeof(buf_1) / sizeof(buf_1[0]));   // Initialize the buffer
+
+//     // Initialize your LCD (SPI, GPIO, etc.)
+//     my_spi_init();
+//     lcd_gpio_init();
+//     lcd_reset();
+//     lcd_init();
+//     lcd_clear(0xFFFF); // Clear with white color (or any other color)
+
+//     // Setup the display driver
+//     // static lv_disp_drv_t disp_drv;  // Use the correct type for display driver
+//     lv_disp_drv_init(&disp_drv);    // Initialize the driver
+//     disp_drv.flush_cb = my_disp_flush;  // Set your driver function
+//     disp_drv.draw_buf = &draw_buf;   // Assign the buffer to the driver
+//     disp_drv.hor_res = 320;         // Set horizontal resolution
+//     disp_drv.ver_res = 240;         // Set vertical resolution
+
+//     // Register the driver in LVGL
+//     lv_disp_drv_register(&disp_drv);
+
+//     // //test
+//     // lv_obj_set_style_bg_color(lv_screen_active(), lv_color_hex(0x003a57), LV_PART_MAIN);
+
+//     // /*Create a white label, set its text and align it to the center*/
+//     // lv_obj_t * label = lv_label_create(lv_screen_active());
+//     // lv_label_set_text(label, "Hello world");
+//     // lv_obj_set_style_text_color(lv_screen_active(), lv_color_hex(0xffffff), LV_PART_MAIN);
+//     // lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
+//     // //test
+// }
+
+
+// void create_simple_gui(void) {
+//     // Create a simple label
+//     lv_obj_t * label = lv_label_create(lv_scr_act());
+//     lv_label_set_text(label, "Hello LVGL!");
+//     lv_obj_center(label);
+// }
+
+///test main
+// LVGL requires a buffer to work with
+static lv_disp_draw_buf_t disp_buf;
+static lv_color_t buf[LV_HOR_RES_MAX * 10]; /* Declare a buffer for 10 lines */
+
+// LVGL display flushing
+void my_disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p) {
+    /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
+    
+    lcd_set_windows(area->x1, area->y1, area->x2, area->y2);
+    for (int y = area->y1; y <= area->y2; y++) {
+        for (int x = area->x1; x <= area->x2; x++) {
+            lcd_write_data_16bit(color_p->full);  // Write a pixel
+            color_p++;
+        }
+    }
+
+    lv_disp_flush_ready(disp_drv); /* Indicate you are ready with the flushing*/
+}
+
+void lv_example_anim_1(void) {
+    static lv_style_t style;
+    lv_style_init(&style);
+    lv_style_set_bg_opa(&style, LV_OPA_COVER);
+    lv_style_set_bg_color(&style, lv_color_make(0xFF, 0, 0)); // Red Color
+
+    /* Create an object with the new style */
+    lv_obj_t * obj = lv_obj_create(lv_scr_act());
+    lv_obj_add_style(obj, &style, 0);
+    lv_obj_set_size(obj, 50, 50); // 50x50 pixels
+    lv_obj_align(obj, LV_ALIGN_CENTER, 0, 0); // Align to center
+
+    /* Create an animation for the X position */
+    lv_anim_t a;
+    lv_anim_init(&a);
+    lv_anim_set_var(&a, obj);
+    lv_anim_set_values(&a, 0, lv_disp_get_hor_res(NULL) - 50); // From left to right
+    lv_anim_set_exec_cb(&a, (lv_anim_exec_xcb_t)lv_obj_set_x);
+    lv_anim_set_time(&a, 100); // 3 seconds to move across
+    lv_anim_set_playback_time(&a, 100); // 3 seconds to move back
+    lv_anim_set_repeat_count(&a, LV_ANIM_REPEAT_INFINITE); // Repeat the animation
+
+    /* Start the animation */
+    lv_anim_start(&a);
+}
+
+/* Function to add an angle to a point */
+void rotate_point(float cx, float cy, float angle, lv_point_t *p) {
+    float s = sin(angle);
+    float c = cos(angle);
+
+    // translate point back to origin:
+    p->x -= cx;
+    p->y -= cy;
+
+    // rotate point
+    float xnew = p->x * c - p->y * s;
+    float ynew = p->x * s + p->y * c;
+
+    // translate point back:
+    p->x = xnew + cx;
+    p->y = ynew + cy;
+}
+
+/* Draw a star with LVGL */
+void draw_star(lv_obj_t * parent) {
+    /* Create an array for the points of the star */
+    lv_point_t points[10];
+
+    /* Center of the star */
+    float cx = 100;
+    float cy = 100;
+
+    /* Outer and inner radius of the star */
+    float outer_r = 50;
+    float inner_r = 20;
+
+    /* Calculate the points */
+    for(int i = 0; i < 5; i++) {
+        // Outer points of star
+        points[2*i].x = cx + outer_r * cos(i * 2 * M_PI / 5);
+        points[2*i].y = cy + outer_r * sin(i * 2 * M_PI / 5);
+
+        // Inner points of star
+        if(i < 4) {
+            points[2*i + 1].x = cx + inner_r * cos((i + 0.5) * 2 * M_PI / 5);
+            points[2*i + 1].y = cy + inner_r * sin((i + 0.5) * 2 * M_PI / 5);
+        }
+    }
+
+    // Connect the last inner point to the first outer point
+    points[9].x = cx + inner_r * cos(4.5 * 2 * M_PI / 5);
+    points[9].y = cy + inner_r * sin(4.5 * 2 * M_PI / 5);
+
+    /* Create line and assign points */
+
+    static lv_style_t line_style;
+    lv_style_init(&line_style);
+    lv_style_set_line_width(&line_style, 2); // Set the line width
+    lv_style_set_line_color(&line_style, lv_palette_main(LV_PALETTE_BLUE)); // Set the line color
+
+    lv_obj_t * line1 = lv_line_create(parent);
+    lv_line_set_points(line1, points, 10);     // Set the points
+    lv_obj_add_style(line1, &line_style, 0);   // Optional: Set a style if you want
+}
+
+/* 定义一个六边形的六个顶点 */
+static lv_point_t hexagon_points[] = {
+    {150, 50}, {250, 50},  // 第一条边的两个顶点
+    {300, 150}, {250, 250}, // 第二条边的两个顶点
+    {150, 250}, {100, 150}, // 第三条边的两个顶点
+    {150, 50}               // 回到起点
+};
+
+void create_hexagon(lv_obj_t * parent) {
+    /* 定义一个六边形的六个顶点 */
+    static lv_point_t points[] = {
+        {60, 0},   // 顶点1
+        {120, 0},  // 顶点2
+        {180, 60},  // 顶点3
+        {120, 120}, // 顶点4
+        {60, 120},  // 顶点5
+        {0, 60},   // 顶点6
+        {60, 0}    // 闭合的最后一个点
+    };
+
+    /* 创建一个 line 对象 */
+    lv_obj_t * line = lv_line_create(parent);
+    lv_line_set_points(line, points, 7); /* 设置点数组和点数量 */
+
+    /* 设置线的样式 */
+    static lv_style_t style_line;
+    lv_style_init(&style_line);
+    lv_style_set_line_width(&style_line, 2);
+    lv_style_set_line_color(&style_line, lv_palette_main(LV_PALETTE_BLUE));
+    lv_obj_add_style(line, &style_line, 0);
+
+    lv_obj_align(line, LV_ALIGN_CENTER, 0, 0); /* 居中对齐 */
+}
+
+
+int main(void) {
+    // Initialize LVGL
+    lv_init();
+    stdio_init_all();
+    my_spi_init();
+    // Initialize your display hardware
+    lcd_gpio_init(); // Initialize GPIOs for LCD
+    lcd_reset();     // Reset LCD
+    lcd_init();      // Initialize LCD
+    lcd_clear(BLUE);
+    // Set up buffers for LVGL
+    lv_disp_draw_buf_init(&disp_buf, buf, NULL, LV_HOR_RES_MAX * 10);
+
+    // Initialize and register a display driver
+    static lv_disp_drv_t disp_drv;
+    lv_disp_drv_init(&disp_drv);
+    disp_drv.hor_res = 240;
+    disp_drv.ver_res = 320;
+    disp_drv.flush_cb = my_disp_flush;
+    disp_drv.draw_buf = &disp_buf;
+    lv_disp_drv_register(&disp_drv);
+
+    // Create a simple label
+    lv_obj_t * label = lv_label_create(lv_scr_act());
+    lv_label_set_text(label, "w0x7ce");
+    lv_obj_center(label);
+
+
+    // //lv_example_anim_1();
+
+    // lv_obj_t * parent = lv_scr_act();
+
+//     // // Now draw the star on this parent
+//     // draw_star(parent);
+//  /* Create a canvas */
+//     static lv_color_t cbuf[LV_CANVAS_BUF_SIZE_TRUE_COLOR(200, 200)];
+//     lv_obj_t* canvas = lv_canvas_create(lv_scr_act());
+//     lv_canvas_set_buffer(canvas, cbuf, 200, 200, LV_IMG_CF_TRUE_COLOR);
+//     lv_obj_align(canvas, NULL, LV_ALIGN_CENTER, 0, 0);
+    
+//     /* Clear the canvas */
+//     lv_canvas_fill_bg(canvas, lv_color_white(), LV_OPA_COVER);
+
+//     /* Draw a hexagon */
+//     draw_hexagon(canvas, lv_color_hex(0xFF0000)); // Red color hexagon
+//  lv_example_polygon_1();
+    /* 创建一个父对象，例如一个活动屏幕 */
+    lv_obj_t * parent = lv_scr_act();
+
+    /* 绘制六边形 */
+    create_hexagon(parent);
+
+    // Handle LVGL tasks
+    while(1) {
+        lv_timer_handler(); // let the GUI do its work
+        sleep_ms(5);
+    }
+
+    return 0;
+}
+
 
 #include "pico/stdlib.h"
 #include "hardware/spi.h"

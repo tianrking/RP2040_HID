@@ -5,6 +5,8 @@
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/gpio.h"
+#include "lvgl.h"
+
 
 // LCD pin definitions
 #define LCD_MOSI_PIN 19
@@ -73,5 +75,7 @@ _lcd_dev lcddev = {
     .width = 320,  // default width
     .height = 240  // default height
 };
+
+
 
 #endif // LCD_ILI9341_H
