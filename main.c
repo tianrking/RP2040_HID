@@ -2,483 +2,498 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include "bsp/board.h"
-#include "tusb.h"
+// #include "bsp/board.h"
 #include "hardware/gpio.h"
-#include "usb_descriptors.h"
+#include "main.h"
 
-//--------------------------------------------------------------------+
-// MACRO CONSTANT TYPEDEF PROTYPES
-//--------------------------------------------------------------------+
-//#define M_PI 3.1415926
-/* Blink pattern
- * - 250 ms  : device not mounted
- * - 1000 ms : device mounted
- * - 2500 ms : device is suspended
- */
-enum  {
-  BLINK_NOT_MOUNTED = 250,
-  BLINK_MOUNTED = 1000,
-  BLINK_SUSPENDED = 2500,
-};
+uint16_t ColorTab[5]={RED,GREEN,BLUE,YELLOW,RED};
+uint16_t POINT_COLOR=WHITE;
 
-// 全局声明 GPIO 引脚变量
-const uint PIN_GP2 = 2;
-const uint PIN_GP3 = 3;
-const uint PIN_GP4 = 4;
-const uint PIN_GP5 = 5;
-const uint PIN_GP6 = 6;
-const uint PIN_GP7 = 7;
-const uint PIN_GP8 = 8;
-const uint PIN_GP9 = 9;
-
-bool gp2_state; //= gpio_get(PIN_GP2) == 0;  // 当 GP2 接地时为真
-bool gp3_state; //= gpio_get(PIN_GP3) == 0;  // 当 GP3 接地时为真
-bool gp4_state; //= gpio_get(PIN_GP4) == 0;  // 当 GP4 接地时为真
-bool gp5_state; //= gpio_get(PIN_GP5) == 0;  // 当 GP5 接地时为真
-
-static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
-void hid_mouse_circle_task(int direct);
-void led_blinking_task(void);
-void hid_task(void);
-void hid_mouse_circle_task(int direct);
-void send_wifi_connect_sequence(void);
-
-void setup_gpio(void);
 /*------------- MAIN -------------*/
 int main(void)
 {
-  board_init();
-  tusb_init();
-  setup_gpio();
+
+  stdio_init_all();
+  my_spi_init();
+  lcd_gpio_init();
+  lcd_init();
+
+  // Fill the screen with a color
+  lcd_clear(WHITE); 
+  sleep_ms(3000);
+  lcd_clear(BLUE); 
   while (1)
   {
-    tud_task(); // tinyusb device task
-    led_blinking_task();
-
-    hid_task();
+    test_fill_rec();
   }
-}
-
-//--------------------------------------------------------------------+
-// Device callbacks
-//--------------------------------------------------------------------+
-
-// wifi connect
-//
-void send_key(uint8_t key) {
-    uint8_t keycode[6] = {0};
-    keycode[0] = key;
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
-    sleep_ms(10);
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 发送空报告以模拟键盘释放
-    sleep_ms(10);
-}
-
-void open_terminal() {
-    // 模拟 Ctrl+Alt+T 发送终端命令
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, KEYBOARD_MODIFIER_LEFTCTRL | KEYBOARD_MODIFIER_LEFTALT, (uint8_t[]){HID_KEY_T});
-    sleep_ms(10);
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 模拟键盘释放
-    sleep_ms(500); // 等待终端打开
-}
-
-void input_wifi_command() {
-    // 模拟输入命令 "nmcli c up WorldMaker"
-    char cmd[] = "nmcli c up WorldMaker";
-    for (int i = 0; cmd[i] != '\0'; i++) {
-        // 这里需要将字符映射到对应的键盘扫描码
-        //uint8_t key = ... // 字符到扫描码的映射
-        //send_key(key);
-	send_key(cmd[i]);
-    }
-    send_key(HID_KEY_ENTER);
-}
-
-/// startup
-void send_combination(uint8_t modifier, uint8_t key) {
-    uint8_t keycode[6] = {0};
-    keycode[0] = key;
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, modifier, keycode);
-    sleep_ms(10);
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL); // 模拟键盘释放
-    sleep_ms(10);
-}
-
-void alt_tab() {
-    send_combination(KEYBOARD_MODIFIER_LEFTALT, HID_KEY_TAB);
-}
-
-void alt_f4() {
-    send_combination(KEYBOARD_MODIFIER_LEFTALT, HID_KEY_F4);
-}
-
-void refresh_f5() {
-    send_combination(0, HID_KEY_F5);
-}
-
-void windows_e() {
-    send_combination(KEYBOARD_MODIFIER_LEFTGUI, HID_KEY_E);
-}
-
-void windows_r() {
-    send_combination(KEYBOARD_MODIFIER_LEFTGUI, HID_KEY_R);
-}
-
-///
-///circle task
-//
-void hid_mouse_circle_task(int direct) {
-    static int angle = 0; // 角度变量
-    const int radius = 10; // 圆形轨迹的半径
-    const int circle_speed = 5; // 移动速度（角度增量）
-
-    // 使用正弦和余弦函数计算增量
-    int8_t x_move = radius * cos(angle * M_PI / 180);
-    int8_t y_move = radius * sin(angle * M_PI / 180);
-
-    // 发送鼠标移动报告
-    if(direct == 1)
-    	tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, x_move, y_move, 0, 0);
-    if(direct == -1)
-	tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, -x_move, -y_move, 0, 0);
-    // 更新角度
-    angle = (angle + circle_speed) % 360;
-}
-
-//
-void setup_gpio() {
-    // 初始化 GPIO 为输入模式，并启用内部上拉电阻
-    const uint PIN_GP2 = 2;
-    const uint PIN_GP3 = 3;
-    const uint PIN_GP4 = 4;
-    const uint PIN_GP5 = 5;
-    const uint PIN_GP6 = 6;
-    const uint PIN_GP7 = 7;
-    gpio_init(PIN_GP2);
-    gpio_init(PIN_GP3);
-    gpio_init(PIN_GP4);
-    gpio_init(PIN_GP5);
-
-    gpio_set_dir(PIN_GP2, GPIO_IN);
-    gpio_set_dir(PIN_GP3, GPIO_IN);
-    gpio_set_dir(PIN_GP4, GPIO_IN);
-    gpio_set_dir(PIN_GP5, GPIO_IN);
-
-    gpio_pull_up(PIN_GP2);
-    gpio_pull_up(PIN_GP3);
-    gpio_pull_up(PIN_GP4);
-    gpio_pull_up(PIN_GP5);
-
-    gpio_init(PIN_GP6);
-    gpio_set_dir(PIN_GP6, GPIO_IN);
-    gpio_pull_up(PIN_GP6);
-
-    gpio_init(PIN_GP7);
-    gpio_set_dir(PIN_GP7, GPIO_IN);
-    gpio_pull_up(PIN_GP7);
-
-    gpio_init(PIN_GP8);
-    gpio_set_dir(PIN_GP8, GPIO_IN);
-    gpio_pull_up(PIN_GP8);
-
-    gpio_init(PIN_GP9);
-    gpio_set_dir(PIN_GP9, GPIO_IN);
-    gpio_pull_up(PIN_GP9);
-}
-
-
-// Invoked when device is mounted
-void tud_mount_cb(void)
-{
-  blink_interval_ms = BLINK_MOUNTED;
-}
-
-// Invoked when device is unmounted
-void tud_umount_cb(void)
-{
-  blink_interval_ms = BLINK_NOT_MOUNTED;
-}
-
-// Invoked when usb bus is suspended
-// remote_wakeup_en : if host allow us  to perform remote wakeup
-// Within 7ms, device must draw an average of current less than 2.5 mA from bus
-void tud_suspend_cb(bool remote_wakeup_en)
-{
-  (void) remote_wakeup_en;
-  blink_interval_ms = BLINK_SUSPENDED;
-}
-
-// Invoked when usb bus is resumed
-void tud_resume_cb(void)
-{
-  blink_interval_ms = BLINK_MOUNTED;
-}
-
-//--------------------------------------------------------------------+
-// USB HID
-//--------------------------------------------------------------------+
-void send_empty_report() {
-    uint8_t empty_keys[6] = {0}; // 所有键位都未被按下
-    tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, empty_keys); // 发送空键盘报告
-}
-
-    bool last_state_gp2 = true;
-    bool last_state_gp3 = true;
-    bool last_state_gp4 = true;
-    bool last_state_gp5 = true;
-    bool last_state_gp6 = true;
-    bool last_state_gp7 = true;
-    bool last_state_gp8 = true;
-    bool last_state_gp9 = true;
-
-static void send_hid_report(uint8_t report_id, uint32_t btn)
-{
-  // skip if hid is not ready yet
-	
-  if ( !tud_hid_ready() ) return;
-
-	bool current_state_gp2 = gpio_get(PIN_GP2) == 0;
-        bool current_state_gp3 = gpio_get(PIN_GP3) == 0;
-        bool current_state_gp4 = gpio_get(PIN_GP4) == 0;
-        bool current_state_gp5 = gpio_get(PIN_GP5) == 0;
-        bool current_state_gp6 = gpio_get(PIN_GP6) == 0;
-        bool current_state_gp7 = gpio_get(PIN_GP7) == 0;
-        bool current_state_gp8 = gpio_get(PIN_GP8) == 0;
-        bool current_state_gp9 = gpio_get(PIN_GP9) == 0;
-    // 音量控制
-    if (gp4_state) {
-        // 音量减小
-        uint16_t volume_decrement = HID_USAGE_CONSUMER_VOLUME_DECREMENT;
-        tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_decrement, 2);
-    } else if (gp5_state) {
-        // 音量增加
-        uint16_t volume_increment = HID_USAGE_CONSUMER_VOLUME_INCREMENT;
-        tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_increment, 2);
-    }
-
-
-        if (!current_state_gp6 && last_state_gp6) {
-            alt_tab();
-	    send_empty_report();
-        }
-
-        if (!current_state_gp7 && last_state_gp7) {
-            alt_f4();
-	    send_empty_report();
-        }
-
-        if (!current_state_gp8 && last_state_gp8) {
-            refresh_f5();
-	    send_empty_report();
-        }
-
-        if (!current_state_gp9 && last_state_gp9) {
-            windows_e();
-	    send_empty_report();
-            sleep_ms(500); // 假设按 GP9 后要打开资源管理器，需要稍长延时
-        }
-
-last_state_gp2 = current_state_gp2;
-last_state_gp3 = current_state_gp3;
-last_state_gp4 = current_state_gp4;
-last_state_gp5 = current_state_gp5;
-last_state_gp6 = current_state_gp6;
-last_state_gp7 = current_state_gp7;
-last_state_gp8 = current_state_gp8;
-last_state_gp9 = current_state_gp9;
-  switch(report_id)
-  {
-    case REPORT_ID_KEYBOARD:
-    {
-      // use to avoid send multiple consecutive zero report for keyboard
-      static bool has_keyboard_key = false;
-
-      if ( btn ||gpio_get(PIN_GP2) == 0)
-      {
-        uint8_t keycode[6] = { 0 };
-        keycode[0] = HID_KEY_A;
-
-        tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
-        has_keyboard_key = true;
-      }else
-      {
-        // send empty key report if previously has key pressed
-        if (has_keyboard_key) tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, NULL);
-        has_keyboard_key = false;
-      }
-    }
-    break;
-
-    case REPORT_ID_MOUSE:
-    {
-      int8_t const delta = 5;
-
-      // no button, right + down, no scroll, no pan
-      if(gpio_get(PIN_GP2)==0)
-      	hid_mouse_circle_task(1);
-      if(gpio_get(PIN_GP3)==0)
-	hid_mouse_circle_task(-1);
-      //tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, delta, delta, 0, 0);
-    }
-    break;
-
-    case REPORT_ID_CONSUMER_CONTROL:
-    {
-      // use to avoid send multiple consecutive zero report
-      static bool has_consumer_key = false;
-
-      if ( btn )
-      {
-        // volume down
-        uint16_t volume_down = HID_USAGE_CONSUMER_VOLUME_DECREMENT;
-        tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &volume_down, 2);
-        has_consumer_key = true;
-      }else
-      {
-        // send empty key report (release key) if previously has key pressed
-        uint16_t empty_key = 0;
-        if (has_consumer_key) tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &empty_key, 2);
-        has_consumer_key = false;
-      }
-    }
-    break;
-
-    case REPORT_ID_GAMEPAD:
-    {
-      // use to avoid send multiple consecutive zero report for keyboard
-      static bool has_gamepad_key = false;
-
-      hid_gamepad_report_t report =
-      {
-        .x   = 0, .y = 0, .z = 0, .rz = 0, .rx = 0, .ry = 0,
-        .hat = 0, .buttons = 0
-      };
-
-      if ( btn )
-      {
-        report.hat = GAMEPAD_HAT_UP;
-        report.buttons = GAMEPAD_BUTTON_A;
-        tud_hid_report(REPORT_ID_GAMEPAD, &report, sizeof(report));
-
-        has_gamepad_key = true;
-      }else
-      {
-        report.hat = GAMEPAD_HAT_CENTERED;
-        report.buttons = 0;
-        if (has_gamepad_key) tud_hid_report(REPORT_ID_GAMEPAD, &report, sizeof(report));
-        has_gamepad_key = false;
-      }
-    }
-    break;
-
-    default: break;
-  }
-}
-
-// Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
-// tud_hid_report_complete_cb() is used to send the next report after previous one is complete
-void hid_task(void)
-{
-  // Poll every 10ms
-  const uint32_t interval_ms = 10;
-  static uint32_t start_ms = 0;
-
-  if ( board_millis() - start_ms < interval_ms) return; // not enough time
-  start_ms += interval_ms;
-
-  uint32_t const btn = board_button_read();
-
-  // Remote wakeup
-  if ( tud_suspended() && btn )
-  {
-    // Wake up host if we are in suspend mode
-    // and REMOTE_WAKEUP feature is enabled by host
-    tud_remote_wakeup();
-  }else
-  {
-    // Send the 1st of report chain, the rest will be sent by tud_hid_report_complete_cb()
-    send_hid_report(REPORT_ID_KEYBOARD, btn);
-  }
-}
-
-// Invoked when sent REPORT successfully to host
-// Application can use this to send the next report
-// Note: For composite reports, report[0] is report ID
-void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_t len)
-{
-  (void) instance;
-  (void) len;
-
-  uint8_t next_report_id = report[0] + 1;
-
-  if (next_report_id < REPORT_ID_COUNT)
-  {
-    send_hid_report(next_report_id, board_button_read());
-  }
-}
-
-// Invoked when received GET_REPORT control request
-// Application must fill buffer report's content and return its length.
-// Return zero will cause the stack to STALL request
-uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t* buffer, uint16_t reqlen)
-{
-  // TODO not Implemented
-  (void) instance;
-  (void) report_id;
-  (void) report_type;
-  (void) buffer;
-  (void) reqlen;
-
   return 0;
 }
 
-// Invoked when received SET_REPORT control request or
-// received data on OUT endpoint ( Report ID = 0, Type = 0 )
-void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize)
-{
-  (void) instance;
+#include "pico/stdlib.h"
+#include "hardware/spi.h"
+#include "hardware/gpio.h"
 
-  if (report_type == HID_REPORT_TYPE_OUTPUT)
-  {
-    // Set keyboard LED e.g Capslock, Numlock etc...
-    if (report_id == REPORT_ID_KEYBOARD)
-    {
-      // bufsize should be (at least) 1
-      if ( bufsize < 1 ) return;
+// LCD pin definitions
+#define LCD_MOSI_PIN 19
+#define LCD_SCK_PIN 18
+#define LCD_CS_PIN 17
+#define LCD_RESET_PIN 20
+#define LCD_DC_PIN 21
+#define LCD_BACKLIGHT_PIN 22
 
-      uint8_t const kbd_leds = buffer[0];
+// LCD width and height
+#define LCD_WIDTH 240   // Adjust for your display
+#define LCD_HEIGHT 320  // Adjust for your display
 
-      if (kbd_leds & KEYBOARD_LED_CAPSLOCK)
-      {
-        // Capslock On: disable blink, turn led on
-        blink_interval_ms = 0;
-        board_led_write(true);
-      }else
-      {
-        // Caplocks Off: back to normal blink
-        board_led_write(false);
-        blink_interval_ms = BLINK_MOUNTED;
-      }
-    }
-  }
+// Color definitions
+#define WHITE 0xFFFF
+#define BLACK 0x0000
+
+// Initialize SPI
+void my_spi_init() {
+    // Initialize SPI0 at 10 MHz
+    spi_init(spi0, 10 * 1000000);
+    gpio_set_function(LCD_MOSI_PIN, GPIO_FUNC_SPI);
+    gpio_set_function(LCD_SCK_PIN, GPIO_FUNC_SPI);
 }
 
-//--------------------------------------------------------------------+
-// BLINKING TASK
-//--------------------------------------------------------------------+
-void led_blinking_task(void)
-{
-  static uint32_t start_ms = 0;
-  static bool led_state = false;
+// Write byte to SPI
+void spi_write_byte(uint8_t byte) {
+    spi_write_blocking(spi0, &byte, 1);
+}
 
-  // blink is disabled
-  if (!blink_interval_ms) return;
+// Write command to LCD
+void lcd_write_command(uint8_t cmd) {
+    gpio_put(LCD_DC_PIN, 0);
+    gpio_put(LCD_CS_PIN, 0);
+    spi_write_byte(cmd);
+    gpio_put(LCD_CS_PIN, 1);
+}
 
-  // Blink every interval ms
-  if ( board_millis() - start_ms < blink_interval_ms) return; // not enough time
-  start_ms += blink_interval_ms;
+// Write data to LCD
+void lcd_write_data(uint8_t data) {
+    gpio_put(LCD_DC_PIN, 1);
+    gpio_put(LCD_CS_PIN, 0);
+    spi_write_byte(data);
+    gpio_put(LCD_CS_PIN, 1);
+}
 
-  board_led_write(led_state);
-  led_state = 1 - led_state; // toggle
+// Set up GPIO for LCD
+void lcd_gpio_init() {
+    gpio_init(LCD_CS_PIN);
+    gpio_set_dir(LCD_CS_PIN, GPIO_OUT);
+    gpio_put(LCD_CS_PIN, 1);
+
+    gpio_init(LCD_RESET_PIN);
+    gpio_set_dir(LCD_RESET_PIN, GPIO_OUT);
+    gpio_put(LCD_RESET_PIN, 1);
+
+    gpio_init(LCD_DC_PIN);
+    gpio_set_dir(LCD_DC_PIN, GPIO_OUT);
+
+    gpio_init(LCD_BACKLIGHT_PIN);
+    gpio_set_dir(LCD_BACKLIGHT_PIN, GPIO_OUT);
+    gpio_put(LCD_BACKLIGHT_PIN, 0); // Turn off backlight initially
+}
+
+// Reset LCD
+void lcd_reset() {
+    gpio_put(LCD_RESET_PIN, 0);
+    sleep_ms(100);
+    gpio_put(LCD_RESET_PIN, 1);
+    sleep_ms(100);
+}
+
+// Initialize LCD
+void lcd_init() {
+    lcd_reset();
+
+  //   // Initialization commands for ILI9341
+  //   	SPI2_Init(); //Ó²ŒþSPI2³õÊŒ»¯
+	// LCD_GPIOInit();//LCD GPIO³õÊŒ»¯										 
+ 	// LCD_RESET(); //LCD žŽÎ»
+//*************2.4inch ILI9341³õÊŒ»¯**********//	
+	lcd_write_command(0xCF);  
+	lcd_write_data(0x00); 
+	lcd_write_data(0xD9); //0xC1 
+	lcd_write_data(0X30); 
+	lcd_write_command(0xED);  
+	lcd_write_data(0x64); 
+	lcd_write_data(0x03); 
+	lcd_write_data(0X12); 
+	lcd_write_data(0X81); 
+	lcd_write_command(0xE8);  
+	lcd_write_data(0x85); 
+	lcd_write_data(0x10); 
+	lcd_write_data(0x7A); 
+	lcd_write_command(0xCB);  
+	lcd_write_data(0x39); 
+	lcd_write_data(0x2C); 
+	lcd_write_data(0x00); 
+	lcd_write_data(0x34); 
+	lcd_write_data(0x02); 
+	lcd_write_command(0xF7);  
+	lcd_write_data(0x20); 
+	lcd_write_command(0xEA);  
+	lcd_write_data(0x00); 
+	lcd_write_data(0x00); 
+	lcd_write_command(0xC0);    //Power control 
+	lcd_write_data(0x1B);   //VRH[5:0] 
+	lcd_write_command(0xC1);    //Power control 
+	lcd_write_data(0x12);   //SAP[2:0];BT[3:0] 0x01
+	lcd_write_command(0xC5);    //VCM control 
+	lcd_write_data(0x08); 	 //30
+	lcd_write_data(0x26); 	 //30
+	lcd_write_command(0xC7);    //VCM control2 
+	lcd_write_data(0XB7); 
+	lcd_write_command(0x36);    // Memory Access Control 
+	lcd_write_data(0x08); 
+	lcd_write_command(0x3A);   
+	lcd_write_data(0x55); 
+	lcd_write_command(0xB1);   
+	lcd_write_data(0x00);   
+	lcd_write_data(0x1A); 
+	lcd_write_command(0xB6);    // Display Function Control 
+	lcd_write_data(0x0A); 
+	lcd_write_data(0xA2); 
+	lcd_write_command(0xF2);    // 3Gamma Function Disable 
+	lcd_write_data(0x00); 
+	lcd_write_command(0x26);    //Gamma curve selected 
+	lcd_write_data(0x01); 
+	lcd_write_command(0xE0);    //Set Gamma 
+	lcd_write_data(0x0F); 
+	lcd_write_data(0x1D); 
+	lcd_write_data(0x1A); 
+	lcd_write_data(0x0A); 
+	lcd_write_data(0x0D); 
+	lcd_write_data(0x07); 
+	lcd_write_data(0x49); 
+	lcd_write_data(0X66); 
+	lcd_write_data(0x3B); 
+	lcd_write_data(0x07); 
+	lcd_write_data(0x11); 
+	lcd_write_data(0x01); 
+	lcd_write_data(0x09); 
+	lcd_write_data(0x05); 
+	lcd_write_data(0x04); 		 
+	lcd_write_command(0XE1);    //Set Gamma 
+	lcd_write_data(0x00); 
+	lcd_write_data(0x18); 
+	lcd_write_data(0x1D); 
+	lcd_write_data(0x02); 
+	lcd_write_data(0x0F); 
+	lcd_write_data(0x04); 
+	lcd_write_data(0x36); 
+	lcd_write_data(0x13); 
+	lcd_write_data(0x4C); 
+	lcd_write_data(0x07); 
+	lcd_write_data(0x13); 
+	lcd_write_data(0x0F); 
+	lcd_write_data(0x2E); 
+	lcd_write_data(0x2F); 
+	lcd_write_data(0x05); 
+	lcd_write_command(0x2B); 
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
+	lcd_write_data(0x01);
+	lcd_write_data(0x3f);
+	lcd_write_command(0x2A); 
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
+	lcd_write_data(0x00);
+	lcd_write_data(0xef);	 
+	lcd_write_command(0x11); //Exit Sleep
+	sleep_ms(100);
+	lcd_write_command(0x29); //display on
+
+  // LCD_direction(USE_HORIZONTAL);//ÉèÖÃLCDÏÔÊŸ·œÏò
+	// LCD_LED=1;//µãÁÁ±³¹â	 
+	// LCD_Clear(WHITE);//ÇåÈ«ÆÁ°×É«
+
+    gpio_put(LCD_BACKLIGHT_PIN, 1); // Turn on backlight
+}
+
+void lcd_set_windows(uint16_t xStart, uint16_t yStart, uint16_t xEnd, uint16_t yEnd) {
+    // Set the column address (x)
+    lcd_write_command(0x2A); // Column addr set
+    lcd_write_data(xStart >> 8);
+    lcd_write_data(xStart & 0xFF); // XSTART 
+    lcd_write_data(xEnd >> 8);
+    lcd_write_data(xEnd & 0xFF); // XEND
+
+    // Set the row address (y)
+    lcd_write_command(0x2B); // Row addr set
+    lcd_write_data(yStart >> 8);
+    lcd_write_data(yStart & 0xFF); // YSTART
+    lcd_write_data(yEnd >> 8);
+    lcd_write_data(yEnd & 0xFF); // YEND
+
+    // Write to RAM
+    lcd_write_command(0x2C);
+}
+
+void lcd_clear(uint16_t color) {
+    // Set window size to full screen
+    lcd_set_windows(0, 0, LCD_WIDTH - 1, LCD_HEIGHT - 1);
+
+    // Select LCD for SPI communication
+    gpio_put(LCD_CS_PIN, 0);
+
+    // Switch to data mode for color transmission
+    gpio_put(LCD_DC_PIN, 1);
+
+    uint32_t total_pixels = LCD_WIDTH * LCD_HEIGHT;
+    for (uint32_t i = 0; i < total_pixels; i++) {
+        // Send high byte of color
+        spi_write_byte(color >> 8);
+        // Send low byte of color
+        spi_write_byte(color & 0xFF);
+    }
+
+    // Deselect LCD once done
+    gpio_put(LCD_CS_PIN, 1);
+}
+
+void lcd_set_cursor(uint16_t Xpos, uint16_t Ypos) {
+    lcd_set_windows(Xpos, Ypos, Xpos, Ypos);
+}
+
+void lcd_set_direction(uint8_t direction) {
+    switch(direction) {
+        case 0: // 0 degrees
+            lcd_write_command(0x36);
+            lcd_write_data(0x48);
+            break;
+        case 1: // 90 degrees
+            lcd_write_command(0x36);
+            lcd_write_data(0x28);
+            break;
+        case 2: // 180 degrees
+            lcd_write_command(0x36);
+            lcd_write_data(0x88);
+            break;
+        case 3: // 270 degrees
+            lcd_write_command(0x36);
+            lcd_write_data(0xE8);
+            break;
+    }
+}
+void lcd_write_reg(uint8_t LCD_Reg, uint16_t LCD_RegValue) {
+    lcd_write_command(LCD_Reg);  // Write the register address
+    lcd_write_data(LCD_RegValue);  // Write the register value
+}
+void lcd_write_ram_prepare(void) {
+    lcd_write_command(0x2C); // Assuming 0x2C is the command to write to RAM for your LCD
+}
+void lcd_write_data_16bit(uint16_t Data) {
+    lcd_write_data(Data >> 8);   // Write the high byte
+    lcd_write_data(Data & 0xFF); // Write the low byte
+}
+
+//uint16_t POINT_COLOR = 0x0000,BACK_COLOR = 0xFFFF;  
+void lcd_draw_point(uint16_t x, uint16_t y) {
+    lcd_set_cursor(x, y);  // Set the cursor to the point where you want to draw
+    lcd_write_data_16bit(POINT_COLOR); // Write the point color
+}
+
+
+void gui_draw_point(uint16_t x, uint16_t y, uint16_t color) {
+    lcd_set_cursor(x, y);  // Set the cursor to the point where you want to draw
+    lcd_write_data_16bit(color); // Write the color to that point
+}
+
+void lcd_fill(uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, uint16_t color) {
+    lcd_set_windows(sx, sy, ex, ey);  // Set the window to the rectangle being filled
+
+    for (uint16_t i = sy; i <= ey; i++) {
+        for (uint16_t j = sx; j <= ex; j++) {
+            lcd_write_data_16bit(color);  // Fill every pixel in the rectangle with the color
+        }
+    }
+
+    // Optionally reset window to full screen, depending on your needs
+    lcd_set_windows(0, 0, LCD_WIDTH - 1, LCD_HEIGHT - 1);
+}
+
+void lcd_draw_line(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+    int x, y, xe, ye;
+    int dx = x2 - x1;
+    int dy = y2 - y1;
+    int dx1 = abs(dx);
+    int dy1 = abs(dy);
+    int px = 2 * dy1 - dx1;
+    int py = 2 * dx1 - dy1;
+
+    if (dy1 <= dx1) {
+        if (dx >= 0) {
+            x = x1; y = y1; xe = x2;
+        } else {
+            x = x2; y = y2; xe = x1;
+        }
+        gui_draw_point(x, y, POINT_COLOR);
+
+        for (int i = 0; x < xe; i++) {
+            x = x + 1;
+            if (px < 0) {
+                px = px + 2 * dy1;
+            } else {
+                if ((dx < 0 && dy < 0) || (dx > 0 && dy > 0)) {
+                    y = y + 1;
+                } else {
+                    y = y - 1;
+                }
+                px = px + 2 * (dy1 - dx1);
+            }
+            gui_draw_point(x, y, POINT_COLOR);
+        }
+    } else {
+        if (dy >= 0) {
+            x = x1; y = y1; ye = y2;
+        } else {
+            x = x2; y = y2; ye = y1;
+        }
+        gui_draw_point(x, y, POINT_COLOR);
+
+        for (int i = 0; y < ye; i++) {
+            y = y + 1;
+            if (py <= 0) {
+                py = py + 2 * dx1;
+            } else {
+                if ((dx < 0 && dy<0) || (dx > 0 && dy > 0)) {
+                    x = x + 1;
+                } else {
+                    x = x - 1;
+                }
+                py = py + 2 * (dx1 - dy1);
+            }
+            gui_draw_point(x, y, POINT_COLOR);
+        }
+    }
+}
+
+void lcd_draw_rectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+    lcd_draw_line(x1, y1, x2, y1); // Top side
+    lcd_draw_line(x1, y2, x2, y2); // Bottom side
+    lcd_draw_line(x1, y1, x1, y2); // Left side
+    lcd_draw_line(x2, y1, x2, y2); // Right side
+}
+void lcd_draw_fill_rectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+    lcd_fill(x1, y1, x2, y2, POINT_COLOR); // Use lcd_fill with the rectangle boundaries
+}
+void _draw_circle_8(int xc, int yc, int x, int y, uint16_t color) {
+    gui_draw_point(xc + x, yc + y, color);
+    gui_draw_point(xc - x, yc + y, color);
+    gui_draw_point(xc + x, yc - y, color);
+    gui_draw_point(xc - x, yc - y, color);
+    gui_draw_point(xc + y, yc + x, color);
+    gui_draw_point(xc - y, yc + x, color);
+    gui_draw_point(xc + y, yc - x, color);
+    gui_draw_point(xc - y, yc - x, color);
+}
+
+void gui_circle(int xc, int yc, uint16_t color, int r, int fill) {
+    int x = 0, y = r;
+    int d = 3 - 2 * r;
+
+    while (x <= y) {
+        if (fill) {
+            for (int yi = x; yi <= y; yi++) {
+                _draw_circle_8(xc, yc, x, yi, color);
+            }
+        } else {
+            _draw_circle_8(xc, yc, x, y, color);
+        }
+
+        if (d < 0) {
+            d = d + 4 * x + 6;
+        } else {
+            d = d + 4 * (x - y) + 10;
+            y--;
+        }
+        x++;
+    }
+}
+
+void draw_triangle(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2) {
+    lcd_draw_line(x0, y0, x1, y1);
+    lcd_draw_line(x1, y1, x2, y2);
+    lcd_draw_line(x2, y2, x0, y0);
+}
+
+// void lcd_show_char(uint16_t x, uint16_t y, uint16_t fc, uint16_t bc, char num, uint8_t size, uint8_t mode) {
+//     uint8_t temp, pos, t;
+
+//     num = num - ' '; // Adjust for ASCII offset for space
+//     lcd_set_windows(x, y, x + size / 2 - 1, y + size - 1);
+
+//     for (pos = 0; pos < size; pos++) {
+//         temp = (size == 12) ? asc2_1206[num][pos] : asc2_1608[num][pos];
+
+//         for (t = 0; t < size / 2; t++) {
+//             uint16_t color = (temp & 0x01) ? fc : bc;
+//             if (mode) {
+//                 gui_draw_point(x + t, y + pos, color);
+//             } else {
+//                 lcd_write_data_16bit(color);
+//             }
+//             temp >>= 1;
+//         }
+//     }
+
+//     lcd_set_windows(0, 0, lcddev.width - 1, lcddev.height - 1); // Reset window to full screen
+// }
+
+// void lcd_show_string(uint16_t x, uint16_t y, uint8_t size, char *p, uint8_t mode) {
+//     while ((*p <= '~') && (*p >= ' ')) { // Check if the character is printable
+//         if (x > (lcddev.width - 1) || y > (lcddev.height - 1)) {
+//             return;
+//         }
+//         lcd_show_char(x, y, POINT_COLOR, BACK_COLOR, *p, size, mode);
+//         x += size / 2;
+//         p++;
+//     }
+// }
+
+// void lcd_show_num(uint16_t x, uint16_t y, uint32_t num, uint8_t len, uint8_t size) {
+//     for (int pos = 0; pos < len; pos++) {
+//         int digit = (num / mypow(10, len - pos - 1)) % 10;
+//         lcd_show_char(x + (size / 2) * pos, y, POINT_COLOR, BACK_COLOR, '0' + digit, size, 0);
+//     }
+// }
+
+void test_fill_rec(void) {
+    uint8_t i = 0;
+    uint16_t point_color;
+    // Assuming DrawTestPage is a function that sets up the test page
+    //draw_test_page("Test 2: GUI Rectangle Fill Test");
+
+    // Clear a section of the screen where rectangles will be drawn
+    lcd_fill(0, 20, lcddev.width, lcddev.height - 20, WHITE);
+
+    // Draw empty rectangles in different colors
+    for (i = 0; i < 5; i++) {
+        point_color = ColorTab[i]; // Set the current drawing color
+        lcd_draw_rectangle(
+            lcddev.width / 2 - 80 + (i * 15), 
+            lcddev.height / 2 - 80 + (i * 15),
+            lcddev.width / 2 - 80 + (i * 15) + 60,
+            lcddev.height / 2 - 80 + (i * 15) + 60
+        );
+    }
+    sleep_ms(1500);
+
+    // Clear the area again for filled rectangles
+    lcd_fill(0, 20, lcddev.width, lcddev.height - 20, WHITE);
+
+    // Draw filled rectangles in different colors
+    for (i = 0; i < 5; i++) {
+        point_color = ColorTab[i]; // Set the current drawing color
+        lcd_draw_fill_rectangle(
+            lcddev.width / 2 - 80 + (i * 15), 
+            lcddev.height / 2 - 80 + (i * 15),
+            lcddev.width / 2 - 80 + (i * 15) + 60,
+            lcddev.height / 2 - 80 + (i * 15) + 60
+        );
+    }
+    sleep_ms(1500);
 }
