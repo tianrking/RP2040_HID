@@ -265,7 +265,7 @@ int main(void) {
 
     // Create a simple label
     lv_obj_t * label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "w0x7ce");
+    lv_label_set_text(label, "w0x7cePPP");
     lv_obj_center(label);
 
 
