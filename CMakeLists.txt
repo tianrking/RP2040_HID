@@ -31,6 +31,7 @@ target_include_directories(rp2040_hid_mouse PUBLIC
 target_link_libraries(rp2040_hid_mouse PUBLIC 
 	pico_stdlib 
 	pico_unique_id 
+    hardware_spi
 	tinyusb_device 
 	tinyusb_board
 	)
