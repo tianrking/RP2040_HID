@@ -1,4 +1,5 @@
 #include "main.h"
+#include "lvgl.h"
 
 // 定义使用的GPIO引脚
 #define PIN_MISO 4
@@ -391,35 +392,87 @@ void ssd1306_display_string(uint8_t chXpos, uint8_t chYpos, const uint8_t *pchSt
     }
 }
 
+// LVGL的显示和刷新回调函数
+static void lvgl_display_flush_cb(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
 
 int main() {
     stdio_init_all();
     init_spi();
-
     ssd1306_init();
-    ssd1306_clear_screen(0x00); // 使用0x00清屏
-    	ssd1306_clear_screen(0xFF);
-	sleep_ms(1000);
-	ssd1306_clear_screen(0x00);
+    lv_init();
+//     ssd1306_clear_screen(0x00); // 使用0x00清屏
+//     	ssd1306_clear_screen(0xFF);
+// 	sleep_ms(1000);
+// 	ssd1306_clear_screen(0x00);
 
-	ssd1306_display_string(18, 0, "1.3inch OLED", 16, 1);
-	ssd1306_display_string(0, 16, "This is a demo for SSD1306/1106 OLED moudle!", 16, 1);
-  ssd1306_refresh_gram();
+// 	ssd1306_display_string(18, 0, "1.3inch OLED", 16, 1);
+// 	ssd1306_display_string(0, 16, "This is a demo for SSD1306/1106 OLED moudle!", 16, 1);
+//   ssd1306_refresh_gram();
+
+
+ // 创建显示缓冲区
+    static lv_disp_draw_buf_t draw_buf;
+    static lv_color_t buf[OLED_WIDTH * 10]; // 缓冲区大小可以根据需要调整
+    lv_disp_draw_buf_init(&draw_buf, buf, NULL, OLED_WIDTH * 10);
+
+    // 创建显示驱动
+    static lv_disp_drv_t disp_drv;
+    lv_disp_drv_init(&disp_drv);
+    disp_drv.hor_res = OLED_WIDTH;
+    disp_drv.ver_res = OLED_HEIGHT;
+    disp_drv.flush_cb = lvgl_display_flush_cb;
+    disp_drv.draw_buf = &draw_buf;
+    lv_disp_drv_register(&disp_drv);
+
+    // 创建一个简单的标签
+    lv_obj_t * label = lv_label_create(lv_scr_act());
+    lv_label_set_text(label, "Hello LVGL!");
+    lv_obj_center(label);
+
+    // 主循环
+    uint32_t last_update = 0;
     // 主循环
     while (true) {
-        // 根据需要更新s_chDispalyBuffer内容
-        // ssd1306_refresh_gram();
-        sleep_ms(1000);
-          gpio_put(25, !gpio_get(25));
+ 
+    //     // sleep_ms(1000);
+    //       gpio_put(25, !gpio_get(25));
+    //  // 更新LVGL
+    //     lv_tick_inc(5); // 更新时间，5ms为例
+    //     lv_timer_handler();
+    //     ssd1306_refresh_gram(); // 刷新OLED显示
+    //     sleep_ms(5);
 
-  //         	ssd1306_clear_screen(0x00);
-	// ssd1306_display_string(18, 0, "1.3inch OLED", 16, 1);
-	// ssd1306_display_string(0, 16, "This is a demo for SSD1306/1106 OLED moudle!", 16, 1);
-	// ssd1306_refresh_gram();
-	// sleep_ms(1000);
+        uint32_t current_time = lv_tick_get();
+        if (current_time - last_update >= 2000) { // 每两秒更新一次
+            last_update = current_time;
+            
+            // 更改标签的文本
+            if(strcmp(lv_label_get_text(label), "TEXT1") == 0) {
+                lv_label_set_text(label, "TEXT2");
+            } else {
+                lv_label_set_text(label, "TEXT1");
+            }
+        }
 
+        // 更新LVGL
+        lv_tick_inc(5); // 更新时间，5ms为例
+        lv_timer_handler();
+        ssd1306_refresh_gram(); // 刷新OLED显示
+        sleep_ms(5);
         
     }
 
     return 0;
+}
+
+// 实现LVGL的显示刷新回调
+static void lvgl_display_flush_cb(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p) {
+    for(int y = area->y1; y <= area->y2; y++) {
+        for(int x = area->x1; x <= area->x2; x++) {
+            // 将LVGL的颜色数据写入到OLED缓冲区
+            ssd1306_draw_point(x, y, color_p->full);
+            color_p++;
+        }
+    }
+    lv_disp_flush_ready(disp_drv); // 告诉LVGL数据已经刷新完毕
 }

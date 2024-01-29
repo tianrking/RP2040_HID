@@ -1,0 +1,5 @@
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir

@@ -11,10 +11,22 @@ set(CMAKE_CXX_STANDARD 17)
 # 初始化 Pico-SDK
 pico_sdk_init()
 
+# 设置LVGL的路径
+set(LVGL_PATH $ENV{LVGL_PATH})
+
+# 检查LVGL路径是否已设置
+if(NOT LVGL_PATH)
+    message(FATAL_ERROR "LVGL_PATH environment variable is not set")
+endif()
+
+# 添加LVGL源文件
+file(GLOB_RECURSE LVGL_SOURCES ${LVGL_PATH}/src/*.c)
+
 # 创建可执行文件
 add_executable(rp2040_hid_mouse
     main.c
     usb_descriptors.c  # 假设您有这个文件，它包含 USB 描述符
+    ${LVGL_SOURCES} # 添加LVGL源文件
 )
 
 target_sources(rp2040_hid_mouse PUBLIC
@@ -23,8 +35,12 @@ target_sources(rp2040_hid_mouse PUBLIC
         )
 
 # Make sure TinyUSB can find tusb_config.h
+# 包含LVGL和其它所需的目录
 target_include_directories(rp2040_hid_mouse PUBLIC
-        ${CMAKE_CURRENT_LIST_DIR})
+    ${CMAKE_CURRENT_LIST_DIR}
+    ${LVGL_PATH} # 添加LVGL的根目录
+    ${LVGL_PATH}/src # 添加LVGL的src目录
+)
 
 # In addition to pico_stdlib required for common PicoSDK functionality, add dependency on tinyusb_device
 # for TinyUSB device support and tinyusb_board for the additional board support library used by the example
