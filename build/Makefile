@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rp2040_hid_mouse
+# Target rules for targets named rp2040_oled
 
 # Build rule for target.
-rp2040_hid_mouse: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rp2040_hid_mouse
-.PHONY : rp2040_hid_mouse
+rp2040_oled: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rp2040_oled
+.PHONY : rp2040_oled
 
 # fast build rule for target.
-rp2040_hid_mouse/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/build
-.PHONY : rp2040_hid_mouse/fast
+rp2040_oled/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/build
+.PHONY : rp2040_oled/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -233,36 +233,12 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
-
-# target to build an object file
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
-
-# target to preprocess a source file
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
-
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
-
-# target to generate assembly for a file
-home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-.PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -270,7 +246,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/w0x7ce/pic
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -278,7 +254,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/w0x7ce/pic
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -286,7 +262,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -294,7 +270,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -302,7 +278,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -310,7 +286,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -318,7 +294,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -326,7 +302,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -334,7 +310,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/w0x7ce/pi
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -342,7 +318,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/w0x7ce/pico
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -350,7 +326,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/w0x7ce/pico
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -358,7 +334,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -366,7 +342,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -374,7 +350,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -382,7 +358,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/w0x7ce/pic
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -390,7 +366,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/w0x7ce/pico-
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -398,7 +374,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/w0x7ce/pico-
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -406,7 +382,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -414,7 +390,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -422,7 +398,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -430,7 +406,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/w0x7ce
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -438,7 +414,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/w0x7ce/p
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -446,7 +422,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/w0x7ce/p
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -454,7 +430,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -462,7 +438,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -470,7 +446,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -478,7 +454,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/w0x7ce
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -486,7 +462,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/w0x7ce/p
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -494,7 +470,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/w0x7ce/p
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -502,7 +478,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/w0x7ce
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -510,7 +486,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/w0x7ce/p
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -518,7 +494,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/w0x7ce/p
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -526,7 +502,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/w0x7ce/p
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -534,7 +510,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/w0x7ce/pic
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -542,7 +518,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/w0x7ce/pic
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -550,7 +526,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/w0x7ce/pico-sdk/
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -558,7 +534,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/w0x7ce/pico-sdk/li
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -566,7 +542,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/w0x7ce/pico-sdk/li
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -574,7 +550,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/w0x7ce/pico-sdk/lib/t
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -582,7 +558,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.i: home/w0x7ce/pico-sdk/lib/tin
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -590,7 +566,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.s: home/w0x7ce/pico-sdk/lib/tin
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -598,7 +574,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -606,7 +582,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -614,7 +590,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
@@ -622,7 +598,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.ob
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
@@ -630,7 +606,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.i:
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
@@ -638,7 +614,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.s:
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -646,7 +622,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj:
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -654,7 +630,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: h
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -662,7 +638,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: h
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -670,7 +646,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj:
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -678,7 +654,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: h
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -686,7 +662,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: h
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -694,7 +670,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.obj: home/w0x7ce/pico-sdk/lib/tinyusb/
 
 # target to build an object file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.i: home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -702,7 +678,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.i: home/w0x7ce/pico-sdk/lib/tinyusb/sr
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.s: home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -710,7 +686,7 @@ home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.s: home/w0x7ce/pico-sdk/lib/tinyusb/sr
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.obj: home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -718,7 +694,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.obj: home/w0x7ce/pico
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.i: home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -726,7 +702,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.i: home/w0x7ce/pico-s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.s: home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -734,7 +710,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.s: home/w0x7ce/pico-s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.obj: home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -742,7 +718,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.obj: home/w0x7ce/pico-sdk/sr
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.i: home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -750,7 +726,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.i: home/w0x7ce/pico-sdk/src/
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.s: home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -758,7 +734,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.s: home/w0x7ce/pico-sdk/src/
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.obj: home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -766,7 +742,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.obj: home/w0x7ce/pico-sdk/src/co
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.i: home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -774,7 +750,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.i: home/w0x7ce/pico-sdk/src/comm
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.s: home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -782,7 +758,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.s: home/w0x7ce/pico-sdk/src/comm
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.obj: home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -790,7 +766,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/sem.obj: home/w0x7ce/pico-sdk/src/comm
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.i: home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i
@@ -798,7 +774,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/sem.i: home/w0x7ce/pico-sdk/src/common
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.s: home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s
@@ -806,7 +782,7 @@ home/w0x7ce/pico-sdk/src/common/pico_sync/sem.s: home/w0x7ce/pico-sdk/src/common
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_time/time.obj: home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj
@@ -814,7 +790,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/time.obj: home/w0x7ce/pico-sdk/src/com
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_time/time.i: home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i
@@ -822,7 +798,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/time.i: home/w0x7ce/pico-sdk/src/commo
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_time/time.s: home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s
@@ -830,7 +806,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/time.s: home/w0x7ce/pico-sdk/src/commo
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.obj: home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -838,7 +814,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.i: home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -846,7 +822,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.s: home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -854,7 +830,7 @@ home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.obj: home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -862,7 +838,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/datetime.obj: home/w0x7ce/pico-sdk/src
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.i: home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i
@@ -870,7 +846,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/datetime.i: home/w0x7ce/pico-sdk/src/c
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.s: home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.s
@@ -878,7 +854,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/datetime.s: home/w0x7ce/pico-sdk/src/c
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.obj: home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -886,7 +862,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/pheap.obj: home/w0x7ce/pico-sdk/src/co
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.i: home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i
@@ -894,7 +870,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/pheap.i: home/w0x7ce/pico-sdk/src/comm
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.s: home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s
@@ -902,7 +878,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/pheap.s: home/w0x7ce/pico-sdk/src/comm
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.obj: home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj
@@ -910,7 +886,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/queue.obj: home/w0x7ce/pico-sdk/src/co
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.i: home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i
@@ -918,7 +894,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/queue.i: home/w0x7ce/pico-sdk/src/comm
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i
 
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.s: home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s
@@ -926,7 +902,7 @@ home/w0x7ce/pico-sdk/src/common/pico_util/queue.s: home/w0x7ce/pico-sdk/src/comm
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -934,7 +910,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -942,7 +918,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -950,7 +926,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -958,7 +934,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/w0x7ce/pico
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -966,7 +942,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/w0x7ce/pico-s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -974,7 +950,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/w0x7ce/pico-s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -982,7 +958,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/w0x7ce/pi
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -990,7 +966,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -998,7 +974,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -1006,7 +982,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -1014,7 +990,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -1022,7 +998,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1030,7 +1006,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1038,7 +1014,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/w0x7ce/pico-sdk/s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1046,7 +1022,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/w0x7ce/pico-sdk/src
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1054,7 +1030,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/w0x7ce/pico-sdk/src
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1062,7 +1038,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/w0x
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -1070,7 +1046,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/w0x7ce/pico-sdk/s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1078,7 +1054,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/w0x7ce/pico-sdk/src
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1086,7 +1062,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/w0x7ce/pico-sdk/src
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
@@ -1094,7 +1070,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.obj: home/w0x7ce/pico-sdk/s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
@@ -1102,7 +1078,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.i: home/w0x7ce/pico-sdk/src
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
@@ -1110,7 +1086,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.s: home/w0x7ce/pico-sdk/src
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1118,7 +1094,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1126,7 +1102,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1134,7 +1110,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1142,7 +1118,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1150,7 +1126,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1158,7 +1134,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1166,7 +1142,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1174,7 +1150,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1182,7 +1158,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1190,7 +1166,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1198,7 +1174,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1206,7 +1182,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1214,7 +1190,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/w0x7ce/
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1222,7 +1198,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/w0x7ce/pi
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1230,7 +1206,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/w0x7ce/pi
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1238,7 +1214,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1246,7 +1222,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1254,7 +1230,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1262,7 +1238,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/w0x7ce/
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1270,7 +1246,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1278,7 +1254,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1286,7 +1262,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1294,7 +1270,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1302,7 +1278,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/w0x7ce/pi
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1310,7 +1286,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/w0x7ce
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1318,7 +1294,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/w0x7ce/p
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1326,7 +1302,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/w0x7ce/p
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1334,7 +1310,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/w0x7ce/pic
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1342,7 +1318,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.i: home/w0x7ce/pico-
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1350,7 +1326,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.s: home/w0x7ce/pico-
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1358,7 +1334,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/w0x
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1366,7 +1342,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp204
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1374,7 +1350,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp204
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1382,7 +1358,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp204
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1390,7 +1366,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/w0x7ce/pico
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1398,7 +1374,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/w0x7ce/p
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1406,7 +1382,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/w0x7ce/pic
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1414,7 +1390,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/w0x7ce/pic
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1422,7 +1398,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/w0x7ce/pico-
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1430,7 +1406,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.i: home/w0x7ce/pico-sd
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1438,7 +1414,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.s: home/w0x7ce/pico-sd
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1446,7 +1422,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/w0x7c
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1454,7 +1430,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: hom
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1462,7 +1438,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/w0x7ce/pic
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1470,7 +1446,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/w0x7ce/pico-
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1478,7 +1454,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/w0x7ce/pico-
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1486,7 +1462,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/w0x7ce/
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1494,7 +1470,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/w0x7ce/pico
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1502,7 +1478,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.i: home/w0x7ce/pico-s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1510,7 +1486,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.s: home/w0x7ce/pico-s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1518,7 +1494,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1526,7 +1502,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1534,7 +1510,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1542,7 +1518,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/w0x7ce/pico-s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1550,7 +1526,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/w0x7ce/pico-sdk
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1558,7 +1534,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/w0x7ce/pico-sdk
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1566,7 +1542,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/w0x
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1574,7 +1550,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/w0x7c
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1582,7 +1558,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/w0x7c
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1590,7 +1566,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/w0x7ce/pic
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1598,7 +1574,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/w0x7
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1606,7 +1582,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/w0x7ce
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1614,7 +1590,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/w0x7ce
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1622,7 +1598,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/w0x7ce/pico-sdk/s
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1630,7 +1606,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/w0x7ce/pico-sdk/src
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1638,7 +1614,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/w0x7ce/pico-sdk/src
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1646,7 +1622,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/w0x
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1654,7 +1630,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/w0x7c
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1662,7 +1638,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/w0x7c
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1670,7 +1646,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/w0x7ce/pi
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1678,7 +1654,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/w0x7ce/pico
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1686,7 +1662,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/w0x7ce/pico
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1694,7 +1670,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: ho
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1702,7 +1678,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1710,7 +1686,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1718,7 +1694,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/w0x7ce/pico-sdk
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1726,7 +1702,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/w0x7ce/pico-sdk/s
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1734,7 +1710,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/w0x7ce/pico-sdk/s
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1742,7 +1718,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/w0x7ce/pi
 
 # target to build an object file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1750,7 +1726,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/w0x7ce/pico
 
 # target to preprocess a source file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1758,7 +1734,7 @@ home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/w0x7ce/pico
 
 # target to generate assembly for a file
 home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 lvgl-release-v8.3/src/core/lv_disp.obj: lvgl-release-v8.3/src/core/lv_disp.c.obj
@@ -1766,7 +1742,7 @@ lvgl-release-v8.3/src/core/lv_disp.obj: lvgl-release-v8.3/src/core/lv_disp.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_disp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_disp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_disp.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_disp.c.obj
 
 lvgl-release-v8.3/src/core/lv_disp.i: lvgl-release-v8.3/src/core/lv_disp.c.i
@@ -1774,7 +1750,7 @@ lvgl-release-v8.3/src/core/lv_disp.i: lvgl-release-v8.3/src/core/lv_disp.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_disp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_disp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_disp.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_disp.c.i
 
 lvgl-release-v8.3/src/core/lv_disp.s: lvgl-release-v8.3/src/core/lv_disp.c.s
@@ -1782,7 +1758,7 @@ lvgl-release-v8.3/src/core/lv_disp.s: lvgl-release-v8.3/src/core/lv_disp.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_disp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_disp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_disp.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_disp.c.s
 
 lvgl-release-v8.3/src/core/lv_event.obj: lvgl-release-v8.3/src/core/lv_event.c.obj
@@ -1790,7 +1766,7 @@ lvgl-release-v8.3/src/core/lv_event.obj: lvgl-release-v8.3/src/core/lv_event.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_event.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_event.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_event.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_event.c.obj
 
 lvgl-release-v8.3/src/core/lv_event.i: lvgl-release-v8.3/src/core/lv_event.c.i
@@ -1798,7 +1774,7 @@ lvgl-release-v8.3/src/core/lv_event.i: lvgl-release-v8.3/src/core/lv_event.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_event.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_event.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_event.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_event.c.i
 
 lvgl-release-v8.3/src/core/lv_event.s: lvgl-release-v8.3/src/core/lv_event.c.s
@@ -1806,7 +1782,7 @@ lvgl-release-v8.3/src/core/lv_event.s: lvgl-release-v8.3/src/core/lv_event.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_event.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_event.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_event.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_event.c.s
 
 lvgl-release-v8.3/src/core/lv_group.obj: lvgl-release-v8.3/src/core/lv_group.c.obj
@@ -1814,7 +1790,7 @@ lvgl-release-v8.3/src/core/lv_group.obj: lvgl-release-v8.3/src/core/lv_group.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_group.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_group.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_group.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_group.c.obj
 
 lvgl-release-v8.3/src/core/lv_group.i: lvgl-release-v8.3/src/core/lv_group.c.i
@@ -1822,7 +1798,7 @@ lvgl-release-v8.3/src/core/lv_group.i: lvgl-release-v8.3/src/core/lv_group.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_group.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_group.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_group.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_group.c.i
 
 lvgl-release-v8.3/src/core/lv_group.s: lvgl-release-v8.3/src/core/lv_group.c.s
@@ -1830,7 +1806,7 @@ lvgl-release-v8.3/src/core/lv_group.s: lvgl-release-v8.3/src/core/lv_group.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_group.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_group.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_group.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_group.c.s
 
 lvgl-release-v8.3/src/core/lv_indev.obj: lvgl-release-v8.3/src/core/lv_indev.c.obj
@@ -1838,7 +1814,7 @@ lvgl-release-v8.3/src/core/lv_indev.obj: lvgl-release-v8.3/src/core/lv_indev.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_indev.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_indev.c.obj
 
 lvgl-release-v8.3/src/core/lv_indev.i: lvgl-release-v8.3/src/core/lv_indev.c.i
@@ -1846,7 +1822,7 @@ lvgl-release-v8.3/src/core/lv_indev.i: lvgl-release-v8.3/src/core/lv_indev.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_indev.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_indev.c.i
 
 lvgl-release-v8.3/src/core/lv_indev.s: lvgl-release-v8.3/src/core/lv_indev.c.s
@@ -1854,7 +1830,7 @@ lvgl-release-v8.3/src/core/lv_indev.s: lvgl-release-v8.3/src/core/lv_indev.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_indev.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_indev.c.s
 
 lvgl-release-v8.3/src/core/lv_indev_scroll.obj: lvgl-release-v8.3/src/core/lv_indev_scroll.c.obj
@@ -1862,7 +1838,7 @@ lvgl-release-v8.3/src/core/lv_indev_scroll.obj: lvgl-release-v8.3/src/core/lv_in
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_indev_scroll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_indev_scroll.c.obj
 
 lvgl-release-v8.3/src/core/lv_indev_scroll.i: lvgl-release-v8.3/src/core/lv_indev_scroll.c.i
@@ -1870,7 +1846,7 @@ lvgl-release-v8.3/src/core/lv_indev_scroll.i: lvgl-release-v8.3/src/core/lv_inde
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_indev_scroll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_indev_scroll.c.i
 
 lvgl-release-v8.3/src/core/lv_indev_scroll.s: lvgl-release-v8.3/src/core/lv_indev_scroll.c.s
@@ -1878,7 +1854,7 @@ lvgl-release-v8.3/src/core/lv_indev_scroll.s: lvgl-release-v8.3/src/core/lv_inde
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_indev_scroll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_indev_scroll.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_indev_scroll.c.s
 
 lvgl-release-v8.3/src/core/lv_obj.obj: lvgl-release-v8.3/src/core/lv_obj.c.obj
@@ -1886,7 +1862,7 @@ lvgl-release-v8.3/src/core/lv_obj.obj: lvgl-release-v8.3/src/core/lv_obj.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj.i: lvgl-release-v8.3/src/core/lv_obj.c.i
@@ -1894,7 +1870,7 @@ lvgl-release-v8.3/src/core/lv_obj.i: lvgl-release-v8.3/src/core/lv_obj.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj.c.i
 
 lvgl-release-v8.3/src/core/lv_obj.s: lvgl-release-v8.3/src/core/lv_obj.c.s
@@ -1902,7 +1878,7 @@ lvgl-release-v8.3/src/core/lv_obj.s: lvgl-release-v8.3/src/core/lv_obj.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_class.obj: lvgl-release-v8.3/src/core/lv_obj_class.c.obj
@@ -1910,7 +1886,7 @@ lvgl-release-v8.3/src/core/lv_obj_class.obj: lvgl-release-v8.3/src/core/lv_obj_c
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_class.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_class.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_class.i: lvgl-release-v8.3/src/core/lv_obj_class.c.i
@@ -1918,7 +1894,7 @@ lvgl-release-v8.3/src/core/lv_obj_class.i: lvgl-release-v8.3/src/core/lv_obj_cla
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_class.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_class.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_class.s: lvgl-release-v8.3/src/core/lv_obj_class.c.s
@@ -1926,7 +1902,7 @@ lvgl-release-v8.3/src/core/lv_obj_class.s: lvgl-release-v8.3/src/core/lv_obj_cla
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_class.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_class.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_class.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_draw.obj: lvgl-release-v8.3/src/core/lv_obj_draw.c.obj
@@ -1934,7 +1910,7 @@ lvgl-release-v8.3/src/core/lv_obj_draw.obj: lvgl-release-v8.3/src/core/lv_obj_dr
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_draw.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_draw.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_draw.i: lvgl-release-v8.3/src/core/lv_obj_draw.c.i
@@ -1942,7 +1918,7 @@ lvgl-release-v8.3/src/core/lv_obj_draw.i: lvgl-release-v8.3/src/core/lv_obj_draw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_draw.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_draw.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_draw.s: lvgl-release-v8.3/src/core/lv_obj_draw.c.s
@@ -1950,7 +1926,7 @@ lvgl-release-v8.3/src/core/lv_obj_draw.s: lvgl-release-v8.3/src/core/lv_obj_draw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_draw.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_draw.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_draw.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_pos.obj: lvgl-release-v8.3/src/core/lv_obj_pos.c.obj
@@ -1958,7 +1934,7 @@ lvgl-release-v8.3/src/core/lv_obj_pos.obj: lvgl-release-v8.3/src/core/lv_obj_pos
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_pos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_pos.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_pos.i: lvgl-release-v8.3/src/core/lv_obj_pos.c.i
@@ -1966,7 +1942,7 @@ lvgl-release-v8.3/src/core/lv_obj_pos.i: lvgl-release-v8.3/src/core/lv_obj_pos.c
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_pos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_pos.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_pos.s: lvgl-release-v8.3/src/core/lv_obj_pos.c.s
@@ -1974,7 +1950,7 @@ lvgl-release-v8.3/src/core/lv_obj_pos.s: lvgl-release-v8.3/src/core/lv_obj_pos.c
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_pos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_pos.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_pos.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_scroll.obj: lvgl-release-v8.3/src/core/lv_obj_scroll.c.obj
@@ -1982,7 +1958,7 @@ lvgl-release-v8.3/src/core/lv_obj_scroll.obj: lvgl-release-v8.3/src/core/lv_obj_
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_scroll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_scroll.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_scroll.i: lvgl-release-v8.3/src/core/lv_obj_scroll.c.i
@@ -1990,7 +1966,7 @@ lvgl-release-v8.3/src/core/lv_obj_scroll.i: lvgl-release-v8.3/src/core/lv_obj_sc
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_scroll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_scroll.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_scroll.s: lvgl-release-v8.3/src/core/lv_obj_scroll.c.s
@@ -1998,7 +1974,7 @@ lvgl-release-v8.3/src/core/lv_obj_scroll.s: lvgl-release-v8.3/src/core/lv_obj_sc
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_scroll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_scroll.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_scroll.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_style.obj: lvgl-release-v8.3/src/core/lv_obj_style.c.obj
@@ -2006,7 +1982,7 @@ lvgl-release-v8.3/src/core/lv_obj_style.obj: lvgl-release-v8.3/src/core/lv_obj_s
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_style.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_style.i: lvgl-release-v8.3/src/core/lv_obj_style.c.i
@@ -2014,7 +1990,7 @@ lvgl-release-v8.3/src/core/lv_obj_style.i: lvgl-release-v8.3/src/core/lv_obj_sty
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_style.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_style.s: lvgl-release-v8.3/src/core/lv_obj_style.c.s
@@ -2022,7 +1998,7 @@ lvgl-release-v8.3/src/core/lv_obj_style.s: lvgl-release-v8.3/src/core/lv_obj_sty
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_style.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_style_gen.obj: lvgl-release-v8.3/src/core/lv_obj_style_gen.c.obj
@@ -2030,7 +2006,7 @@ lvgl-release-v8.3/src/core/lv_obj_style_gen.obj: lvgl-release-v8.3/src/core/lv_o
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_style_gen.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style_gen.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_style_gen.i: lvgl-release-v8.3/src/core/lv_obj_style_gen.c.i
@@ -2038,7 +2014,7 @@ lvgl-release-v8.3/src/core/lv_obj_style_gen.i: lvgl-release-v8.3/src/core/lv_obj
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_style_gen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style_gen.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_style_gen.s: lvgl-release-v8.3/src/core/lv_obj_style_gen.c.s
@@ -2046,7 +2022,7 @@ lvgl-release-v8.3/src/core/lv_obj_style_gen.s: lvgl-release-v8.3/src/core/lv_obj
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_style_gen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_style_gen.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_style_gen.c.s
 
 lvgl-release-v8.3/src/core/lv_obj_tree.obj: lvgl-release-v8.3/src/core/lv_obj_tree.c.obj
@@ -2054,7 +2030,7 @@ lvgl-release-v8.3/src/core/lv_obj_tree.obj: lvgl-release-v8.3/src/core/lv_obj_tr
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_obj_tree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_tree.c.obj
 
 lvgl-release-v8.3/src/core/lv_obj_tree.i: lvgl-release-v8.3/src/core/lv_obj_tree.c.i
@@ -2062,7 +2038,7 @@ lvgl-release-v8.3/src/core/lv_obj_tree.i: lvgl-release-v8.3/src/core/lv_obj_tree
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_obj_tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_tree.c.i
 
 lvgl-release-v8.3/src/core/lv_obj_tree.s: lvgl-release-v8.3/src/core/lv_obj_tree.c.s
@@ -2070,7 +2046,7 @@ lvgl-release-v8.3/src/core/lv_obj_tree.s: lvgl-release-v8.3/src/core/lv_obj_tree
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_obj_tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_obj_tree.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_obj_tree.c.s
 
 lvgl-release-v8.3/src/core/lv_refr.obj: lvgl-release-v8.3/src/core/lv_refr.c.obj
@@ -2078,7 +2054,7 @@ lvgl-release-v8.3/src/core/lv_refr.obj: lvgl-release-v8.3/src/core/lv_refr.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_refr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_refr.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_refr.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_refr.c.obj
 
 lvgl-release-v8.3/src/core/lv_refr.i: lvgl-release-v8.3/src/core/lv_refr.c.i
@@ -2086,7 +2062,7 @@ lvgl-release-v8.3/src/core/lv_refr.i: lvgl-release-v8.3/src/core/lv_refr.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_refr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_refr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_refr.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_refr.c.i
 
 lvgl-release-v8.3/src/core/lv_refr.s: lvgl-release-v8.3/src/core/lv_refr.c.s
@@ -2094,7 +2070,7 @@ lvgl-release-v8.3/src/core/lv_refr.s: lvgl-release-v8.3/src/core/lv_refr.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_refr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_refr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_refr.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_refr.c.s
 
 lvgl-release-v8.3/src/core/lv_theme.obj: lvgl-release-v8.3/src/core/lv_theme.c.obj
@@ -2102,7 +2078,7 @@ lvgl-release-v8.3/src/core/lv_theme.obj: lvgl-release-v8.3/src/core/lv_theme.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/core/lv_theme.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_theme.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_theme.c.obj
 .PHONY : lvgl-release-v8.3/src/core/lv_theme.c.obj
 
 lvgl-release-v8.3/src/core/lv_theme.i: lvgl-release-v8.3/src/core/lv_theme.c.i
@@ -2110,7 +2086,7 @@ lvgl-release-v8.3/src/core/lv_theme.i: lvgl-release-v8.3/src/core/lv_theme.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/core/lv_theme.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_theme.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_theme.c.i
 .PHONY : lvgl-release-v8.3/src/core/lv_theme.c.i
 
 lvgl-release-v8.3/src/core/lv_theme.s: lvgl-release-v8.3/src/core/lv_theme.c.s
@@ -2118,7 +2094,7 @@ lvgl-release-v8.3/src/core/lv_theme.s: lvgl-release-v8.3/src/core/lv_theme.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/core/lv_theme.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/core/lv_theme.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/core/lv_theme.c.s
 .PHONY : lvgl-release-v8.3/src/core/lv_theme.c.s
 
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.obj: lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.obj
@@ -2126,7 +2102,7 @@ lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.obj: lvgl-release-v8.3/src/draw/ar
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.obj
 
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.i: lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.i
@@ -2134,7 +2110,7 @@ lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.i: lvgl-release-v8.3/src/draw/arm2
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.i
 .PHONY : lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.i
 
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.s: lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.s
@@ -2142,7 +2118,7 @@ lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.s: lvgl-release-v8.3/src/draw/arm2
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.s
 .PHONY : lvgl-release-v8.3/src/draw/arm2d/lv_gpu_arm2d.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw.obj: lvgl-release-v8.3/src/draw/lv_draw.c.obj
@@ -2150,7 +2126,7 @@ lvgl-release-v8.3/src/draw/lv_draw.obj: lvgl-release-v8.3/src/draw/lv_draw.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw.i: lvgl-release-v8.3/src/draw/lv_draw.c.i
@@ -2158,7 +2134,7 @@ lvgl-release-v8.3/src/draw/lv_draw.i: lvgl-release-v8.3/src/draw/lv_draw.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw.s: lvgl-release-v8.3/src/draw/lv_draw.c.s
@@ -2166,7 +2142,7 @@ lvgl-release-v8.3/src/draw/lv_draw.s: lvgl-release-v8.3/src/draw/lv_draw.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_arc.obj: lvgl-release-v8.3/src/draw/lv_draw_arc.c.obj
@@ -2174,7 +2150,7 @@ lvgl-release-v8.3/src/draw/lv_draw_arc.obj: lvgl-release-v8.3/src/draw/lv_draw_a
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_arc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_arc.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_arc.i: lvgl-release-v8.3/src/draw/lv_draw_arc.c.i
@@ -2182,7 +2158,7 @@ lvgl-release-v8.3/src/draw/lv_draw_arc.i: lvgl-release-v8.3/src/draw/lv_draw_arc
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_arc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_arc.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_arc.s: lvgl-release-v8.3/src/draw/lv_draw_arc.c.s
@@ -2190,7 +2166,7 @@ lvgl-release-v8.3/src/draw/lv_draw_arc.s: lvgl-release-v8.3/src/draw/lv_draw_arc
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_arc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_arc.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_arc.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_img.obj: lvgl-release-v8.3/src/draw/lv_draw_img.c.obj
@@ -2198,7 +2174,7 @@ lvgl-release-v8.3/src/draw/lv_draw_img.obj: lvgl-release-v8.3/src/draw/lv_draw_i
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_img.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_img.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_img.i: lvgl-release-v8.3/src/draw/lv_draw_img.c.i
@@ -2206,7 +2182,7 @@ lvgl-release-v8.3/src/draw/lv_draw_img.i: lvgl-release-v8.3/src/draw/lv_draw_img
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_img.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_img.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_img.s: lvgl-release-v8.3/src/draw/lv_draw_img.c.s
@@ -2214,7 +2190,7 @@ lvgl-release-v8.3/src/draw/lv_draw_img.s: lvgl-release-v8.3/src/draw/lv_draw_img
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_img.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_img.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_img.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_label.obj: lvgl-release-v8.3/src/draw/lv_draw_label.c.obj
@@ -2222,7 +2198,7 @@ lvgl-release-v8.3/src/draw/lv_draw_label.obj: lvgl-release-v8.3/src/draw/lv_draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_label.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_label.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_label.i: lvgl-release-v8.3/src/draw/lv_draw_label.c.i
@@ -2230,7 +2206,7 @@ lvgl-release-v8.3/src/draw/lv_draw_label.i: lvgl-release-v8.3/src/draw/lv_draw_l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_label.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_label.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_label.s: lvgl-release-v8.3/src/draw/lv_draw_label.c.s
@@ -2238,7 +2214,7 @@ lvgl-release-v8.3/src/draw/lv_draw_label.s: lvgl-release-v8.3/src/draw/lv_draw_l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_label.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_label.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_label.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_layer.obj: lvgl-release-v8.3/src/draw/lv_draw_layer.c.obj
@@ -2246,7 +2222,7 @@ lvgl-release-v8.3/src/draw/lv_draw_layer.obj: lvgl-release-v8.3/src/draw/lv_draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_layer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_layer.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_layer.i: lvgl-release-v8.3/src/draw/lv_draw_layer.c.i
@@ -2254,7 +2230,7 @@ lvgl-release-v8.3/src/draw/lv_draw_layer.i: lvgl-release-v8.3/src/draw/lv_draw_l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_layer.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_layer.s: lvgl-release-v8.3/src/draw/lv_draw_layer.c.s
@@ -2262,7 +2238,7 @@ lvgl-release-v8.3/src/draw/lv_draw_layer.s: lvgl-release-v8.3/src/draw/lv_draw_l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_layer.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_layer.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_line.obj: lvgl-release-v8.3/src/draw/lv_draw_line.c.obj
@@ -2270,7 +2246,7 @@ lvgl-release-v8.3/src/draw/lv_draw_line.obj: lvgl-release-v8.3/src/draw/lv_draw_
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_line.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_line.i: lvgl-release-v8.3/src/draw/lv_draw_line.c.i
@@ -2278,7 +2254,7 @@ lvgl-release-v8.3/src/draw/lv_draw_line.i: lvgl-release-v8.3/src/draw/lv_draw_li
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_line.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_line.s: lvgl-release-v8.3/src/draw/lv_draw_line.c.s
@@ -2286,7 +2262,7 @@ lvgl-release-v8.3/src/draw/lv_draw_line.s: lvgl-release-v8.3/src/draw/lv_draw_li
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_line.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_line.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_mask.obj: lvgl-release-v8.3/src/draw/lv_draw_mask.c.obj
@@ -2294,7 +2270,7 @@ lvgl-release-v8.3/src/draw/lv_draw_mask.obj: lvgl-release-v8.3/src/draw/lv_draw_
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_mask.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_mask.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_mask.i: lvgl-release-v8.3/src/draw/lv_draw_mask.c.i
@@ -2302,7 +2278,7 @@ lvgl-release-v8.3/src/draw/lv_draw_mask.i: lvgl-release-v8.3/src/draw/lv_draw_ma
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_mask.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_mask.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_mask.s: lvgl-release-v8.3/src/draw/lv_draw_mask.c.s
@@ -2310,7 +2286,7 @@ lvgl-release-v8.3/src/draw/lv_draw_mask.s: lvgl-release-v8.3/src/draw/lv_draw_ma
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_mask.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_mask.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_mask.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_rect.obj: lvgl-release-v8.3/src/draw/lv_draw_rect.c.obj
@@ -2318,7 +2294,7 @@ lvgl-release-v8.3/src/draw/lv_draw_rect.obj: lvgl-release-v8.3/src/draw/lv_draw_
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_rect.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_rect.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_rect.i: lvgl-release-v8.3/src/draw/lv_draw_rect.c.i
@@ -2326,7 +2302,7 @@ lvgl-release-v8.3/src/draw/lv_draw_rect.i: lvgl-release-v8.3/src/draw/lv_draw_re
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_rect.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_rect.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_rect.s: lvgl-release-v8.3/src/draw/lv_draw_rect.c.s
@@ -2334,7 +2310,7 @@ lvgl-release-v8.3/src/draw/lv_draw_rect.s: lvgl-release-v8.3/src/draw/lv_draw_re
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_rect.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_rect.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_rect.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_transform.obj: lvgl-release-v8.3/src/draw/lv_draw_transform.c.obj
@@ -2342,7 +2318,7 @@ lvgl-release-v8.3/src/draw/lv_draw_transform.obj: lvgl-release-v8.3/src/draw/lv_
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_transform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_transform.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_transform.i: lvgl-release-v8.3/src/draw/lv_draw_transform.c.i
@@ -2350,7 +2326,7 @@ lvgl-release-v8.3/src/draw/lv_draw_transform.i: lvgl-release-v8.3/src/draw/lv_dr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_transform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_transform.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_transform.s: lvgl-release-v8.3/src/draw/lv_draw_transform.c.s
@@ -2358,7 +2334,7 @@ lvgl-release-v8.3/src/draw/lv_draw_transform.s: lvgl-release-v8.3/src/draw/lv_dr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_transform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_transform.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_transform.c.s
 
 lvgl-release-v8.3/src/draw/lv_draw_triangle.obj: lvgl-release-v8.3/src/draw/lv_draw_triangle.c.obj
@@ -2366,7 +2342,7 @@ lvgl-release-v8.3/src/draw/lv_draw_triangle.obj: lvgl-release-v8.3/src/draw/lv_d
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_draw_triangle.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_triangle.c.obj
 
 lvgl-release-v8.3/src/draw/lv_draw_triangle.i: lvgl-release-v8.3/src/draw/lv_draw_triangle.c.i
@@ -2374,7 +2350,7 @@ lvgl-release-v8.3/src/draw/lv_draw_triangle.i: lvgl-release-v8.3/src/draw/lv_dra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_draw_triangle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_triangle.c.i
 
 lvgl-release-v8.3/src/draw/lv_draw_triangle.s: lvgl-release-v8.3/src/draw/lv_draw_triangle.c.s
@@ -2382,7 +2358,7 @@ lvgl-release-v8.3/src/draw/lv_draw_triangle.s: lvgl-release-v8.3/src/draw/lv_dra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_draw_triangle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_draw_triangle.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_draw_triangle.c.s
 
 lvgl-release-v8.3/src/draw/lv_img_buf.obj: lvgl-release-v8.3/src/draw/lv_img_buf.c.obj
@@ -2390,7 +2366,7 @@ lvgl-release-v8.3/src/draw/lv_img_buf.obj: lvgl-release-v8.3/src/draw/lv_img_buf
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_img_buf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_buf.c.obj
 
 lvgl-release-v8.3/src/draw/lv_img_buf.i: lvgl-release-v8.3/src/draw/lv_img_buf.c.i
@@ -2398,7 +2374,7 @@ lvgl-release-v8.3/src/draw/lv_img_buf.i: lvgl-release-v8.3/src/draw/lv_img_buf.c
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_img_buf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_buf.c.i
 
 lvgl-release-v8.3/src/draw/lv_img_buf.s: lvgl-release-v8.3/src/draw/lv_img_buf.c.s
@@ -2406,7 +2382,7 @@ lvgl-release-v8.3/src/draw/lv_img_buf.s: lvgl-release-v8.3/src/draw/lv_img_buf.c
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_img_buf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_buf.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_buf.c.s
 
 lvgl-release-v8.3/src/draw/lv_img_cache.obj: lvgl-release-v8.3/src/draw/lv_img_cache.c.obj
@@ -2414,7 +2390,7 @@ lvgl-release-v8.3/src/draw/lv_img_cache.obj: lvgl-release-v8.3/src/draw/lv_img_c
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_img_cache.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_cache.c.obj
 
 lvgl-release-v8.3/src/draw/lv_img_cache.i: lvgl-release-v8.3/src/draw/lv_img_cache.c.i
@@ -2422,7 +2398,7 @@ lvgl-release-v8.3/src/draw/lv_img_cache.i: lvgl-release-v8.3/src/draw/lv_img_cac
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_img_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_cache.c.i
 
 lvgl-release-v8.3/src/draw/lv_img_cache.s: lvgl-release-v8.3/src/draw/lv_img_cache.c.s
@@ -2430,7 +2406,7 @@ lvgl-release-v8.3/src/draw/lv_img_cache.s: lvgl-release-v8.3/src/draw/lv_img_cac
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_img_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_cache.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_cache.c.s
 
 lvgl-release-v8.3/src/draw/lv_img_decoder.obj: lvgl-release-v8.3/src/draw/lv_img_decoder.c.obj
@@ -2438,7 +2414,7 @@ lvgl-release-v8.3/src/draw/lv_img_decoder.obj: lvgl-release-v8.3/src/draw/lv_img
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/lv_img_decoder.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_decoder.c.obj
 
 lvgl-release-v8.3/src/draw/lv_img_decoder.i: lvgl-release-v8.3/src/draw/lv_img_decoder.c.i
@@ -2446,7 +2422,7 @@ lvgl-release-v8.3/src/draw/lv_img_decoder.i: lvgl-release-v8.3/src/draw/lv_img_d
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/lv_img_decoder.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.i
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_decoder.c.i
 
 lvgl-release-v8.3/src/draw/lv_img_decoder.s: lvgl-release-v8.3/src/draw/lv_img_decoder.c.s
@@ -2454,7 +2430,7 @@ lvgl-release-v8.3/src/draw/lv_img_decoder.s: lvgl-release-v8.3/src/draw/lv_img_d
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/lv_img_decoder.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/lv_img_decoder.c.s
 .PHONY : lvgl-release-v8.3/src/draw/lv_img_decoder.c.s
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.obj: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.obj
@@ -2462,7 +2438,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.obj: lvgl-release-v8.3/src/draw/n
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.i: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.i
@@ -2470,7 +2446,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.i: lvgl-release-v8.3/src/draw/nxp
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.i
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.s: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.s
@@ -2478,7 +2454,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.s: lvgl-release-v8.3/src/draw/nxp
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp.c.s
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.obj: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.obj
@@ -2486,7 +2462,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.i: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
@@ -2494,7 +2470,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.i: lvgl-release-v8.3/src/dr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.s: lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
@@ -2502,7 +2478,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.s: lvgl-release-v8.3/src/dr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.obj: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.obj
@@ -2510,7 +2486,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.obj: lvgl-release-v8.3/src/dra
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.i: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
@@ -2518,7 +2494,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.i: lvgl-release-v8.3/src/draw/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.s: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
@@ -2526,7 +2502,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.s: lvgl-release-v8.3/src/draw/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.obj: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.obj
@@ -2534,7 +2510,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.i: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
@@ -2542,7 +2518,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.i: lvgl-release-v8.3/src/d
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
 
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.s: lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
@@ -2550,7 +2526,7 @@ lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.s: lvgl-release-v8.3/src/d
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.obj
@@ -2558,7 +2534,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.i
@@ -2566,7 +2542,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.i: lvgl-release-v8.3/src/dr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.s
@@ -2574,7 +2550,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.s: lvgl-release-v8.3/src/dr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.obj
@@ -2582,7 +2558,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.obj: lvgl-release-v8.3/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
@@ -2590,7 +2566,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.i: lvgl-release-v8.3/sr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
@@ -2598,7 +2574,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.s: lvgl-release-v8.3/sr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.obj
@@ -2606,7 +2582,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.obj: lvgl-release-v8.
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
@@ -2614,7 +2590,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.i: lvgl-release-v8.3/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
@@ -2622,7 +2598,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.s: lvgl-release-v8.3/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.obj
@@ -2630,7 +2606,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.obj: lvgl-release-v8.3
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
@@ -2638,7 +2614,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.i: lvgl-release-v8.3/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
@@ -2646,7 +2622,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.s: lvgl-release-v8.3/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.obj
@@ -2654,7 +2630,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.obj: lvgl-release-v8.3
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
@@ -2662,7 +2638,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.i: lvgl-release-v8.3/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
@@ -2670,7 +2646,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.s: lvgl-release-v8.3/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.obj
@@ -2678,7 +2654,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.obj: lvgl-release-v8.3/src/d
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.i
@@ -2686,7 +2662,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.i: lvgl-release-v8.3/src/dra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.s
@@ -2694,7 +2670,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.s: lvgl-release-v8.3/src/dra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c.s
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.obj: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.obj
@@ -2702,7 +2678,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.obj
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.i: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.i
@@ -2710,7 +2686,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.i: lvgl-release-v8.3/src/d
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.i
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.i
 
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.s: lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.s
@@ -2718,7 +2694,7 @@ lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.s: lvgl-release-v8.3/src/d
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.s
 .PHONY : lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c.s
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.obj: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.obj
@@ -2726,7 +2702,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.obj: lvgl-release-v8.3/s
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.obj
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.i: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.i
@@ -2734,7 +2710,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.i: lvgl-release-v8.3/src
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.i
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.i
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.s: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.s
@@ -2742,7 +2718,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.s: lvgl-release-v8.3/src
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.s
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_draw_label.c.s
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.obj: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.obj
@@ -2750,7 +2726,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.obj: lvgl-release-v8.3/src/dr
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.obj
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.i: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
@@ -2758,7 +2734,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.i: lvgl-release-v8.3/src/draw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
 
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.s: lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
@@ -2766,7 +2742,7 @@ lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.s: lvgl-release-v8.3/src/draw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
 .PHONY : lvgl-release-v8.3/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.obj
@@ -2774,7 +2750,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.obj: lvgl-release-v8.3/src/draw/sdl/l
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.i
@@ -2782,7 +2758,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.i: lvgl-release-v8.3/src/draw/sdl/lv_
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.s
@@ -2790,7 +2766,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.s: lvgl-release-v8.3/src/draw/sdl/lv_
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.obj
@@ -2798,7 +2774,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.obj: lvgl-release-v8.3/src/draw/s
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.i
@@ -2806,7 +2782,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.i: lvgl-release-v8.3/src/draw/sdl
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.s
@@ -2814,7 +2790,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.s: lvgl-release-v8.3/src/draw/sdl
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_arc.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.obj
@@ -2822,7 +2798,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.obj: lvgl-release-v8.3/src/draw/sd
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.i
@@ -2830,7 +2806,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.i: lvgl-release-v8.3/src/draw/sdl/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.s
@@ -2838,7 +2814,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.s: lvgl-release-v8.3/src/draw/sdl/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_bg.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.obj
@@ -2846,7 +2822,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.i
@@ -2854,7 +2830,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.i: lvgl-release-v8.3/src/dr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.s
@@ -2862,7 +2838,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.s: lvgl-release-v8.3/src/dr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_composite.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.obj
@@ -2870,7 +2846,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.obj: lvgl-release-v8.3/src/draw/s
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.i
@@ -2878,7 +2854,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.i: lvgl-release-v8.3/src/draw/sdl
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.s
@@ -2886,7 +2862,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.s: lvgl-release-v8.3/src/draw/sdl
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_img.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.obj
@@ -2894,7 +2870,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.obj: lvgl-release-v8.3/src/draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.i
@@ -2902,7 +2878,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.i: lvgl-release-v8.3/src/draw/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.s
@@ -2910,7 +2886,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.s: lvgl-release-v8.3/src/draw/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_label.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.obj
@@ -2918,7 +2894,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.obj: lvgl-release-v8.3/src/draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.i
@@ -2926,7 +2902,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.i: lvgl-release-v8.3/src/draw/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.s
@@ -2934,7 +2910,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.s: lvgl-release-v8.3/src/draw/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_layer.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.obj
@@ -2942,7 +2918,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.obj: lvgl-release-v8.3/src/draw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.i
@@ -2950,7 +2926,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.i: lvgl-release-v8.3/src/draw/sd
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.s
@@ -2958,7 +2934,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.s: lvgl-release-v8.3/src/draw/sd
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_line.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.obj
@@ -2966,7 +2942,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.obj: lvgl-release-v8.3/src/draw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.i
@@ -2974,7 +2950,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.i: lvgl-release-v8.3/src/draw/sd
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.s
@@ -2982,7 +2958,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.s: lvgl-release-v8.3/src/draw/sd
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_mask.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.obj
@@ -2990,7 +2966,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.obj: lvgl-release-v8.3/src/dr
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.i
@@ -2998,7 +2974,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.i: lvgl-release-v8.3/src/draw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.s
@@ -3006,7 +2982,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.s: lvgl-release-v8.3/src/draw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_polygon.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.obj
@@ -3014,7 +2990,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.obj: lvgl-release-v8.3/src/draw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.i
@@ -3022,7 +2998,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.i: lvgl-release-v8.3/src/draw/sd
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.s
@@ -3030,7 +3006,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.s: lvgl-release-v8.3/src/draw/sd
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_rect.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.obj
@@ -3038,7 +3014,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
@@ -3046,7 +3022,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.i: lvgl-release-v8.3/src/d
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
@@ -3054,7 +3030,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.s: lvgl-release-v8.3/src/d
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.obj
@@ -3062,7 +3038,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.obj: lvgl-release-v8.3/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
@@ -3070,7 +3046,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.i: lvgl-release-v8.3/sr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
@@ -3078,7 +3054,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.s: lvgl-release-v8.3/sr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.obj: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.obj
@@ -3086,7 +3062,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.obj: lvgl-release-v8.3/src/draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.obj
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.i: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.i
@@ -3094,7 +3070,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.i: lvgl-release-v8.3/src/draw/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.i
 
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.s: lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.s
@@ -3102,7 +3078,7 @@ lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.s: lvgl-release-v8.3/src/draw/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sdl/lv_draw_sdl_utils.c.s
 
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.obj: lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj
@@ -3110,7 +3086,7 @@ lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.obj: lvgl-release-v8.3
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.obj
 
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.i: lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
@@ -3118,7 +3094,7 @@ lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.i: lvgl-release-v8.3/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
 .PHONY : lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
 
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.s: lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
@@ -3126,7 +3102,7 @@ lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.s: lvgl-release-v8.3/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
 .PHONY : lvgl-release-v8.3/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.obj
@@ -3134,7 +3110,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw.obj: lvgl-release-v8.3/src/draw/sw/lv_d
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.i
@@ -3142,7 +3118,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw.i: lvgl-release-v8.3/src/draw/sw/lv_dra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.s
@@ -3150,7 +3126,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw.s: lvgl-release-v8.3/src/draw/sw/lv_dra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.obj
@@ -3158,7 +3134,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.obj: lvgl-release-v8.3/src/draw/sw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.i
@@ -3166,7 +3142,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.i: lvgl-release-v8.3/src/draw/sw/lv
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.s
@@ -3174,7 +3150,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.s: lvgl-release-v8.3/src/draw/sw/lv
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_arc.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.obj
@@ -3182,7 +3158,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.obj: lvgl-release-v8.3/src/draw/s
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.i
@@ -3190,7 +3166,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.i: lvgl-release-v8.3/src/draw/sw/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.s
@@ -3198,7 +3174,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.s: lvgl-release-v8.3/src/draw/sw/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_blend.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.obj
@@ -3206,7 +3182,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.obj: lvgl-release-v8.3/src/draw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.i
@@ -3214,7 +3190,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.i: lvgl-release-v8.3/src/draw/sw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.s
@@ -3222,7 +3198,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.s: lvgl-release-v8.3/src/draw/sw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.obj
@@ -3230,7 +3206,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.obj: lvgl-release-v8.3/src/dra
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.i
@@ -3238,7 +3214,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.i: lvgl-release-v8.3/src/draw/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.s
@@ -3246,7 +3222,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.s: lvgl-release-v8.3/src/draw/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.obj
@@ -3254,7 +3230,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.obj: lvgl-release-v8.3/src/draw/sw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.i
@@ -3262,7 +3238,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.i: lvgl-release-v8.3/src/draw/sw/lv
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.s
@@ -3270,7 +3246,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.s: lvgl-release-v8.3/src/draw/sw/lv
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_img.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.obj
@@ -3278,7 +3254,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.obj: lvgl-release-v8.3/src/draw/s
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.i
@@ -3286,7 +3262,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.i: lvgl-release-v8.3/src/draw/sw/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.s
@@ -3294,7 +3270,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.s: lvgl-release-v8.3/src/draw/sw/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_layer.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.obj
@@ -3302,7 +3278,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.obj: lvgl-release-v8.3/src/draw/
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.i
@@ -3310,7 +3286,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.i: lvgl-release-v8.3/src/draw/sw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.s
@@ -3318,7 +3294,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.s: lvgl-release-v8.3/src/draw/sw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_letter.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.obj
@@ -3326,7 +3302,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.obj: lvgl-release-v8.3/src/draw/sw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.i
@@ -3334,7 +3310,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.i: lvgl-release-v8.3/src/draw/sw/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.s
@@ -3342,7 +3318,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.s: lvgl-release-v8.3/src/draw/sw/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_line.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.obj
@@ -3350,7 +3326,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.obj: lvgl-release-v8.3/src/draw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.i
@@ -3358,7 +3334,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.i: lvgl-release-v8.3/src/draw/s
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.s
@@ -3366,7 +3342,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.s: lvgl-release-v8.3/src/draw/s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_polygon.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.obj
@@ -3374,7 +3350,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.obj: lvgl-release-v8.3/src/draw/sw
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.i
@@ -3382,7 +3358,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.i: lvgl-release-v8.3/src/draw/sw/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.s
@@ -3390,7 +3366,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.s: lvgl-release-v8.3/src/draw/sw/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_rect.c.s
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.obj: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.obj
@@ -3398,7 +3374,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.obj: lvgl-release-v8.3/src/dr
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.obj
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.i: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.i
@@ -3406,7 +3382,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.i: lvgl-release-v8.3/src/draw
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.i
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.i
 
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.s: lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.s
@@ -3414,7 +3390,7 @@ lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.s: lvgl-release-v8.3/src/draw
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.s
 .PHONY : lvgl-release-v8.3/src/draw/sw/lv_draw_sw_transform.c.s
 
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.obj: lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.obj
@@ -3422,7 +3398,7 @@ lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.obj: lvgl-release-v8
 
 # target to build an object file
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.obj
 .PHONY : lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.obj
 
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.i: lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
@@ -3430,7 +3406,7 @@ lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.i: lvgl-release-v8.3
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
 .PHONY : lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
 
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.s: lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
@@ -3438,7 +3414,7 @@ lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.s: lvgl-release-v8.3
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
 .PHONY : lvgl-release-v8.3/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
 
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.obj: lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.obj
@@ -3446,7 +3422,7 @@ lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.obj: lvgl-release-v8.3/src/extr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.obj
 
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.i: lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.i
@@ -3454,7 +3430,7 @@ lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.i: lvgl-release-v8.3/src/extra/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.i
 .PHONY : lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.i
 
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.s: lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.s
@@ -3462,7 +3438,7 @@ lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.s: lvgl-release-v8.3/src/extra/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.s
 .PHONY : lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c.s
 
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.obj: lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.obj
@@ -3470,7 +3446,7 @@ lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.obj: lvgl-release-v8.3/src/extr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.obj
 
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.i: lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.i
@@ -3478,7 +3454,7 @@ lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.i: lvgl-release-v8.3/src/extra/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.i
 .PHONY : lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.i
 
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.s: lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.s
@@ -3486,7 +3462,7 @@ lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.s: lvgl-release-v8.3/src/extra/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.s
 .PHONY : lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.c.s
 
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.obj: lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.obj
@@ -3494,7 +3470,7 @@ lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.obj: lvgl-release-v8.3/src/extra/lib
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.obj
 
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.i: lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.i
@@ -3502,7 +3478,7 @@ lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.i: lvgl-release-v8.3/src/extra/libs/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.i
 
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.s: lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.s
@@ -3510,7 +3486,7 @@ lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.s: lvgl-release-v8.3/src/extra/libs/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.c.s
 
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.obj: lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj
@@ -3518,7 +3494,7 @@ lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.obj: lvgl-release-v8.3/src/ext
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.obj
 
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.i: lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
@@ -3526,7 +3502,7 @@ lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.i: lvgl-release-v8.3/src/extra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
 
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.s: lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
@@ -3534,7 +3510,7 @@ lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.s: lvgl-release-v8.3/src/extra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
 
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.obj: lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.obj
@@ -3542,7 +3518,7 @@ lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.obj
 
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.i: lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.i
@@ -3550,7 +3526,7 @@ lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.i
 
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.s: lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.s
@@ -3558,7 +3534,7 @@ lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.c.s
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.obj: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj
@@ -3566,7 +3542,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.obj
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.i: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
@@ -3574,7 +3550,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.s: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
@@ -3582,7 +3558,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.obj: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.obj
@@ -3590,7 +3566,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.obj
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.i: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
@@ -3598,7 +3574,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.s: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
@@ -3606,7 +3582,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.obj: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.obj
@@ -3614,7 +3590,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.obj
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.i: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.i
@@ -3622,7 +3598,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.i
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.s: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.s
@@ -3630,7 +3606,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_posix.c.s
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.obj: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.obj
@@ -3638,7 +3614,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.obj
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.i: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.i
@@ -3646,7 +3622,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.i
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.s: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.s
@@ -3654,7 +3630,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_stdio.c.s
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.obj: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.obj
@@ -3662,7 +3638,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.obj
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.i: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.i
@@ -3670,7 +3646,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.i
 
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.s: lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.s
@@ -3678,7 +3654,7 @@ lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fs_win32.c.s
 
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.obj: lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.obj
@@ -3686,7 +3662,7 @@ lvgl-release-v8.3/src/extra/libs/gif/gifdec.obj: lvgl-release-v8.3/src/extra/lib
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.obj
 
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.i: lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.i
@@ -3694,7 +3670,7 @@ lvgl-release-v8.3/src/extra/libs/gif/gifdec.i: lvgl-release-v8.3/src/extra/libs/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.i
 
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.s: lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.s
@@ -3702,7 +3678,7 @@ lvgl-release-v8.3/src/extra/libs/gif/gifdec.s: lvgl-release-v8.3/src/extra/libs/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/gifdec.c.s
 
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.obj: lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.obj
@@ -3710,7 +3686,7 @@ lvgl-release-v8.3/src/extra/libs/gif/lv_gif.obj: lvgl-release-v8.3/src/extra/lib
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.obj
 
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.i: lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.i
@@ -3718,7 +3694,7 @@ lvgl-release-v8.3/src/extra/libs/gif/lv_gif.i: lvgl-release-v8.3/src/extra/libs/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.i
 
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.s: lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.s
@@ -3726,7 +3702,7 @@ lvgl-release-v8.3/src/extra/libs/gif/lv_gif.s: lvgl-release-v8.3/src/extra/libs/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/gif/lv_gif.c.s
 
 lvgl-release-v8.3/src/extra/libs/png/lodepng.obj: lvgl-release-v8.3/src/extra/libs/png/lodepng.c.obj
@@ -3734,7 +3710,7 @@ lvgl-release-v8.3/src/extra/libs/png/lodepng.obj: lvgl-release-v8.3/src/extra/li
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/png/lodepng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lodepng.c.obj
 
 lvgl-release-v8.3/src/extra/libs/png/lodepng.i: lvgl-release-v8.3/src/extra/libs/png/lodepng.c.i
@@ -3742,7 +3718,7 @@ lvgl-release-v8.3/src/extra/libs/png/lodepng.i: lvgl-release-v8.3/src/extra/libs
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/png/lodepng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lodepng.c.i
 
 lvgl-release-v8.3/src/extra/libs/png/lodepng.s: lvgl-release-v8.3/src/extra/libs/png/lodepng.c.s
@@ -3750,7 +3726,7 @@ lvgl-release-v8.3/src/extra/libs/png/lodepng.s: lvgl-release-v8.3/src/extra/libs
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/png/lodepng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lodepng.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lodepng.c.s
 
 lvgl-release-v8.3/src/extra/libs/png/lv_png.obj: lvgl-release-v8.3/src/extra/libs/png/lv_png.c.obj
@@ -3758,7 +3734,7 @@ lvgl-release-v8.3/src/extra/libs/png/lv_png.obj: lvgl-release-v8.3/src/extra/lib
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/png/lv_png.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lv_png.c.obj
 
 lvgl-release-v8.3/src/extra/libs/png/lv_png.i: lvgl-release-v8.3/src/extra/libs/png/lv_png.c.i
@@ -3766,7 +3742,7 @@ lvgl-release-v8.3/src/extra/libs/png/lv_png.i: lvgl-release-v8.3/src/extra/libs/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/png/lv_png.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lv_png.c.i
 
 lvgl-release-v8.3/src/extra/libs/png/lv_png.s: lvgl-release-v8.3/src/extra/libs/png/lv_png.c.s
@@ -3774,7 +3750,7 @@ lvgl-release-v8.3/src/extra/libs/png/lv_png.s: lvgl-release-v8.3/src/extra/libs/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/png/lv_png.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/png/lv_png.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/png/lv_png.c.s
 
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.obj: lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.obj
@@ -3782,7 +3758,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.obj: lvgl-release-v8.3/src/ext
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.obj
 
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.i: lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.i
@@ -3790,7 +3766,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.i: lvgl-release-v8.3/src/extra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.i
 
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.s: lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.s
@@ -3798,7 +3774,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.s: lvgl-release-v8.3/src/extra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.c.s
 
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.obj: lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj
@@ -3806,7 +3782,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.obj: lvgl-release-v8.3/src/ext
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj
 
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.i: lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.i
@@ -3814,7 +3790,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.i: lvgl-release-v8.3/src/extra
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.i
 
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.s: lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.s
@@ -3822,7 +3798,7 @@ lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.s: lvgl-release-v8.3/src/extra
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.s
 
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.obj: lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.obj
@@ -3830,7 +3806,7 @@ lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.obj: lvgl-release-v8.3/src/e
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.obj
 
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.i: lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.i
@@ -3838,7 +3814,7 @@ lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.i: lvgl-release-v8.3/src/ext
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.i
 
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.s: lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.s
@@ -3846,7 +3822,7 @@ lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.s: lvgl-release-v8.3/src/ext
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.c.s
 
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.obj: lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.obj
@@ -3854,7 +3830,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.obj: lvgl-release-v8.3/src/extra/l
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.obj
 
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.i: lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.i
@@ -3862,7 +3838,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.i: lvgl-release-v8.3/src/extra/lib
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.i
 
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.s: lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.s
@@ -3870,7 +3846,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.s: lvgl-release-v8.3/src/extra/lib
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.c.s
 
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.obj: lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.obj
@@ -3878,7 +3854,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.obj: lvgl-release-v8.3/src/extra/lib
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.obj
 
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.i: lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.i
@@ -3886,7 +3862,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.i: lvgl-release-v8.3/src/extra/libs/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.i
 
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.s: lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.s
@@ -3894,7 +3870,7 @@ lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.s: lvgl-release-v8.3/src/extra/libs/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/sjpg/tjpgd.c.s
 
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.obj: lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.obj
@@ -3902,7 +3878,7 @@ lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.obj
 
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.i: lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
@@ -3910,7 +3886,7 @@ lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
 .PHONY : lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
 
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.s: lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
@@ -3918,7 +3894,7 @@ lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
 .PHONY : lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
 
 lvgl-release-v8.3/src/extra/lv_extra.obj: lvgl-release-v8.3/src/extra/lv_extra.c.obj
@@ -3926,7 +3902,7 @@ lvgl-release-v8.3/src/extra/lv_extra.obj: lvgl-release-v8.3/src/extra/lv_extra.c
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/lv_extra.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/lv_extra.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/lv_extra.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/lv_extra.c.obj
 
 lvgl-release-v8.3/src/extra/lv_extra.i: lvgl-release-v8.3/src/extra/lv_extra.c.i
@@ -3934,7 +3910,7 @@ lvgl-release-v8.3/src/extra/lv_extra.i: lvgl-release-v8.3/src/extra/lv_extra.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/lv_extra.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/lv_extra.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/lv_extra.c.i
 .PHONY : lvgl-release-v8.3/src/extra/lv_extra.c.i
 
 lvgl-release-v8.3/src/extra/lv_extra.s: lvgl-release-v8.3/src/extra/lv_extra.c.s
@@ -3942,7 +3918,7 @@ lvgl-release-v8.3/src/extra/lv_extra.s: lvgl-release-v8.3/src/extra/lv_extra.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/lv_extra.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/lv_extra.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/lv_extra.c.s
 .PHONY : lvgl-release-v8.3/src/extra/lv_extra.c.s
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.obj: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.obj
@@ -3950,7 +3926,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.obj: lvgl-release-v8.3/s
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.obj
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.i: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.i
@@ -3958,7 +3934,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.i: lvgl-release-v8.3/src
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.i
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.s: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.s
@@ -3966,7 +3942,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.s: lvgl-release-v8.3/src
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c.s
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.obj: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.obj
@@ -3974,7 +3950,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.obj: lvgl-releas
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.obj
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.i: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.i
@@ -3982,7 +3958,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.i: lvgl-release-
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.i
 
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.s: lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.s
@@ -3990,7 +3966,7 @@ lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.s: lvgl-release-
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/fragment/lv_fragment_manager.c.s
 
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.obj: lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.obj
@@ -3998,7 +3974,7 @@ lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.obj
 
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.i: lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.i
@@ -4006,7 +3982,7 @@ lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.i
 
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.s: lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.s
@@ -4014,7 +3990,7 @@ lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c.s
 
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.obj: lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.obj
@@ -4022,7 +3998,7 @@ lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.obj
 
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.i: lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.i
@@ -4030,7 +4006,7 @@ lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.i: lvgl-release-v8.3/src/ex
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.i
 
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.s: lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.s
@@ -4038,7 +4014,7 @@ lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.s: lvgl-release-v8.3/src/ex
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.c.s
 
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.obj: lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.obj
@@ -4046,7 +4022,7 @@ lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.obj
 
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.i: lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.i
@@ -4054,7 +4030,7 @@ lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.i
 
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.s: lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.s
@@ -4062,7 +4038,7 @@ lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.c.s
 
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.obj: lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.obj
@@ -4070,7 +4046,7 @@ lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.obj: lvgl-release-v8.3/src/e
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.obj
 
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.i: lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.i
@@ -4078,7 +4054,7 @@ lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.i: lvgl-release-v8.3/src/ext
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.i
 
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.s: lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.s
@@ -4086,7 +4062,7 @@ lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.s: lvgl-release-v8.3/src/ext
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.c.s
 
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.obj: lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.obj
@@ -4094,7 +4070,7 @@ lvgl-release-v8.3/src/extra/others/msg/lv_msg.obj: lvgl-release-v8.3/src/extra/o
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.obj
 
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.i: lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.i
@@ -4102,7 +4078,7 @@ lvgl-release-v8.3/src/extra/others/msg/lv_msg.i: lvgl-release-v8.3/src/extra/oth
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.i
 
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.s: lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.s
@@ -4110,7 +4086,7 @@ lvgl-release-v8.3/src/extra/others/msg/lv_msg.s: lvgl-release-v8.3/src/extra/oth
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/msg/lv_msg.c.s
 
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.obj: lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.obj
@@ -4118,7 +4094,7 @@ lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.obj: lvgl-release-v8.3/s
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.obj
 
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.i: lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.i
@@ -4126,7 +4102,7 @@ lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.i: lvgl-release-v8.3/src
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.i
 .PHONY : lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.i
 
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.s: lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.s
@@ -4134,7 +4110,7 @@ lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.s: lvgl-release-v8.3/src
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.s
 .PHONY : lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.c.s
 
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.obj: lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.obj
@@ -4142,7 +4118,7 @@ lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.obj: lvgl-release-v8.3/s
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.obj
 
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.i: lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.i
@@ -4150,7 +4126,7 @@ lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.i: lvgl-release-v8.3/src
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.i
 .PHONY : lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.i
 
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.s: lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.s
@@ -4158,7 +4134,7 @@ lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.s: lvgl-release-v8.3/src
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.s
 .PHONY : lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.c.s
 
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.obj: lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.obj
@@ -4166,7 +4142,7 @@ lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.obj: lvgl-release-v8
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.obj
 
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.i: lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.i
@@ -4174,7 +4150,7 @@ lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.i: lvgl-release-v8.3
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.i
 .PHONY : lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.i
 
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.s: lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.s
@@ -4182,7 +4158,7 @@ lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.s: lvgl-release-v8.3
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.s
 .PHONY : lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.c.s
 
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.obj: lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.obj
@@ -4190,7 +4166,7 @@ lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.obj: lvgl-release-v8.3/src
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.obj
 
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.i: lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.i
@@ -4198,7 +4174,7 @@ lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.i: lvgl-release-v8.3/src/e
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.i
 .PHONY : lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.i
 
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.s: lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.s
@@ -4206,7 +4182,7 @@ lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.s: lvgl-release-v8.3/src/e
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.s
 .PHONY : lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.c.s
 
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.obj: lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.obj
@@ -4214,7 +4190,7 @@ lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.obj: lvgl-release-v8.3/sr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.i: lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.i
@@ -4222,7 +4198,7 @@ lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.i: lvgl-release-v8.3/src/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.i
 
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.s: lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.s
@@ -4230,7 +4206,7 @@ lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.s: lvgl-release-v8.3/src/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c.s
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.obj: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.obj
@@ -4238,7 +4214,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.obj: lvgl-release-v8.3/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.i: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.i
@@ -4246,7 +4222,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.i: lvgl-release-v8.3/sr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.i
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.s: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.s
@@ -4254,7 +4230,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.s: lvgl-release-v8.3/sr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c.s
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.obj: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj
@@ -4262,7 +4238,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.obj: lvgl-
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.i: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
@@ -4270,7 +4246,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.i: lvgl-re
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.s: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
@@ -4278,7 +4254,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.s: lvgl-re
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.obj: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj
@@ -4286,7 +4262,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.obj: lv
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.i: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
@@ -4294,7 +4270,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.i: lvgl
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
 
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.s: lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
@@ -4302,7 +4278,7 @@ lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.s: lvgl
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
 
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.obj: lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.obj
@@ -4310,7 +4286,7 @@ lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.i: lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.i
@@ -4318,7 +4294,7 @@ lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.i
 
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.s: lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.s
@@ -4326,7 +4302,7 @@ lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c.s
 
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.obj: lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.obj
@@ -4334,7 +4310,7 @@ lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.obj: lvgl-release-v
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.i: lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.i
@@ -4342,7 +4318,7 @@ lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.i: lvgl-release-v8.
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.i
 
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.s: lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.s
@@ -4350,7 +4326,7 @@ lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.s: lvgl-release-v8.
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.c.s
 
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.obj: lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.obj
@@ -4358,7 +4334,7 @@ lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.i: lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.i
@@ -4366,7 +4342,7 @@ lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.i: lvgl-release-v8.3/src/ex
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.i
 
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.s: lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.s
@@ -4374,7 +4350,7 @@ lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.s: lvgl-release-v8.3/src/ex
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c.s
 
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.obj: lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.obj
@@ -4382,7 +4358,7 @@ lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.obj: lvgl-release-v8.3/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.i: lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.i
@@ -4390,7 +4366,7 @@ lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.i: lvgl-release-v8.3/sr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.i
 
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.s: lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.s
@@ -4398,7 +4374,7 @@ lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.s: lvgl-release-v8.3/sr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c.s
 
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.obj: lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.obj
@@ -4406,7 +4382,7 @@ lvgl-release-v8.3/src/extra/widgets/led/lv_led.obj: lvgl-release-v8.3/src/extra/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.i: lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.i
@@ -4414,7 +4390,7 @@ lvgl-release-v8.3/src/extra/widgets/led/lv_led.i: lvgl-release-v8.3/src/extra/wi
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.i
 
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.s: lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.s
@@ -4422,7 +4398,7 @@ lvgl-release-v8.3/src/extra/widgets/led/lv_led.s: lvgl-release-v8.3/src/extra/wi
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/led/lv_led.c.s
 
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.obj: lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.obj
@@ -4430,7 +4406,7 @@ lvgl-release-v8.3/src/extra/widgets/list/lv_list.obj: lvgl-release-v8.3/src/extr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.i: lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.i
@@ -4438,7 +4414,7 @@ lvgl-release-v8.3/src/extra/widgets/list/lv_list.i: lvgl-release-v8.3/src/extra/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.i
 
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.s: lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.s
@@ -4446,7 +4422,7 @@ lvgl-release-v8.3/src/extra/widgets/list/lv_list.s: lvgl-release-v8.3/src/extra/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/list/lv_list.c.s
 
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.obj: lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.obj
@@ -4454,7 +4430,7 @@ lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.obj: lvgl-release-v8.3/src/extr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.i: lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.i
@@ -4462,7 +4438,7 @@ lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.i: lvgl-release-v8.3/src/extra/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.i
 
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.s: lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.s
@@ -4470,7 +4446,7 @@ lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.s: lvgl-release-v8.3/src/extra/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.c.s
 
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.obj: lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.obj
@@ -4478,7 +4454,7 @@ lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.obj: lvgl-release-v8.3/src/ex
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.i: lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.i
@@ -4486,7 +4462,7 @@ lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.i: lvgl-release-v8.3/src/extr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.i
 
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.s: lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.s
@@ -4494,7 +4470,7 @@ lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.s: lvgl-release-v8.3/src/extr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.c.s
 
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.obj: lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.obj
@@ -4502,7 +4478,7 @@ lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.obj: lvgl-release-v8.3/src/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.i: lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.i
@@ -4510,7 +4486,7 @@ lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.i: lvgl-release-v8.3/src/ex
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.i
 
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.s: lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.s
@@ -4518,7 +4494,7 @@ lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.s: lvgl-release-v8.3/src/ex
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c.s
 
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.obj: lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.obj
@@ -4526,7 +4502,7 @@ lvgl-release-v8.3/src/extra/widgets/span/lv_span.obj: lvgl-release-v8.3/src/extr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.i: lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.i
@@ -4534,7 +4510,7 @@ lvgl-release-v8.3/src/extra/widgets/span/lv_span.i: lvgl-release-v8.3/src/extra/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.i
 
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.s: lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.s
@@ -4542,7 +4518,7 @@ lvgl-release-v8.3/src/extra/widgets/span/lv_span.s: lvgl-release-v8.3/src/extra/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/span/lv_span.c.s
 
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.obj: lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.obj
@@ -4550,7 +4526,7 @@ lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.obj: lvgl-release-v8.3/sr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.i: lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.i
@@ -4558,7 +4534,7 @@ lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.i: lvgl-release-v8.3/src/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.i
 
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.s: lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.s
@@ -4566,7 +4542,7 @@ lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.s: lvgl-release-v8.3/src/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.c.s
 
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.obj: lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.obj
@@ -4574,7 +4550,7 @@ lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.obj: lvgl-release-v8.3/sr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.i: lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.i
@@ -4582,7 +4558,7 @@ lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.i: lvgl-release-v8.3/src/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.i
 
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.s: lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.s
@@ -4590,7 +4566,7 @@ lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.s: lvgl-release-v8.3/src/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.c.s
 
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.obj: lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.obj
@@ -4598,7 +4574,7 @@ lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.obj: lvgl-release-v8.3/sr
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.i: lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.i
@@ -4606,7 +4582,7 @@ lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.i: lvgl-release-v8.3/src/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.i
 
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.s: lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.s
@@ -4614,7 +4590,7 @@ lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.s: lvgl-release-v8.3/src/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.c.s
 
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.obj: lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.obj
@@ -4622,7 +4598,7 @@ lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.obj: lvgl-release-v8.3/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.i: lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.i
@@ -4630,7 +4606,7 @@ lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.i: lvgl-release-v8.3/sr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.i
 
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.s: lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.s
@@ -4638,7 +4614,7 @@ lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.s: lvgl-release-v8.3/sr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c.s
 
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.obj: lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.obj
@@ -4646,7 +4622,7 @@ lvgl-release-v8.3/src/extra/widgets/win/lv_win.obj: lvgl-release-v8.3/src/extra/
 
 # target to build an object file
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.obj
 .PHONY : lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.obj
 
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.i: lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.i
@@ -4654,7 +4630,7 @@ lvgl-release-v8.3/src/extra/widgets/win/lv_win.i: lvgl-release-v8.3/src/extra/wi
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.i
 .PHONY : lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.i
 
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.s: lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.s
@@ -4662,7 +4638,7 @@ lvgl-release-v8.3/src/extra/widgets/win/lv_win.s: lvgl-release-v8.3/src/extra/wi
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.s
 .PHONY : lvgl-release-v8.3/src/extra/widgets/win/lv_win.c.s
 
 lvgl-release-v8.3/src/font/lv_font.obj: lvgl-release-v8.3/src/font/lv_font.c.obj
@@ -4670,7 +4646,7 @@ lvgl-release-v8.3/src/font/lv_font.obj: lvgl-release-v8.3/src/font/lv_font.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font.c.obj
 
 lvgl-release-v8.3/src/font/lv_font.i: lvgl-release-v8.3/src/font/lv_font.c.i
@@ -4678,7 +4654,7 @@ lvgl-release-v8.3/src/font/lv_font.i: lvgl-release-v8.3/src/font/lv_font.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font.c.i
 
 lvgl-release-v8.3/src/font/lv_font.s: lvgl-release-v8.3/src/font/lv_font.c.s
@@ -4686,7 +4662,7 @@ lvgl-release-v8.3/src/font/lv_font.s: lvgl-release-v8.3/src/font/lv_font.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font.c.s
 
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.obj: lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.obj
@@ -4694,7 +4670,7 @@ lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.obj: lvgl-release-v8
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.i: lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.i
@@ -4702,7 +4678,7 @@ lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.i: lvgl-release-v8.3
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.i
 
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.s: lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.s
@@ -4710,7 +4686,7 @@ lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.s: lvgl-release-v8.3
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c.s
 
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.obj: lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.obj
@@ -4718,7 +4694,7 @@ lvgl-release-v8.3/src/font/lv_font_fmt_txt.obj: lvgl-release-v8.3/src/font/lv_fo
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.i: lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.i
@@ -4726,7 +4702,7 @@ lvgl-release-v8.3/src/font/lv_font_fmt_txt.i: lvgl-release-v8.3/src/font/lv_font
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.i
 
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.s: lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.s
@@ -4734,7 +4710,7 @@ lvgl-release-v8.3/src/font/lv_font_fmt_txt.s: lvgl-release-v8.3/src/font/lv_font
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_fmt_txt.c.s
 
 lvgl-release-v8.3/src/font/lv_font_loader.obj: lvgl-release-v8.3/src/font/lv_font_loader.c.obj
@@ -4742,7 +4718,7 @@ lvgl-release-v8.3/src/font/lv_font_loader.obj: lvgl-release-v8.3/src/font/lv_fon
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_loader.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_loader.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_loader.i: lvgl-release-v8.3/src/font/lv_font_loader.c.i
@@ -4750,7 +4726,7 @@ lvgl-release-v8.3/src/font/lv_font_loader.i: lvgl-release-v8.3/src/font/lv_font_
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_loader.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_loader.c.i
 
 lvgl-release-v8.3/src/font/lv_font_loader.s: lvgl-release-v8.3/src/font/lv_font_loader.c.s
@@ -4758,7 +4734,7 @@ lvgl-release-v8.3/src/font/lv_font_loader.s: lvgl-release-v8.3/src/font/lv_font_
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_loader.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_loader.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_loader.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.obj
@@ -4766,7 +4742,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_10.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.i: lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.i
@@ -4774,7 +4750,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_10.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.s: lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.s
@@ -4782,7 +4758,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_10.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_10.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.obj
@@ -4790,7 +4766,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.i: lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.i
@@ -4798,7 +4774,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.s: lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.s
@@ -4806,7 +4782,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.obj
@@ -4814,7 +4790,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.obj: lvgl-release-v8.3/sr
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.i: lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.i
@@ -4822,7 +4798,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.i: lvgl-release-v8.3/src/
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.s: lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.s
@@ -4830,7 +4806,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.s: lvgl-release-v8.3/src/
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.obj
@@ -4838,7 +4814,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_14.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.i: lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.i
@@ -4846,7 +4822,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_14.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.s: lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.s
@@ -4854,7 +4830,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_14.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_14.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.obj
@@ -4862,7 +4838,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_16.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.i: lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.i
@@ -4870,7 +4846,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_16.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.s: lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.s
@@ -4878,7 +4854,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_16.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_16.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.obj
@@ -4886,7 +4862,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_18.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.i: lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.i
@@ -4894,7 +4870,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_18.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.s: lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.s
@@ -4902,7 +4878,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_18.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_18.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.obj
@@ -4910,7 +4886,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_20.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.i: lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.i
@@ -4918,7 +4894,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_20.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.s: lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.s
@@ -4926,7 +4902,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_20.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_20.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.obj
@@ -4934,7 +4910,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_22.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.i: lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.i
@@ -4942,7 +4918,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_22.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.s: lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.s
@@ -4950,7 +4926,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_22.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_22.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.obj
@@ -4958,7 +4934,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_24.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.i: lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.i
@@ -4966,7 +4942,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_24.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.s: lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.s
@@ -4974,7 +4950,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_24.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_24.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.obj
@@ -4982,7 +4958,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_26.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.i: lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.i
@@ -4990,7 +4966,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_26.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.s: lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.s
@@ -4998,7 +4974,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_26.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_26.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.obj
@@ -5006,7 +4982,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.i: lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.i
@@ -5014,7 +4990,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.s: lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.s
@@ -5022,7 +4998,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.obj
@@ -5030,7 +5006,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.obj: lvgl-release-v8
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.i: lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.i
@@ -5038,7 +5014,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.i: lvgl-release-v8.3
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.s: lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.s
@@ -5046,7 +5022,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.s: lvgl-release-v8.3
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_28_compressed.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.obj
@@ -5054,7 +5030,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_30.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.i: lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.i
@@ -5062,7 +5038,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_30.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.s: lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.s
@@ -5070,7 +5046,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_30.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_30.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.obj
@@ -5078,7 +5054,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_32.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.i: lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.i
@@ -5086,7 +5062,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_32.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.s: lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.s
@@ -5094,7 +5070,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_32.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_32.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.obj
@@ -5102,7 +5078,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_34.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.i: lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.i
@@ -5110,7 +5086,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_34.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.s: lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.s
@@ -5118,7 +5094,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_34.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_34.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.obj
@@ -5126,7 +5102,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_36.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.i: lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.i
@@ -5134,7 +5110,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_36.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.s: lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.s
@@ -5142,7 +5118,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_36.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_36.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.obj
@@ -5150,7 +5126,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_38.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.i: lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.i
@@ -5158,7 +5134,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_38.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.s: lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.s
@@ -5166,7 +5142,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_38.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_38.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.obj
@@ -5174,7 +5150,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_40.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.i: lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.i
@@ -5182,7 +5158,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_40.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.s: lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.s
@@ -5190,7 +5166,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_40.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_40.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.obj
@@ -5198,7 +5174,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_42.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.i: lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.i
@@ -5206,7 +5182,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_42.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.s: lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.s
@@ -5214,7 +5190,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_42.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_42.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.obj
@@ -5222,7 +5198,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_44.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.i: lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.i
@@ -5230,7 +5206,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_44.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.s: lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.s
@@ -5238,7 +5214,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_44.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_44.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.obj
@@ -5246,7 +5222,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_46.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.i: lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.i
@@ -5254,7 +5230,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_46.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.s: lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.s
@@ -5262,7 +5238,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_46.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_46.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.obj
@@ -5270,7 +5246,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_48.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.i: lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.i
@@ -5278,7 +5254,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_48.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.s: lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.s
@@ -5286,7 +5262,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_48.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_48.c.s
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.obj: lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.obj
@@ -5294,7 +5270,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_8.obj: lvgl-release-v8.3/src/font/
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.i: lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.i
@@ -5302,7 +5278,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_8.i: lvgl-release-v8.3/src/font/lv
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.i
 
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.s: lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.s
@@ -5310,7 +5286,7 @@ lvgl-release-v8.3/src/font/lv_font_montserrat_8.s: lvgl-release-v8.3/src/font/lv
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_montserrat_8.c.s
 
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.obj: lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.obj
@@ -5318,7 +5294,7 @@ lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.obj: lvgl-release-v8.3/src/font
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.i: lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.i
@@ -5326,7 +5302,7 @@ lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.i: lvgl-release-v8.3/src/font/l
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.i
 
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.s: lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.s
@@ -5334,7 +5310,7 @@ lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.s: lvgl-release-v8.3/src/font/l
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_simsun_16_cjk.c.s
 
 lvgl-release-v8.3/src/font/lv_font_unscii_16.obj: lvgl-release-v8.3/src/font/lv_font_unscii_16.c.obj
@@ -5342,7 +5318,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_16.obj: lvgl-release-v8.3/src/font/lv_
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_unscii_16.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_16.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_unscii_16.i: lvgl-release-v8.3/src/font/lv_font_unscii_16.c.i
@@ -5350,7 +5326,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_16.i: lvgl-release-v8.3/src/font/lv_fo
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_unscii_16.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_16.c.i
 
 lvgl-release-v8.3/src/font/lv_font_unscii_16.s: lvgl-release-v8.3/src/font/lv_font_unscii_16.c.s
@@ -5358,7 +5334,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_16.s: lvgl-release-v8.3/src/font/lv_fo
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_unscii_16.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_16.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_16.c.s
 
 lvgl-release-v8.3/src/font/lv_font_unscii_8.obj: lvgl-release-v8.3/src/font/lv_font_unscii_8.c.obj
@@ -5366,7 +5342,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_8.obj: lvgl-release-v8.3/src/font/lv_f
 
 # target to build an object file
 lvgl-release-v8.3/src/font/lv_font_unscii_8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.obj
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_8.c.obj
 
 lvgl-release-v8.3/src/font/lv_font_unscii_8.i: lvgl-release-v8.3/src/font/lv_font_unscii_8.c.i
@@ -5374,7 +5350,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_8.i: lvgl-release-v8.3/src/font/lv_fon
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/font/lv_font_unscii_8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.i
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_8.c.i
 
 lvgl-release-v8.3/src/font/lv_font_unscii_8.s: lvgl-release-v8.3/src/font/lv_font_unscii_8.c.s
@@ -5382,7 +5358,7 @@ lvgl-release-v8.3/src/font/lv_font_unscii_8.s: lvgl-release-v8.3/src/font/lv_fon
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/font/lv_font_unscii_8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font_unscii_8.c.s
 .PHONY : lvgl-release-v8.3/src/font/lv_font_unscii_8.c.s
 
 lvgl-release-v8.3/src/hal/lv_hal_disp.obj: lvgl-release-v8.3/src/hal/lv_hal_disp.c.obj
@@ -5390,7 +5366,7 @@ lvgl-release-v8.3/src/hal/lv_hal_disp.obj: lvgl-release-v8.3/src/hal/lv_hal_disp
 
 # target to build an object file
 lvgl-release-v8.3/src/hal/lv_hal_disp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.obj
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_disp.c.obj
 
 lvgl-release-v8.3/src/hal/lv_hal_disp.i: lvgl-release-v8.3/src/hal/lv_hal_disp.c.i
@@ -5398,7 +5374,7 @@ lvgl-release-v8.3/src/hal/lv_hal_disp.i: lvgl-release-v8.3/src/hal/lv_hal_disp.c
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/hal/lv_hal_disp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.i
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_disp.c.i
 
 lvgl-release-v8.3/src/hal/lv_hal_disp.s: lvgl-release-v8.3/src/hal/lv_hal_disp.c.s
@@ -5406,7 +5382,7 @@ lvgl-release-v8.3/src/hal/lv_hal_disp.s: lvgl-release-v8.3/src/hal/lv_hal_disp.c
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/hal/lv_hal_disp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_disp.c.s
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_disp.c.s
 
 lvgl-release-v8.3/src/hal/lv_hal_indev.obj: lvgl-release-v8.3/src/hal/lv_hal_indev.c.obj
@@ -5414,7 +5390,7 @@ lvgl-release-v8.3/src/hal/lv_hal_indev.obj: lvgl-release-v8.3/src/hal/lv_hal_ind
 
 # target to build an object file
 lvgl-release-v8.3/src/hal/lv_hal_indev.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.obj
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_indev.c.obj
 
 lvgl-release-v8.3/src/hal/lv_hal_indev.i: lvgl-release-v8.3/src/hal/lv_hal_indev.c.i
@@ -5422,7 +5398,7 @@ lvgl-release-v8.3/src/hal/lv_hal_indev.i: lvgl-release-v8.3/src/hal/lv_hal_indev
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/hal/lv_hal_indev.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.i
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_indev.c.i
 
 lvgl-release-v8.3/src/hal/lv_hal_indev.s: lvgl-release-v8.3/src/hal/lv_hal_indev.c.s
@@ -5430,7 +5406,7 @@ lvgl-release-v8.3/src/hal/lv_hal_indev.s: lvgl-release-v8.3/src/hal/lv_hal_indev
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/hal/lv_hal_indev.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_indev.c.s
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_indev.c.s
 
 lvgl-release-v8.3/src/hal/lv_hal_tick.obj: lvgl-release-v8.3/src/hal/lv_hal_tick.c.obj
@@ -5438,7 +5414,7 @@ lvgl-release-v8.3/src/hal/lv_hal_tick.obj: lvgl-release-v8.3/src/hal/lv_hal_tick
 
 # target to build an object file
 lvgl-release-v8.3/src/hal/lv_hal_tick.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.obj
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_tick.c.obj
 
 lvgl-release-v8.3/src/hal/lv_hal_tick.i: lvgl-release-v8.3/src/hal/lv_hal_tick.c.i
@@ -5446,7 +5422,7 @@ lvgl-release-v8.3/src/hal/lv_hal_tick.i: lvgl-release-v8.3/src/hal/lv_hal_tick.c
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/hal/lv_hal_tick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.i
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_tick.c.i
 
 lvgl-release-v8.3/src/hal/lv_hal_tick.s: lvgl-release-v8.3/src/hal/lv_hal_tick.c.s
@@ -5454,7 +5430,7 @@ lvgl-release-v8.3/src/hal/lv_hal_tick.s: lvgl-release-v8.3/src/hal/lv_hal_tick.c
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/hal/lv_hal_tick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/hal/lv_hal_tick.c.s
 .PHONY : lvgl-release-v8.3/src/hal/lv_hal_tick.c.s
 
 lvgl-release-v8.3/src/misc/lv_anim.obj: lvgl-release-v8.3/src/misc/lv_anim.c.obj
@@ -5462,7 +5438,7 @@ lvgl-release-v8.3/src/misc/lv_anim.obj: lvgl-release-v8.3/src/misc/lv_anim.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_anim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim.c.obj
 
 lvgl-release-v8.3/src/misc/lv_anim.i: lvgl-release-v8.3/src/misc/lv_anim.c.i
@@ -5470,7 +5446,7 @@ lvgl-release-v8.3/src/misc/lv_anim.i: lvgl-release-v8.3/src/misc/lv_anim.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_anim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim.c.i
 
 lvgl-release-v8.3/src/misc/lv_anim.s: lvgl-release-v8.3/src/misc/lv_anim.c.s
@@ -5478,7 +5454,7 @@ lvgl-release-v8.3/src/misc/lv_anim.s: lvgl-release-v8.3/src/misc/lv_anim.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_anim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim.c.s
 
 lvgl-release-v8.3/src/misc/lv_anim_timeline.obj: lvgl-release-v8.3/src/misc/lv_anim_timeline.c.obj
@@ -5486,7 +5462,7 @@ lvgl-release-v8.3/src/misc/lv_anim_timeline.obj: lvgl-release-v8.3/src/misc/lv_a
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_anim_timeline.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim_timeline.c.obj
 
 lvgl-release-v8.3/src/misc/lv_anim_timeline.i: lvgl-release-v8.3/src/misc/lv_anim_timeline.c.i
@@ -5494,7 +5470,7 @@ lvgl-release-v8.3/src/misc/lv_anim_timeline.i: lvgl-release-v8.3/src/misc/lv_ani
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_anim_timeline.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim_timeline.c.i
 
 lvgl-release-v8.3/src/misc/lv_anim_timeline.s: lvgl-release-v8.3/src/misc/lv_anim_timeline.c.s
@@ -5502,7 +5478,7 @@ lvgl-release-v8.3/src/misc/lv_anim_timeline.s: lvgl-release-v8.3/src/misc/lv_ani
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_anim_timeline.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_anim_timeline.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_anim_timeline.c.s
 
 lvgl-release-v8.3/src/misc/lv_area.obj: lvgl-release-v8.3/src/misc/lv_area.c.obj
@@ -5510,7 +5486,7 @@ lvgl-release-v8.3/src/misc/lv_area.obj: lvgl-release-v8.3/src/misc/lv_area.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_area.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_area.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_area.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_area.c.obj
 
 lvgl-release-v8.3/src/misc/lv_area.i: lvgl-release-v8.3/src/misc/lv_area.c.i
@@ -5518,7 +5494,7 @@ lvgl-release-v8.3/src/misc/lv_area.i: lvgl-release-v8.3/src/misc/lv_area.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_area.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_area.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_area.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_area.c.i
 
 lvgl-release-v8.3/src/misc/lv_area.s: lvgl-release-v8.3/src/misc/lv_area.c.s
@@ -5526,7 +5502,7 @@ lvgl-release-v8.3/src/misc/lv_area.s: lvgl-release-v8.3/src/misc/lv_area.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_area.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_area.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_area.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_area.c.s
 
 lvgl-release-v8.3/src/misc/lv_async.obj: lvgl-release-v8.3/src/misc/lv_async.c.obj
@@ -5534,7 +5510,7 @@ lvgl-release-v8.3/src/misc/lv_async.obj: lvgl-release-v8.3/src/misc/lv_async.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_async.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_async.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_async.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_async.c.obj
 
 lvgl-release-v8.3/src/misc/lv_async.i: lvgl-release-v8.3/src/misc/lv_async.c.i
@@ -5542,7 +5518,7 @@ lvgl-release-v8.3/src/misc/lv_async.i: lvgl-release-v8.3/src/misc/lv_async.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_async.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_async.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_async.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_async.c.i
 
 lvgl-release-v8.3/src/misc/lv_async.s: lvgl-release-v8.3/src/misc/lv_async.c.s
@@ -5550,7 +5526,7 @@ lvgl-release-v8.3/src/misc/lv_async.s: lvgl-release-v8.3/src/misc/lv_async.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_async.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_async.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_async.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_async.c.s
 
 lvgl-release-v8.3/src/misc/lv_bidi.obj: lvgl-release-v8.3/src/misc/lv_bidi.c.obj
@@ -5558,7 +5534,7 @@ lvgl-release-v8.3/src/misc/lv_bidi.obj: lvgl-release-v8.3/src/misc/lv_bidi.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_bidi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_bidi.c.obj
 
 lvgl-release-v8.3/src/misc/lv_bidi.i: lvgl-release-v8.3/src/misc/lv_bidi.c.i
@@ -5566,7 +5542,7 @@ lvgl-release-v8.3/src/misc/lv_bidi.i: lvgl-release-v8.3/src/misc/lv_bidi.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_bidi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_bidi.c.i
 
 lvgl-release-v8.3/src/misc/lv_bidi.s: lvgl-release-v8.3/src/misc/lv_bidi.c.s
@@ -5574,7 +5550,7 @@ lvgl-release-v8.3/src/misc/lv_bidi.s: lvgl-release-v8.3/src/misc/lv_bidi.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_bidi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_bidi.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_bidi.c.s
 
 lvgl-release-v8.3/src/misc/lv_color.obj: lvgl-release-v8.3/src/misc/lv_color.c.obj
@@ -5582,7 +5558,7 @@ lvgl-release-v8.3/src/misc/lv_color.obj: lvgl-release-v8.3/src/misc/lv_color.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_color.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_color.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_color.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_color.c.obj
 
 lvgl-release-v8.3/src/misc/lv_color.i: lvgl-release-v8.3/src/misc/lv_color.c.i
@@ -5590,7 +5566,7 @@ lvgl-release-v8.3/src/misc/lv_color.i: lvgl-release-v8.3/src/misc/lv_color.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_color.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_color.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_color.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_color.c.i
 
 lvgl-release-v8.3/src/misc/lv_color.s: lvgl-release-v8.3/src/misc/lv_color.c.s
@@ -5598,7 +5574,7 @@ lvgl-release-v8.3/src/misc/lv_color.s: lvgl-release-v8.3/src/misc/lv_color.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_color.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_color.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_color.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_color.c.s
 
 lvgl-release-v8.3/src/misc/lv_fs.obj: lvgl-release-v8.3/src/misc/lv_fs.c.obj
@@ -5606,7 +5582,7 @@ lvgl-release-v8.3/src/misc/lv_fs.obj: lvgl-release-v8.3/src/misc/lv_fs.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_fs.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_fs.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_fs.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_fs.c.obj
 
 lvgl-release-v8.3/src/misc/lv_fs.i: lvgl-release-v8.3/src/misc/lv_fs.c.i
@@ -5614,7 +5590,7 @@ lvgl-release-v8.3/src/misc/lv_fs.i: lvgl-release-v8.3/src/misc/lv_fs.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_fs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_fs.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_fs.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_fs.c.i
 
 lvgl-release-v8.3/src/misc/lv_fs.s: lvgl-release-v8.3/src/misc/lv_fs.c.s
@@ -5622,7 +5598,7 @@ lvgl-release-v8.3/src/misc/lv_fs.s: lvgl-release-v8.3/src/misc/lv_fs.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_fs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_fs.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_fs.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_fs.c.s
 
 lvgl-release-v8.3/src/misc/lv_gc.obj: lvgl-release-v8.3/src/misc/lv_gc.c.obj
@@ -5630,7 +5606,7 @@ lvgl-release-v8.3/src/misc/lv_gc.obj: lvgl-release-v8.3/src/misc/lv_gc.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_gc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_gc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_gc.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_gc.c.obj
 
 lvgl-release-v8.3/src/misc/lv_gc.i: lvgl-release-v8.3/src/misc/lv_gc.c.i
@@ -5638,7 +5614,7 @@ lvgl-release-v8.3/src/misc/lv_gc.i: lvgl-release-v8.3/src/misc/lv_gc.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_gc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_gc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_gc.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_gc.c.i
 
 lvgl-release-v8.3/src/misc/lv_gc.s: lvgl-release-v8.3/src/misc/lv_gc.c.s
@@ -5646,7 +5622,7 @@ lvgl-release-v8.3/src/misc/lv_gc.s: lvgl-release-v8.3/src/misc/lv_gc.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_gc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_gc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_gc.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_gc.c.s
 
 lvgl-release-v8.3/src/misc/lv_ll.obj: lvgl-release-v8.3/src/misc/lv_ll.c.obj
@@ -5654,7 +5630,7 @@ lvgl-release-v8.3/src/misc/lv_ll.obj: lvgl-release-v8.3/src/misc/lv_ll.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_ll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_ll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_ll.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_ll.c.obj
 
 lvgl-release-v8.3/src/misc/lv_ll.i: lvgl-release-v8.3/src/misc/lv_ll.c.i
@@ -5662,7 +5638,7 @@ lvgl-release-v8.3/src/misc/lv_ll.i: lvgl-release-v8.3/src/misc/lv_ll.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_ll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_ll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_ll.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_ll.c.i
 
 lvgl-release-v8.3/src/misc/lv_ll.s: lvgl-release-v8.3/src/misc/lv_ll.c.s
@@ -5670,7 +5646,7 @@ lvgl-release-v8.3/src/misc/lv_ll.s: lvgl-release-v8.3/src/misc/lv_ll.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_ll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_ll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_ll.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_ll.c.s
 
 lvgl-release-v8.3/src/misc/lv_log.obj: lvgl-release-v8.3/src/misc/lv_log.c.obj
@@ -5678,7 +5654,7 @@ lvgl-release-v8.3/src/misc/lv_log.obj: lvgl-release-v8.3/src/misc/lv_log.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_log.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_log.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_log.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_log.c.obj
 
 lvgl-release-v8.3/src/misc/lv_log.i: lvgl-release-v8.3/src/misc/lv_log.c.i
@@ -5686,7 +5662,7 @@ lvgl-release-v8.3/src/misc/lv_log.i: lvgl-release-v8.3/src/misc/lv_log.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_log.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_log.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_log.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_log.c.i
 
 lvgl-release-v8.3/src/misc/lv_log.s: lvgl-release-v8.3/src/misc/lv_log.c.s
@@ -5694,7 +5670,7 @@ lvgl-release-v8.3/src/misc/lv_log.s: lvgl-release-v8.3/src/misc/lv_log.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_log.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_log.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_log.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_log.c.s
 
 lvgl-release-v8.3/src/misc/lv_lru.obj: lvgl-release-v8.3/src/misc/lv_lru.c.obj
@@ -5702,7 +5678,7 @@ lvgl-release-v8.3/src/misc/lv_lru.obj: lvgl-release-v8.3/src/misc/lv_lru.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_lru.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_lru.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_lru.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_lru.c.obj
 
 lvgl-release-v8.3/src/misc/lv_lru.i: lvgl-release-v8.3/src/misc/lv_lru.c.i
@@ -5710,7 +5686,7 @@ lvgl-release-v8.3/src/misc/lv_lru.i: lvgl-release-v8.3/src/misc/lv_lru.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_lru.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_lru.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_lru.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_lru.c.i
 
 lvgl-release-v8.3/src/misc/lv_lru.s: lvgl-release-v8.3/src/misc/lv_lru.c.s
@@ -5718,7 +5694,7 @@ lvgl-release-v8.3/src/misc/lv_lru.s: lvgl-release-v8.3/src/misc/lv_lru.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_lru.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_lru.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_lru.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_lru.c.s
 
 lvgl-release-v8.3/src/misc/lv_math.obj: lvgl-release-v8.3/src/misc/lv_math.c.obj
@@ -5726,7 +5702,7 @@ lvgl-release-v8.3/src/misc/lv_math.obj: lvgl-release-v8.3/src/misc/lv_math.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_math.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_math.c.obj
 
 lvgl-release-v8.3/src/misc/lv_math.i: lvgl-release-v8.3/src/misc/lv_math.c.i
@@ -5734,7 +5710,7 @@ lvgl-release-v8.3/src/misc/lv_math.i: lvgl-release-v8.3/src/misc/lv_math.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_math.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_math.c.i
 
 lvgl-release-v8.3/src/misc/lv_math.s: lvgl-release-v8.3/src/misc/lv_math.c.s
@@ -5742,7 +5718,7 @@ lvgl-release-v8.3/src/misc/lv_math.s: lvgl-release-v8.3/src/misc/lv_math.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_math.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_math.c.s
 
 lvgl-release-v8.3/src/misc/lv_mem.obj: lvgl-release-v8.3/src/misc/lv_mem.c.obj
@@ -5750,7 +5726,7 @@ lvgl-release-v8.3/src/misc/lv_mem.obj: lvgl-release-v8.3/src/misc/lv_mem.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_mem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_mem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_mem.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_mem.c.obj
 
 lvgl-release-v8.3/src/misc/lv_mem.i: lvgl-release-v8.3/src/misc/lv_mem.c.i
@@ -5758,7 +5734,7 @@ lvgl-release-v8.3/src/misc/lv_mem.i: lvgl-release-v8.3/src/misc/lv_mem.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_mem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_mem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_mem.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_mem.c.i
 
 lvgl-release-v8.3/src/misc/lv_mem.s: lvgl-release-v8.3/src/misc/lv_mem.c.s
@@ -5766,7 +5742,7 @@ lvgl-release-v8.3/src/misc/lv_mem.s: lvgl-release-v8.3/src/misc/lv_mem.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_mem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_mem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_mem.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_mem.c.s
 
 lvgl-release-v8.3/src/misc/lv_printf.obj: lvgl-release-v8.3/src/misc/lv_printf.c.obj
@@ -5774,7 +5750,7 @@ lvgl-release-v8.3/src/misc/lv_printf.obj: lvgl-release-v8.3/src/misc/lv_printf.c
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_printf.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_printf.c.obj
 
 lvgl-release-v8.3/src/misc/lv_printf.i: lvgl-release-v8.3/src/misc/lv_printf.c.i
@@ -5782,7 +5758,7 @@ lvgl-release-v8.3/src/misc/lv_printf.i: lvgl-release-v8.3/src/misc/lv_printf.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_printf.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_printf.c.i
 
 lvgl-release-v8.3/src/misc/lv_printf.s: lvgl-release-v8.3/src/misc/lv_printf.c.s
@@ -5790,7 +5766,7 @@ lvgl-release-v8.3/src/misc/lv_printf.s: lvgl-release-v8.3/src/misc/lv_printf.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_printf.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_printf.c.s
 
 lvgl-release-v8.3/src/misc/lv_style.obj: lvgl-release-v8.3/src/misc/lv_style.c.obj
@@ -5798,7 +5774,7 @@ lvgl-release-v8.3/src/misc/lv_style.obj: lvgl-release-v8.3/src/misc/lv_style.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_style.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_style.c.obj
 
 lvgl-release-v8.3/src/misc/lv_style.i: lvgl-release-v8.3/src/misc/lv_style.c.i
@@ -5806,7 +5782,7 @@ lvgl-release-v8.3/src/misc/lv_style.i: lvgl-release-v8.3/src/misc/lv_style.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_style.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_style.c.i
 
 lvgl-release-v8.3/src/misc/lv_style.s: lvgl-release-v8.3/src/misc/lv_style.c.s
@@ -5814,7 +5790,7 @@ lvgl-release-v8.3/src/misc/lv_style.s: lvgl-release-v8.3/src/misc/lv_style.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_style.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_style.c.s
 
 lvgl-release-v8.3/src/misc/lv_style_gen.obj: lvgl-release-v8.3/src/misc/lv_style_gen.c.obj
@@ -5822,7 +5798,7 @@ lvgl-release-v8.3/src/misc/lv_style_gen.obj: lvgl-release-v8.3/src/misc/lv_style
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_style_gen.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_style_gen.c.obj
 
 lvgl-release-v8.3/src/misc/lv_style_gen.i: lvgl-release-v8.3/src/misc/lv_style_gen.c.i
@@ -5830,7 +5806,7 @@ lvgl-release-v8.3/src/misc/lv_style_gen.i: lvgl-release-v8.3/src/misc/lv_style_g
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_style_gen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_style_gen.c.i
 
 lvgl-release-v8.3/src/misc/lv_style_gen.s: lvgl-release-v8.3/src/misc/lv_style_gen.c.s
@@ -5838,7 +5814,7 @@ lvgl-release-v8.3/src/misc/lv_style_gen.s: lvgl-release-v8.3/src/misc/lv_style_g
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_style_gen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_style_gen.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_style_gen.c.s
 
 lvgl-release-v8.3/src/misc/lv_templ.obj: lvgl-release-v8.3/src/misc/lv_templ.c.obj
@@ -5846,7 +5822,7 @@ lvgl-release-v8.3/src/misc/lv_templ.obj: lvgl-release-v8.3/src/misc/lv_templ.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_templ.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_templ.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_templ.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_templ.c.obj
 
 lvgl-release-v8.3/src/misc/lv_templ.i: lvgl-release-v8.3/src/misc/lv_templ.c.i
@@ -5854,7 +5830,7 @@ lvgl-release-v8.3/src/misc/lv_templ.i: lvgl-release-v8.3/src/misc/lv_templ.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_templ.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_templ.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_templ.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_templ.c.i
 
 lvgl-release-v8.3/src/misc/lv_templ.s: lvgl-release-v8.3/src/misc/lv_templ.c.s
@@ -5862,7 +5838,7 @@ lvgl-release-v8.3/src/misc/lv_templ.s: lvgl-release-v8.3/src/misc/lv_templ.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_templ.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_templ.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_templ.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_templ.c.s
 
 lvgl-release-v8.3/src/misc/lv_timer.obj: lvgl-release-v8.3/src/misc/lv_timer.c.obj
@@ -5870,7 +5846,7 @@ lvgl-release-v8.3/src/misc/lv_timer.obj: lvgl-release-v8.3/src/misc/lv_timer.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_timer.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_timer.c.obj
 
 lvgl-release-v8.3/src/misc/lv_timer.i: lvgl-release-v8.3/src/misc/lv_timer.c.i
@@ -5878,7 +5854,7 @@ lvgl-release-v8.3/src/misc/lv_timer.i: lvgl-release-v8.3/src/misc/lv_timer.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_timer.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_timer.c.i
 
 lvgl-release-v8.3/src/misc/lv_timer.s: lvgl-release-v8.3/src/misc/lv_timer.c.s
@@ -5886,7 +5862,7 @@ lvgl-release-v8.3/src/misc/lv_timer.s: lvgl-release-v8.3/src/misc/lv_timer.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_timer.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_timer.c.s
 
 lvgl-release-v8.3/src/misc/lv_tlsf.obj: lvgl-release-v8.3/src/misc/lv_tlsf.c.obj
@@ -5894,7 +5870,7 @@ lvgl-release-v8.3/src/misc/lv_tlsf.obj: lvgl-release-v8.3/src/misc/lv_tlsf.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_tlsf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_tlsf.c.obj
 
 lvgl-release-v8.3/src/misc/lv_tlsf.i: lvgl-release-v8.3/src/misc/lv_tlsf.c.i
@@ -5902,7 +5878,7 @@ lvgl-release-v8.3/src/misc/lv_tlsf.i: lvgl-release-v8.3/src/misc/lv_tlsf.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_tlsf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_tlsf.c.i
 
 lvgl-release-v8.3/src/misc/lv_tlsf.s: lvgl-release-v8.3/src/misc/lv_tlsf.c.s
@@ -5910,7 +5886,7 @@ lvgl-release-v8.3/src/misc/lv_tlsf.s: lvgl-release-v8.3/src/misc/lv_tlsf.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_tlsf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_tlsf.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_tlsf.c.s
 
 lvgl-release-v8.3/src/misc/lv_txt.obj: lvgl-release-v8.3/src/misc/lv_txt.c.obj
@@ -5918,7 +5894,7 @@ lvgl-release-v8.3/src/misc/lv_txt.obj: lvgl-release-v8.3/src/misc/lv_txt.c.obj
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_txt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt.c.obj
 
 lvgl-release-v8.3/src/misc/lv_txt.i: lvgl-release-v8.3/src/misc/lv_txt.c.i
@@ -5926,7 +5902,7 @@ lvgl-release-v8.3/src/misc/lv_txt.i: lvgl-release-v8.3/src/misc/lv_txt.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_txt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt.c.i
 
 lvgl-release-v8.3/src/misc/lv_txt.s: lvgl-release-v8.3/src/misc/lv_txt.c.s
@@ -5934,7 +5910,7 @@ lvgl-release-v8.3/src/misc/lv_txt.s: lvgl-release-v8.3/src/misc/lv_txt.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_txt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt.c.s
 
 lvgl-release-v8.3/src/misc/lv_txt_ap.obj: lvgl-release-v8.3/src/misc/lv_txt_ap.c.obj
@@ -5942,7 +5918,7 @@ lvgl-release-v8.3/src/misc/lv_txt_ap.obj: lvgl-release-v8.3/src/misc/lv_txt_ap.c
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_txt_ap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt_ap.c.obj
 
 lvgl-release-v8.3/src/misc/lv_txt_ap.i: lvgl-release-v8.3/src/misc/lv_txt_ap.c.i
@@ -5950,7 +5926,7 @@ lvgl-release-v8.3/src/misc/lv_txt_ap.i: lvgl-release-v8.3/src/misc/lv_txt_ap.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_txt_ap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt_ap.c.i
 
 lvgl-release-v8.3/src/misc/lv_txt_ap.s: lvgl-release-v8.3/src/misc/lv_txt_ap.c.s
@@ -5958,7 +5934,7 @@ lvgl-release-v8.3/src/misc/lv_txt_ap.s: lvgl-release-v8.3/src/misc/lv_txt_ap.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_txt_ap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_txt_ap.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_txt_ap.c.s
 
 lvgl-release-v8.3/src/misc/lv_utils.obj: lvgl-release-v8.3/src/misc/lv_utils.c.obj
@@ -5966,7 +5942,7 @@ lvgl-release-v8.3/src/misc/lv_utils.obj: lvgl-release-v8.3/src/misc/lv_utils.c.o
 
 # target to build an object file
 lvgl-release-v8.3/src/misc/lv_utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_utils.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_utils.c.obj
 .PHONY : lvgl-release-v8.3/src/misc/lv_utils.c.obj
 
 lvgl-release-v8.3/src/misc/lv_utils.i: lvgl-release-v8.3/src/misc/lv_utils.c.i
@@ -5974,7 +5950,7 @@ lvgl-release-v8.3/src/misc/lv_utils.i: lvgl-release-v8.3/src/misc/lv_utils.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/misc/lv_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_utils.c.i
 .PHONY : lvgl-release-v8.3/src/misc/lv_utils.c.i
 
 lvgl-release-v8.3/src/misc/lv_utils.s: lvgl-release-v8.3/src/misc/lv_utils.c.s
@@ -5982,7 +5958,7 @@ lvgl-release-v8.3/src/misc/lv_utils.s: lvgl-release-v8.3/src/misc/lv_utils.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/misc/lv_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/misc/lv_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/misc/lv_utils.c.s
 .PHONY : lvgl-release-v8.3/src/misc/lv_utils.c.s
 
 lvgl-release-v8.3/src/widgets/lv_arc.obj: lvgl-release-v8.3/src/widgets/lv_arc.c.obj
@@ -5990,7 +5966,7 @@ lvgl-release-v8.3/src/widgets/lv_arc.obj: lvgl-release-v8.3/src/widgets/lv_arc.c
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_arc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_arc.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_arc.i: lvgl-release-v8.3/src/widgets/lv_arc.c.i
@@ -5998,7 +5974,7 @@ lvgl-release-v8.3/src/widgets/lv_arc.i: lvgl-release-v8.3/src/widgets/lv_arc.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_arc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_arc.c.i
 
 lvgl-release-v8.3/src/widgets/lv_arc.s: lvgl-release-v8.3/src/widgets/lv_arc.c.s
@@ -6006,7 +5982,7 @@ lvgl-release-v8.3/src/widgets/lv_arc.s: lvgl-release-v8.3/src/widgets/lv_arc.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_arc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_arc.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_arc.c.s
 
 lvgl-release-v8.3/src/widgets/lv_bar.obj: lvgl-release-v8.3/src/widgets/lv_bar.c.obj
@@ -6014,7 +5990,7 @@ lvgl-release-v8.3/src/widgets/lv_bar.obj: lvgl-release-v8.3/src/widgets/lv_bar.c
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_bar.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_bar.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_bar.i: lvgl-release-v8.3/src/widgets/lv_bar.c.i
@@ -6022,7 +5998,7 @@ lvgl-release-v8.3/src/widgets/lv_bar.i: lvgl-release-v8.3/src/widgets/lv_bar.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_bar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_bar.c.i
 
 lvgl-release-v8.3/src/widgets/lv_bar.s: lvgl-release-v8.3/src/widgets/lv_bar.c.s
@@ -6030,7 +6006,7 @@ lvgl-release-v8.3/src/widgets/lv_bar.s: lvgl-release-v8.3/src/widgets/lv_bar.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_bar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_bar.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_bar.c.s
 
 lvgl-release-v8.3/src/widgets/lv_btn.obj: lvgl-release-v8.3/src/widgets/lv_btn.c.obj
@@ -6038,7 +6014,7 @@ lvgl-release-v8.3/src/widgets/lv_btn.obj: lvgl-release-v8.3/src/widgets/lv_btn.c
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_btn.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btn.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_btn.i: lvgl-release-v8.3/src/widgets/lv_btn.c.i
@@ -6046,7 +6022,7 @@ lvgl-release-v8.3/src/widgets/lv_btn.i: lvgl-release-v8.3/src/widgets/lv_btn.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_btn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btn.c.i
 
 lvgl-release-v8.3/src/widgets/lv_btn.s: lvgl-release-v8.3/src/widgets/lv_btn.c.s
@@ -6054,7 +6030,7 @@ lvgl-release-v8.3/src/widgets/lv_btn.s: lvgl-release-v8.3/src/widgets/lv_btn.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_btn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btn.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btn.c.s
 
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.obj: lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.obj
@@ -6062,7 +6038,7 @@ lvgl-release-v8.3/src/widgets/lv_btnmatrix.obj: lvgl-release-v8.3/src/widgets/lv
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.i: lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.i
@@ -6070,7 +6046,7 @@ lvgl-release-v8.3/src/widgets/lv_btnmatrix.i: lvgl-release-v8.3/src/widgets/lv_b
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.i
 
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.s: lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.s
@@ -6078,7 +6054,7 @@ lvgl-release-v8.3/src/widgets/lv_btnmatrix.s: lvgl-release-v8.3/src/widgets/lv_b
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_btnmatrix.c.s
 
 lvgl-release-v8.3/src/widgets/lv_canvas.obj: lvgl-release-v8.3/src/widgets/lv_canvas.c.obj
@@ -6086,7 +6062,7 @@ lvgl-release-v8.3/src/widgets/lv_canvas.obj: lvgl-release-v8.3/src/widgets/lv_ca
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_canvas.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_canvas.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_canvas.i: lvgl-release-v8.3/src/widgets/lv_canvas.c.i
@@ -6094,7 +6070,7 @@ lvgl-release-v8.3/src/widgets/lv_canvas.i: lvgl-release-v8.3/src/widgets/lv_canv
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_canvas.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_canvas.c.i
 
 lvgl-release-v8.3/src/widgets/lv_canvas.s: lvgl-release-v8.3/src/widgets/lv_canvas.c.s
@@ -6102,7 +6078,7 @@ lvgl-release-v8.3/src/widgets/lv_canvas.s: lvgl-release-v8.3/src/widgets/lv_canv
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_canvas.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_canvas.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_canvas.c.s
 
 lvgl-release-v8.3/src/widgets/lv_checkbox.obj: lvgl-release-v8.3/src/widgets/lv_checkbox.c.obj
@@ -6110,7 +6086,7 @@ lvgl-release-v8.3/src/widgets/lv_checkbox.obj: lvgl-release-v8.3/src/widgets/lv_
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_checkbox.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_checkbox.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_checkbox.i: lvgl-release-v8.3/src/widgets/lv_checkbox.c.i
@@ -6118,7 +6094,7 @@ lvgl-release-v8.3/src/widgets/lv_checkbox.i: lvgl-release-v8.3/src/widgets/lv_ch
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_checkbox.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_checkbox.c.i
 
 lvgl-release-v8.3/src/widgets/lv_checkbox.s: lvgl-release-v8.3/src/widgets/lv_checkbox.c.s
@@ -6126,7 +6102,7 @@ lvgl-release-v8.3/src/widgets/lv_checkbox.s: lvgl-release-v8.3/src/widgets/lv_ch
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_checkbox.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_checkbox.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_checkbox.c.s
 
 lvgl-release-v8.3/src/widgets/lv_dropdown.obj: lvgl-release-v8.3/src/widgets/lv_dropdown.c.obj
@@ -6134,7 +6110,7 @@ lvgl-release-v8.3/src/widgets/lv_dropdown.obj: lvgl-release-v8.3/src/widgets/lv_
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_dropdown.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_dropdown.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_dropdown.i: lvgl-release-v8.3/src/widgets/lv_dropdown.c.i
@@ -6142,7 +6118,7 @@ lvgl-release-v8.3/src/widgets/lv_dropdown.i: lvgl-release-v8.3/src/widgets/lv_dr
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_dropdown.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_dropdown.c.i
 
 lvgl-release-v8.3/src/widgets/lv_dropdown.s: lvgl-release-v8.3/src/widgets/lv_dropdown.c.s
@@ -6150,7 +6126,7 @@ lvgl-release-v8.3/src/widgets/lv_dropdown.s: lvgl-release-v8.3/src/widgets/lv_dr
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_dropdown.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_dropdown.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_dropdown.c.s
 
 lvgl-release-v8.3/src/widgets/lv_img.obj: lvgl-release-v8.3/src/widgets/lv_img.c.obj
@@ -6158,7 +6134,7 @@ lvgl-release-v8.3/src/widgets/lv_img.obj: lvgl-release-v8.3/src/widgets/lv_img.c
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_img.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_img.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_img.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_img.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_img.i: lvgl-release-v8.3/src/widgets/lv_img.c.i
@@ -6166,7 +6142,7 @@ lvgl-release-v8.3/src/widgets/lv_img.i: lvgl-release-v8.3/src/widgets/lv_img.c.i
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_img.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_img.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_img.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_img.c.i
 
 lvgl-release-v8.3/src/widgets/lv_img.s: lvgl-release-v8.3/src/widgets/lv_img.c.s
@@ -6174,7 +6150,7 @@ lvgl-release-v8.3/src/widgets/lv_img.s: lvgl-release-v8.3/src/widgets/lv_img.c.s
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_img.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_img.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_img.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_img.c.s
 
 lvgl-release-v8.3/src/widgets/lv_label.obj: lvgl-release-v8.3/src/widgets/lv_label.c.obj
@@ -6182,7 +6158,7 @@ lvgl-release-v8.3/src/widgets/lv_label.obj: lvgl-release-v8.3/src/widgets/lv_lab
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_label.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_label.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_label.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_label.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_label.i: lvgl-release-v8.3/src/widgets/lv_label.c.i
@@ -6190,7 +6166,7 @@ lvgl-release-v8.3/src/widgets/lv_label.i: lvgl-release-v8.3/src/widgets/lv_label
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_label.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_label.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_label.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_label.c.i
 
 lvgl-release-v8.3/src/widgets/lv_label.s: lvgl-release-v8.3/src/widgets/lv_label.c.s
@@ -6198,7 +6174,7 @@ lvgl-release-v8.3/src/widgets/lv_label.s: lvgl-release-v8.3/src/widgets/lv_label
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_label.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_label.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_label.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_label.c.s
 
 lvgl-release-v8.3/src/widgets/lv_line.obj: lvgl-release-v8.3/src/widgets/lv_line.c.obj
@@ -6206,7 +6182,7 @@ lvgl-release-v8.3/src/widgets/lv_line.obj: lvgl-release-v8.3/src/widgets/lv_line
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_line.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_line.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_line.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_line.i: lvgl-release-v8.3/src/widgets/lv_line.c.i
@@ -6214,7 +6190,7 @@ lvgl-release-v8.3/src/widgets/lv_line.i: lvgl-release-v8.3/src/widgets/lv_line.c
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_line.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_line.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_line.c.i
 
 lvgl-release-v8.3/src/widgets/lv_line.s: lvgl-release-v8.3/src/widgets/lv_line.c.s
@@ -6222,7 +6198,7 @@ lvgl-release-v8.3/src/widgets/lv_line.s: lvgl-release-v8.3/src/widgets/lv_line.c
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_line.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_line.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_line.c.s
 
 lvgl-release-v8.3/src/widgets/lv_objx_templ.obj: lvgl-release-v8.3/src/widgets/lv_objx_templ.c.obj
@@ -6230,7 +6206,7 @@ lvgl-release-v8.3/src/widgets/lv_objx_templ.obj: lvgl-release-v8.3/src/widgets/l
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_objx_templ.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_objx_templ.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_objx_templ.i: lvgl-release-v8.3/src/widgets/lv_objx_templ.c.i
@@ -6238,7 +6214,7 @@ lvgl-release-v8.3/src/widgets/lv_objx_templ.i: lvgl-release-v8.3/src/widgets/lv_
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_objx_templ.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_objx_templ.c.i
 
 lvgl-release-v8.3/src/widgets/lv_objx_templ.s: lvgl-release-v8.3/src/widgets/lv_objx_templ.c.s
@@ -6246,7 +6222,7 @@ lvgl-release-v8.3/src/widgets/lv_objx_templ.s: lvgl-release-v8.3/src/widgets/lv_
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_objx_templ.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_objx_templ.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_objx_templ.c.s
 
 lvgl-release-v8.3/src/widgets/lv_roller.obj: lvgl-release-v8.3/src/widgets/lv_roller.c.obj
@@ -6254,7 +6230,7 @@ lvgl-release-v8.3/src/widgets/lv_roller.obj: lvgl-release-v8.3/src/widgets/lv_ro
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_roller.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_roller.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_roller.i: lvgl-release-v8.3/src/widgets/lv_roller.c.i
@@ -6262,7 +6238,7 @@ lvgl-release-v8.3/src/widgets/lv_roller.i: lvgl-release-v8.3/src/widgets/lv_roll
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_roller.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_roller.c.i
 
 lvgl-release-v8.3/src/widgets/lv_roller.s: lvgl-release-v8.3/src/widgets/lv_roller.c.s
@@ -6270,7 +6246,7 @@ lvgl-release-v8.3/src/widgets/lv_roller.s: lvgl-release-v8.3/src/widgets/lv_roll
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_roller.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_roller.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_roller.c.s
 
 lvgl-release-v8.3/src/widgets/lv_slider.obj: lvgl-release-v8.3/src/widgets/lv_slider.c.obj
@@ -6278,7 +6254,7 @@ lvgl-release-v8.3/src/widgets/lv_slider.obj: lvgl-release-v8.3/src/widgets/lv_sl
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_slider.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_slider.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_slider.i: lvgl-release-v8.3/src/widgets/lv_slider.c.i
@@ -6286,7 +6262,7 @@ lvgl-release-v8.3/src/widgets/lv_slider.i: lvgl-release-v8.3/src/widgets/lv_slid
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_slider.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_slider.c.i
 
 lvgl-release-v8.3/src/widgets/lv_slider.s: lvgl-release-v8.3/src/widgets/lv_slider.c.s
@@ -6294,7 +6270,7 @@ lvgl-release-v8.3/src/widgets/lv_slider.s: lvgl-release-v8.3/src/widgets/lv_slid
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_slider.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_slider.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_slider.c.s
 
 lvgl-release-v8.3/src/widgets/lv_switch.obj: lvgl-release-v8.3/src/widgets/lv_switch.c.obj
@@ -6302,7 +6278,7 @@ lvgl-release-v8.3/src/widgets/lv_switch.obj: lvgl-release-v8.3/src/widgets/lv_sw
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_switch.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_switch.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_switch.i: lvgl-release-v8.3/src/widgets/lv_switch.c.i
@@ -6310,7 +6286,7 @@ lvgl-release-v8.3/src/widgets/lv_switch.i: lvgl-release-v8.3/src/widgets/lv_swit
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_switch.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_switch.c.i
 
 lvgl-release-v8.3/src/widgets/lv_switch.s: lvgl-release-v8.3/src/widgets/lv_switch.c.s
@@ -6318,7 +6294,7 @@ lvgl-release-v8.3/src/widgets/lv_switch.s: lvgl-release-v8.3/src/widgets/lv_swit
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_switch.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_switch.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_switch.c.s
 
 lvgl-release-v8.3/src/widgets/lv_table.obj: lvgl-release-v8.3/src/widgets/lv_table.c.obj
@@ -6326,7 +6302,7 @@ lvgl-release-v8.3/src/widgets/lv_table.obj: lvgl-release-v8.3/src/widgets/lv_tab
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_table.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_table.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_table.i: lvgl-release-v8.3/src/widgets/lv_table.c.i
@@ -6334,7 +6310,7 @@ lvgl-release-v8.3/src/widgets/lv_table.i: lvgl-release-v8.3/src/widgets/lv_table
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_table.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_table.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_table.c.i
 
 lvgl-release-v8.3/src/widgets/lv_table.s: lvgl-release-v8.3/src/widgets/lv_table.c.s
@@ -6342,7 +6318,7 @@ lvgl-release-v8.3/src/widgets/lv_table.s: lvgl-release-v8.3/src/widgets/lv_table
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_table.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_table.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_table.c.s
 
 lvgl-release-v8.3/src/widgets/lv_textarea.obj: lvgl-release-v8.3/src/widgets/lv_textarea.c.obj
@@ -6350,7 +6326,7 @@ lvgl-release-v8.3/src/widgets/lv_textarea.obj: lvgl-release-v8.3/src/widgets/lv_
 
 # target to build an object file
 lvgl-release-v8.3/src/widgets/lv_textarea.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj
 .PHONY : lvgl-release-v8.3/src/widgets/lv_textarea.c.obj
 
 lvgl-release-v8.3/src/widgets/lv_textarea.i: lvgl-release-v8.3/src/widgets/lv_textarea.c.i
@@ -6358,7 +6334,7 @@ lvgl-release-v8.3/src/widgets/lv_textarea.i: lvgl-release-v8.3/src/widgets/lv_te
 
 # target to preprocess a source file
 lvgl-release-v8.3/src/widgets/lv_textarea.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.i
 .PHONY : lvgl-release-v8.3/src/widgets/lv_textarea.c.i
 
 lvgl-release-v8.3/src/widgets/lv_textarea.s: lvgl-release-v8.3/src/widgets/lv_textarea.c.s
@@ -6366,7 +6342,7 @@ lvgl-release-v8.3/src/widgets/lv_textarea.s: lvgl-release-v8.3/src/widgets/lv_te
 
 # target to generate assembly for a file
 lvgl-release-v8.3/src/widgets/lv_textarea.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.s
 .PHONY : lvgl-release-v8.3/src/widgets/lv_textarea.c.s
 
 main.obj: main.c.obj
@@ -6374,7 +6350,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -6382,7 +6358,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -6390,32 +6366,32 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/main.c.s
 .PHONY : main.c.s
 
-usb_descriptors.obj: usb_descriptors.c.obj
-.PHONY : usb_descriptors.obj
+ssd1306_drv/ssd1306_drv.obj: ssd1306_drv/ssd1306_drv.c.obj
+.PHONY : ssd1306_drv/ssd1306_drv.obj
 
 # target to build an object file
-usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/usb_descriptors.c.obj
-.PHONY : usb_descriptors.c.obj
+ssd1306_drv/ssd1306_drv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj
+.PHONY : ssd1306_drv/ssd1306_drv.c.obj
 
-usb_descriptors.i: usb_descriptors.c.i
-.PHONY : usb_descriptors.i
+ssd1306_drv/ssd1306_drv.i: ssd1306_drv/ssd1306_drv.c.i
+.PHONY : ssd1306_drv/ssd1306_drv.i
 
 # target to preprocess a source file
-usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/usb_descriptors.c.i
-.PHONY : usb_descriptors.c.i
+ssd1306_drv/ssd1306_drv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.i
+.PHONY : ssd1306_drv/ssd1306_drv.c.i
 
-usb_descriptors.s: usb_descriptors.c.s
-.PHONY : usb_descriptors.s
+ssd1306_drv/ssd1306_drv.s: ssd1306_drv/ssd1306_drv.c.s
+.PHONY : ssd1306_drv/ssd1306_drv.s
 
 # target to generate assembly for a file
-usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_hid_mouse.dir/build.make CMakeFiles/rp2040_hid_mouse.dir/usb_descriptors.c.s
-.PHONY : usb_descriptors.c.s
+ssd1306_drv/ssd1306_drv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.s
+.PHONY : ssd1306_drv/ssd1306_drv.c.s
 
 # Help Target
 help:
@@ -6433,10 +6409,7 @@ help:
 	@echo "... tinyusb_pico_pio_usb_usb_rx_pio_h"
 	@echo "... tinyusb_pico_pio_usb_usb_tx_pio_h"
 	@echo "... bs2_default"
-	@echo "... rp2040_hid_mouse"
-	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
-	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
-	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
+	@echo "... rp2040_oled"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -7204,9 +7177,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... usb_descriptors.obj"
-	@echo "... usb_descriptors.i"
-	@echo "... usb_descriptors.s"
+	@echo "... ssd1306_drv/ssd1306_drv.obj"
+	@echo "... ssd1306_drv/ssd1306_drv.i"
+	@echo "... ssd1306_drv/ssd1306_drv.s"
 .PHONY : help
 
 

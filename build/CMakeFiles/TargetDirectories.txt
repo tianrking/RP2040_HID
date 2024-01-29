@@ -1,4 +1,4 @@
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/rp2040_hid_mouse.dir
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/rp2040_oled.dir
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/ELF2UF2Build.dir
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/edit_cache.dir
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/rebuild_cache.dir

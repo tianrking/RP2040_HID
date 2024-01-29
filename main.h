@@ -3,6 +3,7 @@
 
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
+#include "ssd1306_drv.h"
 
 // 定义SSD1306的SPI引脚
 #define PIN_MISO 4
