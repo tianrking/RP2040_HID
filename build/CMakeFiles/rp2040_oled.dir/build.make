@@ -2785,10 +2785,66 @@ CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.s"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.c -o CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.s
 
+CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
+CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c
+CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj -MF CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj.d -o CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj -c /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c
+
+CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.i"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c > CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.i
+
+CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.s"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c -o CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.s
+
+CMakeFiles/rp2040_oled.dir/ui.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
+CMakeFiles/rp2040_oled.dir/ui.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c
+CMakeFiles/rp2040_oled.dir/ui.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building C object CMakeFiles/rp2040_oled.dir/ui.c.obj"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/ui.c.obj -MF CMakeFiles/rp2040_oled.dir/ui.c.obj.d -o CMakeFiles/rp2040_oled.dir/ui.c.obj -c /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c
+
+CMakeFiles/rp2040_oled.dir/ui.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2040_oled.dir/ui.c.i"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c > CMakeFiles/rp2040_oled.dir/ui.c.i
+
+CMakeFiles/rp2040_oled.dir/ui.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2040_oled.dir/ui.c.s"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c -o CMakeFiles/rp2040_oled.dir/ui.c.s
+
+CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
+CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c
+CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building C object CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj -MF CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj.d -o CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj -c /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c
+
+CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.i"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c > CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.i
+
+CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.s"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c -o CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.s
+
+CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
+CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c
+CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building C object CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj -MF CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj.d -o CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj -c /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c
+
+CMakeFiles/rp2040_oled.dir/ui_helpers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2040_oled.dir/ui_helpers.c.i"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c > CMakeFiles/rp2040_oled.dir/ui_helpers.c.i
+
+CMakeFiles/rp2040_oled.dir/ui_helpers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2040_oled.dir/ui_helpers.c.s"
+	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c -o CMakeFiles/rp2040_oled.dir/ui_helpers.c.s
+
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_195) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -2802,7 +2858,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdli
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_196) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -2816,7 +2872,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpi
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_197) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -2830,7 +2886,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/pla
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_198) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -2844,7 +2900,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/cl
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_199) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -2858,7 +2914,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/syn
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_200) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -2871,7 +2927,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_201) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -2885,7 +2941,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_202) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -2899,7 +2955,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/sem.c.s: cm
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_203) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -2913,7 +2969,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_204) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -2927,7 +2983,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/mutex.c.s: 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_205) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -2941,7 +2997,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_sync/critical_se
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_206) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -2955,7 +3011,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.s: c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_207) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -2969,7 +3025,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_hel
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_208) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -2983,7 +3039,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/ti
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_209) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -2997,7 +3053,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/datetime.c.
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_210) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -3011,7 +3067,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/pheap.c.s: 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj: /home/w0x7ce/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_211) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj -c /home/w0x7ce/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -3025,7 +3081,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.s: 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_212) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -3039,7 +3095,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/uar
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_213) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -3053,7 +3109,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_214) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -3067,7 +3123,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/pll.
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_215) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -3081,7 +3137,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_vreg/vre
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_216) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -3095,7 +3151,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_217) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -3108,7 +3164,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/xos
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_218) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -3122,7 +3178,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_divider/
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_219) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -3136,7 +3192,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runt
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_220) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -3149,7 +3205,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_printf/print
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_221) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -3163,7 +3219,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bit_ops/bit_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_222) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -3176,7 +3232,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/boot
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_223) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -3189,7 +3245,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_divider/divi
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_224) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -3203,7 +3259,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/doubl
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_225) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -3217,7 +3273,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/doubl
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_226) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -3230,7 +3286,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/doubl
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_227) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -3243,7 +3299,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_double/doubl
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_228) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -3256,7 +3312,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_int64_ops/pi
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_229) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -3270,7 +3326,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_230) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -3284,7 +3340,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_231) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -3297,7 +3353,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_232) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -3311,7 +3367,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_233) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -3324,7 +3380,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/pico_
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_234) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -3337,7 +3393,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_mem_ops/mem_
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_235) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building ASM object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -3351,7 +3407,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_lin
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_236) "Building CXX object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building CXX object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -3365,7 +3421,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_lin
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_237) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -3379,7 +3435,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_lin
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_238) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -3393,7 +3449,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_239) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -3407,7 +3463,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/re
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_240) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -3421,7 +3477,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/st
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_241) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -3435,7 +3491,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/st
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_242) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -3449,7 +3505,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_unique_id/un
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_243) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -3463,7 +3519,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/fl
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_244) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -3477,7 +3533,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspber
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_245) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -3491,7 +3547,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspber
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_246) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -3505,7 +3561,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_247) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -3519,7 +3575,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd_cont
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_248) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -3533,7 +3589,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audi
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_249) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -3547,7 +3603,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_de
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_250) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -3561,7 +3617,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_de
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_251) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -3575,7 +3631,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_252) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -3589,7 +3645,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/hid/hid_de
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_253) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -3603,7 +3659,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/midi/midi_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_254) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -3617,7 +3673,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/msc/msc_de
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_255) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -3631,7 +3687,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rn
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_256) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -3645,7 +3701,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ncm_de
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_257) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -3659,7 +3715,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/usbtmc/usb
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_258) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -3673,7 +3729,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/vendor/ven
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_259) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -3687,7 +3743,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/vide
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_260) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i: cmake_force
@@ -3701,7 +3757,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/portable/raspber
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_261) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -3715,7 +3771,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_262) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_266) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -3729,7 +3785,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/common/tusb_fifo
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_263) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_267) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -3743,7 +3799,7 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_u
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/rp2040_oled.dir/flags.make
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/rp2040_oled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_264) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_268) "Building C object CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -c /home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -3950,6 +4006,10 @@ rp2040_oled_OBJECTS = \
 "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj" \
 "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj" \
 "CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj" \
+"CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj" \
+"CMakeFiles/rp2040_oled.dir/ui.c.obj" \
+"CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj" \
+"CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj" \
 "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
@@ -4218,6 +4278,10 @@ rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_swi
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj
+rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj
+rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/ui.c.obj
+rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj
+rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -4291,7 +4355,7 @@ rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/build.make
 rp2040_oled.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 rp2040_oled.elf: CMakeFiles/rp2040_oled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_265) "Linking CXX executable rp2040_oled.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_269) "Linking CXX executable rp2040_oled.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rp2040_oled.dir/link.txt --verbose=$(VERBOSE)
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objcopy -Oihex /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/rp2040_oled.elf rp2040_oled.hex
 	/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/rp2040_oled.elf rp2040_oled.bin

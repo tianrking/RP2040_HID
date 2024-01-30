@@ -22,11 +22,18 @@ endif()
 # 添加LVGL源文件
 file(GLOB_RECURSE LVGL_SOURCES ${LVGL_PATH}/src/*.c)
 
+SET(SOURCES screens/ui_Screen1.c
+    ui.c
+    components/ui_comp_hook.c
+    ui_helpers.c
+    )
+
 # 创建可执行文件
 add_executable(rp2040_oled
     main.c
     ${LVGL_SOURCES} # 添加LVGL源文件
     ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv/ssd1306_drv.c
+    ${SOURCES}
 )
 
 # Make sure TinyUSB can find tusb_config.h

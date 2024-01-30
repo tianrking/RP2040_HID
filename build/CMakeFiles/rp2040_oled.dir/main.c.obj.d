@@ -56,6 +56,7 @@ CMakeFiles/rp2040_oled.dir/main.c.obj: \
  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
+ /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/../lv_conf_internal.h \
@@ -293,4 +294,6 @@ CMakeFiles/rp2040_oled.dir/main.c.obj: \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/../../../lvgl.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/../../../lvgl.h \
+ /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
+ /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/math.h

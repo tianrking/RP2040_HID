@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj"
+  "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
   "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
@@ -514,8 +516,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/main.c.obj"
   "CMakeFiles/rp2040_oled.dir/main.c.obj.d"
+  "CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj"
+  "CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj"
   "CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj.d"
+  "CMakeFiles/rp2040_oled.dir/ui.c.obj"
+  "CMakeFiles/rp2040_oled.dir/ui.c.obj.d"
+  "CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj"
+  "CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj.d"
   "rp2040_oled.elf"
   "rp2040_oled.pdb"
 )

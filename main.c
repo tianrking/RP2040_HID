@@ -35,8 +35,8 @@ int main()
     const uint32_t update_period_ms = 500; // 更新周期，单位为毫秒
     uint32_t counter = 0; // 计数器
 
-    // sleep_ms(2000); // 假设等待2秒
-    lv_obj_del(label);
+     sleep_ms(4000); // 假设等待2秒
+    //lv_obj_del(label);
      // 创建圆形
     lv_obj_t * circle = lv_obj_create(lv_scr_act());
     lv_obj_set_size(circle, 20, 20);
@@ -47,6 +47,9 @@ int main()
     const int center_x = OLED_WIDTH / 2 - 15;
     const int center_y = OLED_HEIGHT / 2 - 7;
     double angle = 0.0;
+
+    ui_init();
+    ui_Screen1_screen_init();
     while (true) {
         // // 更新LVGL
         // lv_tick_inc(20); // 更新时间，5ms为例

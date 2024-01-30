@@ -233,6 +233,30 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+components/ui_comp_hook.obj: components/ui_comp_hook.c.obj
+.PHONY : components/ui_comp_hook.obj
+
+# target to build an object file
+components/ui_comp_hook.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj
+.PHONY : components/ui_comp_hook.c.obj
+
+components/ui_comp_hook.i: components/ui_comp_hook.c.i
+.PHONY : components/ui_comp_hook.i
+
+# target to preprocess a source file
+components/ui_comp_hook.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.i
+.PHONY : components/ui_comp_hook.c.i
+
+components/ui_comp_hook.s: components/ui_comp_hook.c.s
+.PHONY : components/ui_comp_hook.s
+
+# target to generate assembly for a file
+components/ui_comp_hook.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.s
+.PHONY : components/ui_comp_hook.c.s
+
 home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
@@ -6369,6 +6393,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/main.c.s
 .PHONY : main.c.s
 
+screens/ui_Screen1.obj: screens/ui_Screen1.c.obj
+.PHONY : screens/ui_Screen1.obj
+
+# target to build an object file
+screens/ui_Screen1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj
+.PHONY : screens/ui_Screen1.c.obj
+
+screens/ui_Screen1.i: screens/ui_Screen1.c.i
+.PHONY : screens/ui_Screen1.i
+
+# target to preprocess a source file
+screens/ui_Screen1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.i
+.PHONY : screens/ui_Screen1.c.i
+
+screens/ui_Screen1.s: screens/ui_Screen1.c.s
+.PHONY : screens/ui_Screen1.s
+
+# target to generate assembly for a file
+screens/ui_Screen1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.s
+.PHONY : screens/ui_Screen1.c.s
+
 ssd1306_drv/ssd1306_drv.obj: ssd1306_drv/ssd1306_drv.c.obj
 .PHONY : ssd1306_drv/ssd1306_drv.obj
 
@@ -6393,6 +6441,54 @@ ssd1306_drv/ssd1306_drv.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.s
 .PHONY : ssd1306_drv/ssd1306_drv.c.s
 
+ui.obj: ui.c.obj
+.PHONY : ui.obj
+
+# target to build an object file
+ui.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui.c.obj
+.PHONY : ui.c.obj
+
+ui.i: ui.c.i
+.PHONY : ui.i
+
+# target to preprocess a source file
+ui.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui.c.i
+.PHONY : ui.c.i
+
+ui.s: ui.c.s
+.PHONY : ui.s
+
+# target to generate assembly for a file
+ui.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui.c.s
+.PHONY : ui.c.s
+
+ui_helpers.obj: ui_helpers.c.obj
+.PHONY : ui_helpers.obj
+
+# target to build an object file
+ui_helpers.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj
+.PHONY : ui_helpers.c.obj
+
+ui_helpers.i: ui_helpers.c.i
+.PHONY : ui_helpers.i
+
+# target to preprocess a source file
+ui_helpers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui_helpers.c.i
+.PHONY : ui_helpers.c.i
+
+ui_helpers.s: ui_helpers.c.s
+.PHONY : ui_helpers.s
+
+# target to generate assembly for a file
+ui_helpers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/ui_helpers.c.s
+.PHONY : ui_helpers.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -6410,6 +6506,9 @@ help:
 	@echo "... tinyusb_pico_pio_usb_usb_tx_pio_h"
 	@echo "... bs2_default"
 	@echo "... rp2040_oled"
+	@echo "... components/ui_comp_hook.obj"
+	@echo "... components/ui_comp_hook.i"
+	@echo "... components/ui_comp_hook.s"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -7177,9 +7276,18 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... screens/ui_Screen1.obj"
+	@echo "... screens/ui_Screen1.i"
+	@echo "... screens/ui_Screen1.s"
 	@echo "... ssd1306_drv/ssd1306_drv.obj"
 	@echo "... ssd1306_drv/ssd1306_drv.i"
 	@echo "... ssd1306_drv/ssd1306_drv.s"
+	@echo "... ui.obj"
+	@echo "... ui.i"
+	@echo "... ui.s"
+	@echo "... ui_helpers.obj"
+	@echo "... ui_helpers.i"
+	@echo "... ui_helpers.s"
 .PHONY : help
 
 

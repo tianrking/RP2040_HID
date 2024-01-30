@@ -27,6 +27,25 @@ target_include_directories(rp2040_hid_mouse PUBLIC
 
 4. Define the display and input drivers by configuring `lv_conf.h`
 
+
+
+## Squareline Export
+
+1. export
+2. CMakelist  to  CMKBAK.txt
+3. modify the file
+
+```c
+ui.c:25:6
+///////////////////// TEST LVGL SETTINGS ////////////////////
+// #if LV_COLOR_DEPTH != 8
+//     #error "LV_COLOR_DEPTH should be 8bit to match SquareLine Studio's settings"
+// #endif
+// #if LV_COLOR_16_SWAP !=0
+//     #error "LV_COLOR_16_SWAP should be 0 to match SquareLine Studio's settings"
+// #endif
+```
+
 ## Features
 
 - Simulate mouse motion and clicks over USB
