@@ -45,6 +45,12 @@ ui.c:25:6
 //     #error "LV_COLOR_16_SWAP should be 0 to match SquareLine Studio's settings"
 // #endif
 ```
+SPI drive
+SCL-GP6
+SDA-GP7
+RES-GP9
+DC-GP8
+CS-GP5
 
 ## Features
 
