@@ -56,6 +56,7 @@ CMakeFiles/rp2040_oled.dir/main.c.obj: \
  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
+ /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \

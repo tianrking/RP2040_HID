@@ -4,23 +4,37 @@
 // LVGL的显示和刷新回调函数
 static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p);
 
+#define OLED_HEIGHT_240 240
+#define OLED_WIDTH_240 240
+
+static lv_disp_drv_t disp_drv;
+static lv_indev_drv_t indev_drv;
+static lv_indev_t indev;
+static lv_obj_t *scr;
 int main()
 {
     stdio_init_all();
     init_spi();
-    ssd1306_init();
+    //ssd1306_init();
+    GC9A01_init();
+
+    // while (1==1)
+    // {
+    //     /* code */
+    // }
+    
     lv_init();
 
     // 创建显示缓冲区
     static lv_disp_draw_buf_t draw_buf;
-    static lv_color_t buf[OLED_WIDTH * 10]; // 缓冲区大小可以根据需要调整
-    lv_disp_draw_buf_init(&draw_buf, buf, NULL, OLED_WIDTH * 10);
+    static lv_color_t buf[OLED_WIDTH_240 * 10]; // 缓冲区大小可以根据需要调整
+    lv_disp_draw_buf_init(&draw_buf, buf, NULL, OLED_WIDTH_240 * 10);
 
     // 创建显示驱动
     static lv_disp_drv_t disp_drv;
     lv_disp_drv_init(&disp_drv);
-    disp_drv.hor_res = OLED_WIDTH;
-    disp_drv.ver_res = OLED_HEIGHT;
+    disp_drv.hor_res = OLED_WIDTH_240;
+    disp_drv.ver_res = OLED_HEIGHT_240;
     disp_drv.flush_cb = lvgl_display_flush_cb;
     disp_drv.draw_buf = &draw_buf;
     lv_disp_drv_register(&disp_drv);
@@ -35,7 +49,7 @@ int main()
     const uint32_t update_period_ms = 500; // 更新周期，单位为毫秒
     uint32_t counter = 0; // 计数器
 
-     sleep_ms(4000); // 假设等待2秒
+    sleep_ms(4000); // 假设等待2秒
     //lv_obj_del(label);
      // 创建圆形
     lv_obj_t * circle = lv_obj_create(lv_scr_act());
@@ -44,8 +58,8 @@ int main()
     lv_obj_set_style_radius(circle, LV_RADIUS_CIRCLE, 0);
 
     const int radius = 20; // 移动半径
-    const int center_x = OLED_WIDTH / 2 - 15;
-    const int center_y = OLED_HEIGHT / 2 - 7;
+    const int center_x = OLED_WIDTH_240 / 2 - 15;
+    const int center_y = OLED_HEIGHT_240 / 2 - 7;
     double angle = 0.0;
 
     ui_init();
@@ -107,14 +121,28 @@ int main()
 //     lv_disp_flush_ready(disp_drv); // 告诉LVGL数据已经刷新完毕
 // }
 
-static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p) {
-    for (int y = area->y1; y <= area->y2; y++) {
-        for (int x = area->x1; x <= area->x2; x++) {
-            ssd1306_draw_point(x, y, color_p->full);
-            color_p++;
-        }
-    }
+// static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p) {
+//     for (int y = area->y1; y <= area->y2; y++) {
+//         for (int x = area->x1; x <= area->x2; x++) {
+//             ssd1306_draw_point(x, y, color_p->full);
+//             color_p++;
+//         }
+//     }
 
-    ssd1306_refresh_gram(); // 刷新OLED显示
+//     ssd1306_refresh_gram(); // 刷新OLED显示
+//     lv_disp_flush_ready(disp_drv); // 告诉LVGL数据已经刷新完毕
+// }
+
+
+static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p) {
+    // 计算区域大小
+    int32_t size = lv_area_get_width(area) * lv_area_get_height(area);
+
+    // 首先，设置地址窗口
+    GC9A01_set_address_window(area->x1, area->y1, area->x2, area->y2);
+
+    // 发送像素数据
+    GC9A01_write_continue((uint8_t *)color_p, size * 2); // 假设LVGL颜色深度为16位
+
     lv_disp_flush_ready(disp_drv); // 告诉LVGL数据已经刷新完毕
 }

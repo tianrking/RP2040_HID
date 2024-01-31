@@ -77,6 +77,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv"
   "/home/w0x7ce/pico-sdk/src/common/pico_stdlib/include"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/w0x7ce/pico-sdk/src/common/pico_base/include"
@@ -127,6 +128,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.c" "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj.d"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c" "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj.d"
   "/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"

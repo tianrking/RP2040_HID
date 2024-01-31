@@ -33,6 +33,7 @@ add_executable(rp2040_oled
     main.c
     ${LVGL_SOURCES} # 添加LVGL源文件
     ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv/ssd1306_drv.c
+    ${CMAKE_CURRENT_LIST_DIR}/GC9A01_drv/GC9A01_drv.c
     ${SOURCES}
 )
 
@@ -43,6 +44,7 @@ target_include_directories(rp2040_oled PUBLIC
     ${LVGL_PATH} # 添加LVGL的根目录
     ${LVGL_PATH}/src # 添加LVGL的src目录
     ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv
+    ${CMAKE_CURRENT_LIST_DIR}/GC9A01_drv/
 )
 
 # In addition to pico_stdlib required for common PicoSDK functionality, add dependency on tinyusb_device

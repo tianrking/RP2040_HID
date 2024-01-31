@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj"
+  "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj"
   "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj.d"
   "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"

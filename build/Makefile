@@ -233,6 +233,30 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+GC9A01_drv/GC9A01_drv.obj: GC9A01_drv/GC9A01_drv.c.obj
+.PHONY : GC9A01_drv/GC9A01_drv.obj
+
+# target to build an object file
+GC9A01_drv/GC9A01_drv.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj
+.PHONY : GC9A01_drv/GC9A01_drv.c.obj
+
+GC9A01_drv/GC9A01_drv.i: GC9A01_drv/GC9A01_drv.c.i
+.PHONY : GC9A01_drv/GC9A01_drv.i
+
+# target to preprocess a source file
+GC9A01_drv/GC9A01_drv.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.i
+.PHONY : GC9A01_drv/GC9A01_drv.c.i
+
+GC9A01_drv/GC9A01_drv.s: GC9A01_drv/GC9A01_drv.c.s
+.PHONY : GC9A01_drv/GC9A01_drv.s
+
+# target to generate assembly for a file
+GC9A01_drv/GC9A01_drv.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.s
+.PHONY : GC9A01_drv/GC9A01_drv.c.s
+
 components/ui_comp_hook.obj: components/ui_comp_hook.c.obj
 .PHONY : components/ui_comp_hook.obj
 
@@ -6506,6 +6530,9 @@ help:
 	@echo "... tinyusb_pico_pio_usb_usb_tx_pio_h"
 	@echo "... bs2_default"
 	@echo "... rp2040_oled"
+	@echo "... GC9A01_drv/GC9A01_drv.obj"
+	@echo "... GC9A01_drv/GC9A01_drv.i"
+	@echo "... GC9A01_drv/GC9A01_drv.s"
 	@echo "... components/ui_comp_hook.obj"
 	@echo "... components/ui_comp_hook.i"
 	@echo "... components/ui_comp_hook.s"
