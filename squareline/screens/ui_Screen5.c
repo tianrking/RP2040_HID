@@ -10,12 +10,12 @@ void ui_Screen5_screen_init(void)
     ui_Screen5 = lv_obj_create(NULL);
     lv_obj_clear_flag(ui_Screen5, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Arc4 = lv_arc_create(ui_Screen5);
-    lv_obj_set_width(ui_Arc4, 150);
-    lv_obj_set_height(ui_Arc4, 150);
-    lv_obj_set_x(ui_Arc4, -12);
-    lv_obj_set_y(ui_Arc4, -20);
-    lv_obj_set_align(ui_Arc4, LV_ALIGN_CENTER);
+    // ui_Arc4 = lv_arc_create(ui_Screen5);
+    // lv_obj_set_width(ui_Arc4, 150);
+    // lv_obj_set_height(ui_Arc4, 150);
+    // lv_obj_set_x(ui_Arc4, -12);
+    // lv_obj_set_y(ui_Arc4, -20);
+    // lv_obj_set_align(ui_Arc4, LV_ALIGN_CENTER);
 
 
     ui_Spinner3 = lv_spinner_create(ui_Screen5, 1000, 90);
@@ -30,3 +30,4 @@ void ui_Screen5_screen_init(void)
 
 
 }
+

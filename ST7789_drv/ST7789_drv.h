@@ -34,6 +34,10 @@ void ST7735_InitReg(void);
 void ST7735_Init(uint8_t Scan_dir);
 void ST7735_Clear(uint16_t Color) ;
 
+void ST7735_dma_write_byte(bool command, uint8_t byte);
+void ST7735_dma_init_spi(void);
+void ST7735_dma_send(const uint8_t *data, size_t len);
+
 #define HORIZONTAL 0
 #define VERTICAL   1
 #define ST7735_WIDTH 240

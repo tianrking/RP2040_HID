@@ -3,10 +3,17 @@
 #include "math.h"
 #include "time.h"
 #include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
+
 // LVGL的显示和刷新回调函数
 static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p);
 static void timer_switch_screen(lv_timer_t *timer) ;
 // static void chart_update_cb(lv_timer_t *timer) ;
+static void update_fps_label(lv_obj_t *label);
+static void update_chart(lv_timer_t * timer) ;
+
+static void create_console(void) ;
 
 // extern lv_obj_t * ui_Chart1;
 // extern lv_chart_series_t * ui_Chart2_series_1 ;
@@ -33,8 +40,11 @@ int main()
      // 初始化屏幕
     ST7735_init_spi();  // 初始化SPI
     ST7735_Init(0); // 初始化屏幕
+
     ST7735_Clear(0x001F); // 清屏为blue色
     ST7735_Clear(0x07E0); // 清屏为green
+
+    //sleep_ms(5000);
 
     lv_init();
 
@@ -59,11 +69,18 @@ int main()
     // 创建定时器
     lv_timer_create(timer_switch_screen, 5000, NULL); // 每5秒切换一次视窗
 
+    lv_obj_t *fps_label = lv_label_create(ui_Screen5);
+    lv_label_set_text(fps_label, "FPS: --");
+    lv_obj_align(fps_label, LV_ALIGN_BOTTOM_RIGHT, -10, -10); // 定位到右下角
+    create_console();
+
     while (true) {
     
         lv_tick_inc(5);
         lv_timer_handler();
 
+        update_fps_label(fps_label);
+        
         sleep_ms(5);
     }
 
@@ -94,11 +111,62 @@ static void lvgl_display_flush_cb(lv_disp_drv_t *disp_drv, const lv_area_t *area
 
 static void timer_switch_screen(lv_timer_t *timer) {
     static bool toggle = true;
-    if (toggle) {
-        lv_scr_load(ui_Screen1);
-    } else {
-        lv_scr_load(ui_Screen5);
-    }
+    // if (toggle) {
+    //     lv_scr_load(ui_Screen1);
+    // } else {
+    //     lv_scr_load(ui_Screen5);
+    // }
+    lv_scr_load(ui_Screen5);
     toggle = !toggle;
 }
 
+static void update_fps_label(lv_obj_t *label) {
+    static uint32_t last_tick = 0;
+    static uint32_t frame_count = 0;
+
+    frame_count++;
+    uint32_t current_tick = lv_tick_get();
+    if (current_tick - last_tick >= 1000) { // 每秒更新一次
+        char fps_text[16];
+        snprintf(fps_text, sizeof(fps_text), "FPS: %d", frame_count);
+        lv_label_set_text(label, fps_text);
+        frame_count = 0;
+        last_tick = current_tick;
+    }
+}
+
+
+void create_console(void) {
+    // 创建一个屏幕大小的容器
+
+    lv_obj_t *console = lv_chart_create(ui_Screen5);
+    lv_obj_set_width(console, 210);
+    lv_obj_set_height(console, 130);
+    lv_obj_set_x(console, 3);
+    lv_obj_set_y(console, 5);
+    //lv_obj_set_align(console, LV_ALIGN_CENTER);
+    lv_chart_set_type(console, LV_CHART_TYPE_LINE);
+    lv_chart_set_axis_tick(console, LV_CHART_AXIS_PRIMARY_X, 10, 5, 5, 2, true, 50);
+    lv_chart_set_axis_tick(console, LV_CHART_AXIS_PRIMARY_Y, 10, 5, 5, 2, true, 50);
+    lv_chart_set_axis_tick(console, LV_CHART_AXIS_SECONDARY_Y, 10, 5, 5, 2, true, 25);
+    lv_chart_series_t * gg = lv_chart_add_series(console, lv_color_hex(0x808080),
+                                                                 LV_CHART_AXIS_PRIMARY_Y);
+    static lv_coord_t gg_arrag[] = { 0, 10, 20, 40, 80, 80, 40, 20, 10, 0 };
+    lv_chart_set_ext_y_array(console, gg, gg_arrag);
+
+    lv_timer_t * timer = lv_timer_create(update_chart, 100, console);  // 每1000毫秒更新一次
+
+
+}
+
+
+// 更新图表数据的函数
+void update_chart(lv_timer_t * timer) {
+    // 获取图表对象和数据数组
+    lv_obj_t * chart = timer->user_data;
+    lv_chart_series_t * ser = lv_chart_get_series_next(chart, NULL);
+
+    // 添加一个新的随机数到数组末尾
+    lv_coord_t new_value = rand() % 100;  // 假设数据范围为0到99
+    lv_chart_set_next_value(chart, ser, new_value);
+}
