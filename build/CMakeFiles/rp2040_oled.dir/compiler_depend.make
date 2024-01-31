@@ -3,6 +3,7 @@
 
 CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.c \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
@@ -218,10 +219,10 @@ CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj: /home/w0x7ce/Desktop/LVG
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
@@ -284,7 +285,292 @@ CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj: /home/w0x7ce/Desktop/LVG
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 
-CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c
+CMakeFiles/rp2040_oled.dir/ST7789_drv/ST7789_drv.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.c \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.h \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+  /home/w0x7ce/pico-sdk/src/boards/include/boards/pico.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/config.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c \
   generated/pico_base/pico/config_autogen.h \
@@ -1669,6 +1955,50 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/c
   /home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+
+CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+  /home/w0x7ce/pico-sdk/src/boards/include/boards/pico.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/config.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  /home/w0x7ce/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
 
 CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c \
@@ -27137,6 +27467,7 @@ CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj: /hom
 
 CMakeFiles/rp2040_oled.dir/main.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.c \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
@@ -27352,32 +27683,48 @@ CMakeFiles/rp2040_oled.dir/main.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/time.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/types.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/math.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/select.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/time.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
@@ -27419,7 +27766,9 @@ CMakeFiles/rp2040_oled.dir/main.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 
-CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c \
+CMakeFiles/rp2040_oled.dir/squareline/components/ui_comp_hook.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/components/ui_comp_hook.c
+
+CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen1.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen1.c \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
@@ -27632,9 +27981,732 @@ CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: /home/w0x7ce/Desktop/LVGL/0
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen5.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen5.c \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/rp2040_oled.dir/squareline/ui.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.c \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/rp2040_oled.dir/squareline/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.c \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
@@ -27662,6 +28734,7 @@ CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj: /home/w0x7ce/Desktop/LVGL/0
 
 CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.c \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
@@ -27877,10 +28950,10 @@ CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj: /home/w0x7ce/Desktop/L
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h \
+  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h \
   /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
@@ -27943,488 +29016,10 @@ CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj: /home/w0x7ce/Desktop/L
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 
-CMakeFiles/rp2040_oled.dir/ui.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
-CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_event.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_style_gen.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_refr.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_theme.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/grid/lv_grid.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/lv_layouts.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/gif/lv_gif.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/lv_libs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lv_png.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/lv_qrcode.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/rlottie/lv_rlottie.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/sjpg/lv_sjpg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/imgfont/lv_imgfont.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/lv_others.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/basic/lv_theme_basic.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/default/lv_theme_default.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/lv_themes.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/themes/mono/lv_theme_mono.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/colorwheel/lv_colorwheel.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/list/lv_list.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/lv_widgets.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/menu/lv_menu.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/span/lv_span.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinbox/lv_spinbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/spinner/lv_spinner.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lvgl.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/win/lv_win.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_loader.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_assert.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style_gen.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_arc.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_layer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_line.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_mask.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_triangle.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_cache.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_pos.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_style.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_dither.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/sw/lv_draw_sw_gradient.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_disp.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_api_map.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim_timeline.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_log.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_math.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_timer.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_types.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_internal.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_txt.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_arc.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_bar.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btn.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_btnmatrix.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_checkbox.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_label.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h \
-  /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.c:
 
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen5.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.c:
 
@@ -28474,8 +29069,6 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_color.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.c:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_tick.c:
@@ -28490,9 +29083,9 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_48.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c:
 
 /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico.h:
 
@@ -28522,12 +29115,6 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 
-/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c:
-
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
 
 /home/w0x7ce/pico-sdk/src/common/pico_sync/include/pico/mutex.h:
@@ -28537,6 +29124,10 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/osal/osal.h:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio/stdio.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_buf.c:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h:
 
@@ -28563,6 +29154,16 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c:
+
+/home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
+
+/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_transform.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/fragment/lv_fragment.c:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
 
@@ -28602,7 +29203,9 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
 
-/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c:
+
+/home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/lv_extra.h:
 
@@ -28615,6 +29218,10 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
 
 /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/config.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.h:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
 
@@ -28654,14 +29261,6 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/inttypes.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_utils.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lodepng.h:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
-
-/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/unistd.h:
-
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_switch.h:
@@ -28670,33 +29269,19 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/chart/lv_chart.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h:
-
-/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.h:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.c:
+
+/home/w0x7ce/pico-sdk/lib/tinyusb/src/tusb.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_ll.h:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
 
@@ -28738,11 +29323,11 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/fsdrv/lv_fsdrv.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.h:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/snapshot/lv_snapshot.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/bmp/lv_bmp.h:
+
+/home/w0x7ce/pico-sdk/src/common/pico_time/timeout_helper.c:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
 
@@ -28758,6 +29343,8 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/imgbtn/lv_imgbtn.h:
 
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.c:
+
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
@@ -28766,13 +29353,15 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/monkey/lv_monkey.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_slider.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/keyboard/lv_keyboard.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_tree.h:
 
@@ -28788,10 +29377,6 @@ CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj: /home/w0x7ce/Desktop/LVGL/0.96OLED_
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_18.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_anim.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_area.h:
@@ -28803,8 +29388,6 @@ generated/pico_base/pico/version.h:
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev_scroll.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_events.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h:
 
@@ -28848,19 +29431,35 @@ generated/pico_base/pico/version.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/msg/lv_msg.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/ime/lv_ime_pinyin.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/meter/lv_meter.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_fmt_txt.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_canvas.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h:
+/home/w0x7ce/pico-sdk/src/rp2_common/pico_runtime/runtime.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c:
+/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_events.h:
+
+/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h:
 
@@ -28880,9 +29479,23 @@ generated/pico_base/pico/version.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_group.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/ffmpeg/lv_ffmpeg.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_mem.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_line.h:
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/led/lv_led.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/lv_conf_kconfig.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/hal/lv_hal_indev.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_bidi.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_roller.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tileview/lv_tileview.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev.h:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
 
 generated/pico_base/pico/config_autogen.h:
 
@@ -28920,10 +29533,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/class/video/video_device.c:
 
-/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_dropdown.h:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_scroll.c:
@@ -28950,6 +29559,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
 
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/components/ui_comp_hook.c:
+
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/math.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.h:
@@ -28961,8 +29572,6 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
-
-/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h:
 
@@ -28983,6 +29592,8 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_fs.h:
 
 /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/types.h:
+
+/home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/tabview/lv_tabview.h:
 
@@ -29006,9 +29617,9 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c:
-
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_timer/timer.c:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
 
 /home/w0x7ce/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
 
@@ -29041,6 +29652,14 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_printf.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_label.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_utils.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/png/lodepng.h:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
+
+/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/unistd.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/misc/lv_async.h:
 
@@ -29092,9 +29711,9 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_12_subpx.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_buf.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_img.h:
 
@@ -29110,9 +29729,9 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_line.h:
 
-/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h:
+/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/syslimits.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c:
+/home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h:
 
@@ -29123,6 +29742,8 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/select.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/msgbox/lv_msgbox.c:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen1.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/freetype/lv_freetype.h:
 
@@ -29162,9 +29783,13 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
 
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.h:
+
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c:
 
@@ -29173,8 +29798,6 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/spi.c:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-/home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
 
@@ -29208,8 +29831,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c:
-
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_dejavu_16_persian_hebrew.c:
@@ -29221,8 +29842,6 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
 
 /home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/float.h:
 
@@ -29260,8 +29879,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_46.c:
-
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h:
 
 /home/w0x7ce/pico-sdk/lib/tinyusb/src/device/usbd.h:
@@ -29273,6 +29890,8 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/time.h:
+
+/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/times.h:
 
@@ -29310,10 +29929,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/cstdlib:
 
-/home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_40.c:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.c:
 
 /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/c++/13.2.1/pstl/pstl_config.h:
@@ -29350,14 +29965,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/layouts/flex/lv_flex.c:
 
-/home/w0x7ce/pico-sdk/src/common/pico_sync/lock_core.c:
-
-/home/w0x7ce/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/others/gridnav/lv_gridnav.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_34.c:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_img_decoder.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_disp.c:
@@ -29371,6 +29978,8 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/tiny_ttf/lv_tiny_ttf.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_indev_scroll.h:
+
+/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/core/lv_obj_class.c:
 
@@ -29438,8 +30047,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_blend.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c:
-
 /home/w0x7ce/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_draw_vglite_rect.c:
@@ -29453,6 +30060,8 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/lv_draw_rect.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/vglite/lv_vglite_utils.c:
+
+/home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
 
 /home/w0x7ce/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
 
@@ -29572,8 +30181,6 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/animimg/lv_animimg.c:
 
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar.c:
-
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_arrow.c:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/widgets/calendar/lv_calendar_header_dropdown.c:
@@ -29613,5 +30220,3 @@ generated/pico_base/pico/config_autogen.h:
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/draw/nxp/pxp/lv_draw_pxp_blend.h:
 
 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_36.c:
-
-/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font_montserrat_38.c:

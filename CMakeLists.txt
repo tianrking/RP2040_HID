@@ -22,10 +22,11 @@ endif()
 # 添加LVGL源文件
 file(GLOB_RECURSE LVGL_SOURCES ${LVGL_PATH}/src/*.c)
 
-SET(SOURCES screens/ui_Screen1.c
-    ui.c
-    components/ui_comp_hook.c
-    ui_helpers.c
+SET(SOURCES squareline/screens/ui_Screen1.c
+    squareline/screens/ui_Screen5.c
+    squareline/ui.c
+    squareline/components/ui_comp_hook.c
+    squareline/ui_helpers.c
     )
 
 # 创建可执行文件
@@ -34,6 +35,7 @@ add_executable(rp2040_oled
     ${LVGL_SOURCES} # 添加LVGL源文件
     ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv/ssd1306_drv.c
     ${CMAKE_CURRENT_LIST_DIR}/GC9A01_drv/GC9A01_drv.c
+    ${CMAKE_CURRENT_LIST_DIR}/ST7789_drv/ST7789_drv.c
     ${SOURCES}
 )
 
@@ -43,8 +45,10 @@ target_include_directories(rp2040_oled PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}
     ${LVGL_PATH} # 添加LVGL的根目录
     ${LVGL_PATH}/src # 添加LVGL的src目录
-    ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv
+    ${CMAKE_CURRENT_LIST_DIR}/ssd1306_drv/
     ${CMAKE_CURRENT_LIST_DIR}/GC9A01_drv/
+    ${CMAKE_CURRENT_LIST_DIR}/ST7789_drv/
+    ${CMAKE_CURRENT_LIST_DIR}/squareline/
 )
 
 # In addition to pico_stdlib required for common PicoSDK functionality, add dependency on tinyusb_device
@@ -53,6 +57,7 @@ target_link_libraries(rp2040_oled PUBLIC
 	pico_stdlib 
 	pico_unique_id 
     hardware_spi
+    hardware_dma
 	)
 
 # Uncomment this line to enable fix for Errata RP2040-E5 (the fix requires use of GPIO 15)

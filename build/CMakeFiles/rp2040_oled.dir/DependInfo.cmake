@@ -78,6 +78,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline"
   "/home/w0x7ce/pico-sdk/src/common/pico_stdlib/include"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/w0x7ce/pico-sdk/src/common/pico_base/include"
@@ -124,12 +126,13 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/w0x7ce/pico-sdk/lib/tinyusb/hw"
   "/home/w0x7ce/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_spi/include"
+  "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/GC9A01_drv/GC9A01_drv.c" "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/GC9A01_drv/GC9A01_drv.c.obj.d"
-  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/components/ui_comp_hook.c" "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/components/ui_comp_hook.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ST7789_drv/ST7789_drv.c" "CMakeFiles/rp2040_oled.dir/ST7789_drv/ST7789_drv.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/ST7789_drv/ST7789_drv.c.obj.d"
   "/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
@@ -160,6 +163,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_util/queue.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
+  "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
@@ -381,10 +385,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_table.c" "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_table.c.obj.d"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/widgets/lv_textarea.c" "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/widgets/lv_textarea.c.obj.d"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/main.c" "CMakeFiles/rp2040_oled.dir/main.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/main.c.obj.d"
-  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/screens/ui_Screen1.c" "CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/screens/ui_Screen1.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/components/ui_comp_hook.c" "CMakeFiles/rp2040_oled.dir/squareline/components/ui_comp_hook.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/squareline/components/ui_comp_hook.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen1.c" "CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen1.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen1.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/screens/ui_Screen5.c" "CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen5.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen5.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui.c" "CMakeFiles/rp2040_oled.dir/squareline/ui.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/squareline/ui.c.obj.d"
+  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/squareline/ui_helpers.c" "CMakeFiles/rp2040_oled.dir/squareline/ui_helpers.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/squareline/ui_helpers.c.obj.d"
   "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ssd1306_drv/ssd1306_drv.c" "CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/ssd1306_drv/ssd1306_drv.c.obj.d"
-  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui.c" "CMakeFiles/rp2040_oled.dir/ui.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/ui.c.obj.d"
-  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/ui_helpers.c" "CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj" "gcc" "CMakeFiles/rp2040_oled.dir/ui_helpers.c.obj.d"
   "/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 
