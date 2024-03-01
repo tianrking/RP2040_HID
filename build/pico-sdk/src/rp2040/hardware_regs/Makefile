@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040
+CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build
+CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2040/hardware_regs//CMakeFiles/progress.marks
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles 0
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2040/hardware_regs//CMakeFiles/progress.marks
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/clean
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/preinstall
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/preinstall
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/hardware_regs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

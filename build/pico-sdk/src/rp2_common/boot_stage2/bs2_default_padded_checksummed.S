@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

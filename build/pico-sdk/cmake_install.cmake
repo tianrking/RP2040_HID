@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

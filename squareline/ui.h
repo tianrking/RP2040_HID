@@ -29,6 +29,13 @@ extern lv_obj_t * ui_Spinner3;
 extern lv_obj_t * ui____initial_actions0;
 
 
+// SCREEEN: ui_Screen9
+void ui_Screen9_screen_init(void);
+void lv_ex_img_1(void);
+extern lv_obj_t * ui_Screen9;
+
+
+
 
 
 void ui_init(void);

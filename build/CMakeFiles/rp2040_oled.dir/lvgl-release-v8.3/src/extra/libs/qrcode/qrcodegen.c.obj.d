@@ -1,5 +1,5 @@
 CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.obj: \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/limits.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/limits.h \
@@ -25,16 +25,16 @@ CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.c.o
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/strings.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/string.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/qrcodegen.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_assert.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/../lv_conf_internal.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/../lv_conf_kconfig.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_log.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_types.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_mem.h
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_assert.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/../lv_conf_internal.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/../lv_conf_kconfig.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/lv_conf.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_log.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_types.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/extra/libs/qrcode/../../../misc/lv_mem.h

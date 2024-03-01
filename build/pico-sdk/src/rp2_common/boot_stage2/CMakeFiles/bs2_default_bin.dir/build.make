@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040
+CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build
+CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/progr
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2 && /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2 && /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_de
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040 /home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2 /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/w0x7ce/Desktop/LVGL/240_240_ST7789 /home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2 /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2 /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 

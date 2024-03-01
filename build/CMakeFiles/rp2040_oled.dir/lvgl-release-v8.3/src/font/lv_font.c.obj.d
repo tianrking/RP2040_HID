@@ -1,7 +1,7 @@
 CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font.c.obj: \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.c \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_font.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../lv_conf_internal.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/lv_font.c \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/lv_font.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../lv_conf_internal.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
@@ -9,19 +9,19 @@ CMakeFiles/rp2040_oled.dir/lvgl-release-v8.3/src/font/lv_font.c.obj: \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../lv_conf_kconfig.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/lv_conf.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../lv_conf_kconfig.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/lv_conf.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/lv_symbol_def.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_area.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/../lv_conf_internal.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_utils.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_log.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_types.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_assert.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_log.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/lvgl-release-v8.3/src/font/../misc/lv_mem.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/lv_symbol_def.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_area.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/../lv_conf_internal.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_utils.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_log.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_types.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_assert.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_log.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/lvgl-release-v8.3/src/font/../misc/lv_mem.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/string.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \

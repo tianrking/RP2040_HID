@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/CMakeLists.txt"
-  "CMakeFiles/3.28.1/CMakeASMCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeSystem.cmake"
+  "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/CMakeLists.txt"
+  "CMakeFiles/3.28.3/CMakeASMCompiler.cmake"
+  "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/tinyusb/pioasm/tmp/PioasmBuild-mkdirs.cmake"
   "/home/w0x7ce/pico-sdk/CMakeLists.txt"

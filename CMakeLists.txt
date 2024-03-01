@@ -27,6 +27,8 @@ SET(SOURCES squareline/screens/ui_Screen1.c
     squareline/ui.c
     squareline/components/ui_comp_hook.c
     squareline/ui_helpers.c
+    squareline/screens/ui_Screen9.c
+    media/logo.c
     )
 
 # 创建可执行文件

@@ -4,7 +4,7 @@
 # compile ASM with /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc
 ASM_DEFINES = -DPICO_BOARD=\"pico\" -DPICO_BUILD=1 -DPICO_NO_HARDWARE=0 -DPICO_ON_DEVICE=1
 
-ASM_INCLUDES = -I/home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2/asminclude -I/home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include -I/home/w0x7ce/pico-sdk/src/rp2_common/hardware_base/include -I/home/w0x7ce/pico-sdk/src/common/pico_base/include -I/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/generated/pico_base -I/home/w0x7ce/pico-sdk/src/boards/include -I/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include -I/home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2/include
+ASM_INCLUDES = -I/home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2/asminclude -I/home/w0x7ce/pico-sdk/src/rp2040/hardware_regs/include -I/home/w0x7ce/pico-sdk/src/rp2_common/hardware_base/include -I/home/w0x7ce/pico-sdk/src/common/pico_base/include -I/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/generated/pico_base -I/home/w0x7ce/pico-sdk/src/boards/include -I/home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include -I/home/w0x7ce/pico-sdk/src/rp2_common/boot_stage2/include
 
 ASM_FLAGS = -mcpu=cortex-m0plus -mthumb -O3 -DNDEBUG
 

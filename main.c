@@ -49,9 +49,15 @@ int main()
     lv_init();
 
     // 创建显示缓冲区
-    static lv_disp_draw_buf_t draw_buf;
-    static lv_color_t buf[OLED_WIDTH_240 * 100]; // 缓冲区大小可以根据需要调整
-    lv_disp_draw_buf_init(&draw_buf, buf, NULL, OLED_WIDTH_240 * 10);
+    // static lv_disp_draw_buf_t draw_buf;
+    // static lv_color_t buf[OLED_WIDTH_240 * 100]; // 缓冲区大小可以根据需要调整
+    // lv_disp_draw_buf_init(&draw_buf, buf, NULL, OLED_WIDTH_240 * 10);
+    static lv_color_t buf_1[OLED_WIDTH_240 * 40]; // 第一个缓冲区
+    static lv_color_t buf_2[OLED_WIDTH_240 * 40]; // 第二个缓冲区
+
+    lv_disp_draw_buf_t draw_buf;
+    lv_disp_draw_buf_init(&draw_buf, buf_1, buf_2, OLED_WIDTH_240 * 40); // 使用双缓
+
 
     // 创建显示驱动
     static lv_disp_drv_t disp_drv;
@@ -69,17 +75,19 @@ int main()
     // 创建定时器
     lv_timer_create(timer_switch_screen, 5000, NULL); // 每5秒切换一次视窗
 
-    lv_obj_t *fps_label = lv_label_create(ui_Screen5);
-    lv_label_set_text(fps_label, "FPS: --");
-    lv_obj_align(fps_label, LV_ALIGN_BOTTOM_RIGHT, -10, -10); // 定位到右下角
-    create_console();
+    // lv_obj_t *fps_label = lv_label_create(ui_Screen5);
+    // lv_label_set_text(fps_label, "FPS: --");
+    // lv_obj_align(fps_label, LV_ALIGN_BOTTOM_RIGHT, -10, -10); // 定位到右下角
+    // create_console();
+
+    lv_ex_img_1();
 
     while (true) {
     
         lv_tick_inc(5);
         lv_timer_handler();
 
-        update_fps_label(fps_label);
+        // update_fps_label(fps_label);
         
         sleep_ms(5);
     }
@@ -116,7 +124,7 @@ static void timer_switch_screen(lv_timer_t *timer) {
     // } else {
     //     lv_scr_load(ui_Screen5);
     // }
-    lv_scr_load(ui_Screen5);
+    // lv_scr_load(ui_Screen5);
     toggle = !toggle;
 }
 
@@ -170,3 +178,4 @@ void update_chart(lv_timer_t * timer) {
     lv_coord_t new_value = rand() % 100;  // 假设数据范围为0到99
     lv_chart_set_next_value(chart, ser, new_value);
 }
+

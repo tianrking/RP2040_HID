@@ -35,9 +35,9 @@ CMakeFiles/rp2040_oled.dir/home/w0x7ce/pico-sdk/src/common/pico_time/time.c.obj:
  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/assert.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /home/w0x7ce/Downloads/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi/arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/generated/pico_base/pico/version.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/generated/pico_base/pico/version.h \
  /home/w0x7ce/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/generated/pico_base/pico/config_autogen.h \
+ /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/generated/pico_base/pico/config_autogen.h \
  /home/w0x7ce/pico-sdk/src/boards/include/boards/pico.h \
  /home/w0x7ce/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/w0x7ce/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \

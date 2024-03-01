@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040
+CMAKE_SOURCE_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build
+CMAKE_BINARY_DIR = /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -6441,6 +6441,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/main.c.s
 .PHONY : main.c.s
 
+media/logo.obj: media/logo.c.obj
+.PHONY : media/logo.obj
+
+# target to build an object file
+media/logo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/media/logo.c.obj
+.PHONY : media/logo.c.obj
+
+media/logo.i: media/logo.c.i
+.PHONY : media/logo.i
+
+# target to preprocess a source file
+media/logo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/media/logo.c.i
+.PHONY : media/logo.c.i
+
+media/logo.s: media/logo.c.s
+.PHONY : media/logo.s
+
+# target to generate assembly for a file
+media/logo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/media/logo.c.s
+.PHONY : media/logo.c.s
+
 squareline/components/ui_comp_hook.obj: squareline/components/ui_comp_hook.c.obj
 .PHONY : squareline/components/ui_comp_hook.obj
 
@@ -6512,6 +6536,30 @@ squareline/screens/ui_Screen5.s: squareline/screens/ui_Screen5.c.s
 squareline/screens/ui_Screen5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen5.c.s
 .PHONY : squareline/screens/ui_Screen5.c.s
+
+squareline/screens/ui_Screen9.obj: squareline/screens/ui_Screen9.c.obj
+.PHONY : squareline/screens/ui_Screen9.obj
+
+# target to build an object file
+squareline/screens/ui_Screen9.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen9.c.obj
+.PHONY : squareline/screens/ui_Screen9.c.obj
+
+squareline/screens/ui_Screen9.i: squareline/screens/ui_Screen9.c.i
+.PHONY : squareline/screens/ui_Screen9.i
+
+# target to preprocess a source file
+squareline/screens/ui_Screen9.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen9.c.i
+.PHONY : squareline/screens/ui_Screen9.c.i
+
+squareline/screens/ui_Screen9.s: squareline/screens/ui_Screen9.c.s
+.PHONY : squareline/screens/ui_Screen9.s
+
+# target to generate assembly for a file
+squareline/screens/ui_Screen9.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2040_oled.dir/build.make CMakeFiles/rp2040_oled.dir/squareline/screens/ui_Screen9.c.s
+.PHONY : squareline/screens/ui_Screen9.c.s
 
 squareline/ui.obj: squareline/ui.c.obj
 .PHONY : squareline/ui.obj
@@ -7378,6 +7426,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... media/logo.obj"
+	@echo "... media/logo.i"
+	@echo "... media/logo.s"
 	@echo "... squareline/components/ui_comp_hook.obj"
 	@echo "... squareline/components/ui_comp_hook.i"
 	@echo "... squareline/components/ui_comp_hook.s"
@@ -7387,6 +7438,9 @@ help:
 	@echo "... squareline/screens/ui_Screen5.obj"
 	@echo "... squareline/screens/ui_Screen5.i"
 	@echo "... squareline/screens/ui_Screen5.s"
+	@echo "... squareline/screens/ui_Screen9.obj"
+	@echo "... squareline/screens/ui_Screen9.i"
+	@echo "... squareline/screens/ui_Screen9.s"
 	@echo "... squareline/ui.obj"
 	@echo "... squareline/ui.i"
 	@echo "... squareline/ui.s"

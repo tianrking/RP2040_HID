@@ -4,6 +4,7 @@
         "string": "cpp",
         "string_view": "cpp",
         "ui.h": "c",
-        "st7735_drv.h": "c"
+        "st7735_drv.h": "c",
+        "main.h": "c"
     }
 }

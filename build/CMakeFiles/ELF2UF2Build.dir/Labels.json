@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/ELF2UF2Build"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles/ELF2UF2Build"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/ELF2UF2Build.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles/ELF2UF2Build.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/CMakeFiles/ELF2UF2Build-complete.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/CMakeFiles/ELF2UF2Build-complete.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule"
 		},
 		{
-			"file" : "/home/w0x7ce/Desktop/LVGL/0.96OLED_RP2040/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule"
+			"file" : "/home/w0x7ce/Desktop/LVGL/240_240_ST7789/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule"
 		}
 	],
 	"target" : 

@@ -1,7 +1,34 @@
 #include "main.h"
 #include "hardware/dma.h"
+#include "hardware/irq.h"
 
+// 定義SPI和DMA
+#define SPI_PORT spi0
+#define DMA_CHANNEL_TX dma_claim_unused_channel(true)
 static int dma_channel;
+// void ST7735_init_spi(void) {
+//     // 初始化SPI引腳
+//     spi_init(spi0, 100* 1000 * 1000); // 1 MHz SPI速度
+//     spi_set_format(spi0, 8, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST);
+
+//     gpio_set_function(ST7735_PIN_SCK, GPIO_FUNC_SPI);
+//     gpio_set_function(ST7735_PIN_MOSI, GPIO_FUNC_SPI);
+
+//     // 初始化控制引腳
+//     gpio_init(ST7735_PIN_CS);
+//     gpio_set_dir(ST7735_PIN_CS, GPIO_OUT);
+//     gpio_init(ST7735_PIN_DC);
+//     gpio_set_dir(ST7735_PIN_DC, GPIO_OUT);
+//     gpio_init(ST7735_PIN_RST);
+//     gpio_set_dir(ST7735_PIN_RST, GPIO_OUT);
+
+//     // 領取DMA通道
+//     dma_channel = dma_claim_unused_channel(true);
+    
+//     ST7735_CS_ON;
+//     ST7735_RESET_ON;
+// }
+
 void ST7735_init_spi(void) {
     // 初始化SPI引脚
     gpio_set_function(ST7735_PIN_MOSI, GPIO_FUNC_SPI);
@@ -16,13 +43,35 @@ void ST7735_init_spi(void) {
     gpio_set_dir(ST7735_PIN_RST, GPIO_OUT);
 
     // SPI配置
-    spi_init(spi0, 100* 1000 * 1000); // 使用1MHz速度初始化SPI
+    spi_init(spi0, 10 * 1000 * 1000); // 使用1MHz速度初始化SPI
     spi_set_format(spi0, 8, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST);
 
     // 默认状态
     ST7735_CS_ON;    // 释放CS
     ST7735_RESET_ON; // 默认不重置
 }
+
+// DMA發送函數
+// void ST7735_write_command(uint8_t cmd) {
+//     ST7735_CS_ON; // 啟動CS
+//     ST7735_DC_OFF; // 命令模式
+//     ST7735_CS_OFF;
+//     dma_channel_config config = dma_channel_get_default_config(dma_channel);
+//     channel_config_set_transfer_data_size(&config, DMA_SIZE_8);
+//     channel_config_set_dreq(&config, spi_get_dreq(spi0, true));
+
+//     dma_channel_configure(
+//         dma_channel,
+//         &config,
+//         &spi_get_hw(spi0)->dr, // 寫入SPI數據寄存器的地址
+//         &cmd, // 從cmd變量的地址讀取
+//         1,    // 數據長度
+//         true  // 立即開始
+//     );
+
+//     dma_channel_wait_for_finish_blocking(dma_channel);
+//     ST7735_CS_ON; // 關閉CS
+// }
 
 void ST7735_write_command(uint8_t cmd) {
     ST7735_CS_ON;
@@ -31,6 +80,32 @@ void ST7735_write_command(uint8_t cmd) {
     spi_write_blocking(spi0, &cmd, 1);
     ST7735_CS_ON;
 }
+
+// DMA发送单个数据字节
+// void ST7735_write_data(uint8_t data) {
+//     ST7735_CS_ON;
+//     ST7735_DC_ON; // 數據模式
+//     ST7735_CS_OFF; // 啟動CS
+
+//     // 獲取DMA默認配置並賦值給一個變量
+//     dma_channel_config config = dma_channel_get_default_config(dma_channel);
+    
+//     // 配置DMA通道，使用變量地址
+//     dma_channel_configure(
+//         dma_channel,
+//         &config,
+//         &spi_get_hw(spi0)->dr, // 寫入SPI數據寄存器的地址
+//         &data, // 從data變量的地址讀取
+//         1,    // 數據長度
+//         true  // 立即開始
+//     );
+
+//     dma_channel_wait_for_finish_blocking(dma_channel);
+//     ST7735_CS_ON; // 關閉CS
+// }
+
+
+
 void ST7735_write_data(uint8_t data) {
     ST7735_CS_ON;
     ST7735_DC_ON;
@@ -38,6 +113,29 @@ void ST7735_write_data(uint8_t data) {
     spi_write_blocking(spi0, &data, 1);
     ST7735_CS_ON;
 }
+
+// void ST7735_write_data_sequence(uint8_t *data, size_t len) {
+//     ST7735_DC_ON;
+//     ST7735_CS_OFF;
+
+//     // 獲取DMA默認配置並賦值給一個變量
+//     dma_channel_config config = dma_channel_get_default_config(DMA_CHANNEL_TX);
+
+//     // 配置DMA通道，使用變量地址
+//     dma_channel_configure(
+//         DMA_CHANNEL_TX,
+//         &config,
+//         &spi_get_hw(spi0)->dr, // 寫入SPI數據寄存器的地址
+//         data,                  // 從buffer讀取
+//         len,                   // 傳輸長度
+//         true                   // 立即開始
+//     );
+
+//     dma_channel_wait_for_finish_blocking(DMA_CHANNEL_TX);
+//     ST7735_CS_ON;
+// }
+
+
 
 void ST7735_write_data_sequence(uint8_t *data, size_t len) {
     ST7735_DC_ON;
@@ -270,3 +368,51 @@ void ST7735_Clear(uint16_t Color) {
 
     ST7735_CS_ON;
 }
+
+// #include "hardware/dma.h"
+
+// #define DMA_CHANNEL_TX dma_claim_unused_channel(true)
+
+// // 假设ST7735_WIDTH 和 ST7735_HEIGHT 已经定义
+// static uint16_t lineBuffer[ST7735_WIDTH]; // 用于填充屏幕的一行
+
+// void ST7735_Clear(uint16_t Color) {
+//     // 调整颜色格式以匹配ST7735期望的大端格式
+//     uint16_t adjustedColor = __builtin_bswap16(Color);
+
+//     // 用调整后的颜色填充lineBuffer
+//     for (int i = 0; i < ST7735_WIDTH; i++) {
+//         lineBuffer[i] = adjustedColor;
+//     }
+
+//     // 设置整个屏幕为窗口
+//     ST7735_SetWindows(0, 0, ST7735_WIDTH - 1, ST7735_HEIGHT - 1);
+
+//     // 配置DMA用于数据传输
+//     dma_channel_config config = dma_channel_get_default_config(dma_channel);
+//     channel_config_set_transfer_data_size(&config, DMA_SIZE_16);
+//     channel_config_set_read_increment(&config, true);
+//     channel_config_set_write_increment(&config, false);
+//     channel_config_set_dreq(&config, spi_get_dreq(spi0, true));
+
+//     // 准备DMA传输
+//     dma_channel_configure(
+//         dma_channel,
+//         &config,
+//         &spi_get_hw(spi0)->dr, // SPI数据寄存器的地址
+//         lineBuffer,            // 从lineBuffer数组读取
+//         ST7735_WIDTH,          // 传输的长度（以16位计数）
+//         true                   // 立即开始
+//     );
+
+//     ST7735_DC_ON;  // 设置为数据模式
+//     ST7735_CS_OFF; // 激活片选
+
+//     // 循环DMA传输以填充整个屏幕
+//     for (int j = 0; j < ST7735_HEIGHT; j++) {
+//         dma_channel_start(dma_channel); // 重启DMA传输
+//         dma_channel_wait_for_finish_blocking(dma_channel);
+//     }
+
+//     ST7735_CS_ON; // 关闭片选
+// }
